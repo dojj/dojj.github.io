@@ -167,9 +167,6 @@ pre {
 /**
  * Clearfix
  */
-/**
- * Site header   **********************************************************
- */
 nav h1 {
   text-align: center;
   margin: 0 0 3% 0; }
@@ -209,17 +206,19 @@ body {
 .lightbox:target {
   visibility: visible; }
 
+/****************************************/
 .container {
   background-color: #ffffff;
   border-style: dotted;
   width: 800px;
   height: 700px;
-  margin: auto; }
+  margin: auto;
+  padding-right: 6px; }
 
 .outer {
   background-color: #ffffff;
   border-style: solid;
-  border-color: #2698BA;
+  border-color: #B509AC;
   margin-top: 5%;
   width: 800px;
   height: 400px; }
@@ -228,7 +227,8 @@ body {
   width: 300px;
   height: 200px;
   border-style: solid;
-  float: right; }
+  border-color: #2698BA;
+  float: left; }
 
 .desc {
   background-color: #ffffff;
@@ -246,11 +246,13 @@ body {
   right: 60px;
   opacity: 0;
 }
+
 .next {
   position: absolute;
   top: 170px;
   right: 10px;
 }
+
 .close {
   position: absolute;
   top: 8px;
@@ -261,11 +263,9 @@ body {
 .gallery {
   display: block;
   margin: 0 auto;
-    border: 0 solid #ccc;
-
-    width: 293px;
-    height: 293px;
-
+  border: 0 solid #ccc;
+  width: 293px;
+  height: 293px;
 }
 */
 /*div.gallery:hover {
