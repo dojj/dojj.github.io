@@ -36,7 +36,7 @@ nav h1 {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(56,56,56, .8);
+  background-color: rgba(56, 56, 56, .8);
   height: 100%;
   width: 100%;
 }
@@ -45,41 +45,47 @@ nav h1 {
   visibility: visible;
 }
 
+
 /****************************************/
 
 .container {
   background-color: #ffffff;
-  border-style:dotted;
-  width: 800px;
-  height: 700px;
+  border-style: dotted;
+  width: 935px;
+  height: 600px;
   margin: auto;
-  padding-right: 6px;
+  position: relative;
+  padding: 0 6px 12px 0;
 }
 
-.outer {
+.outer /*purple*/ {
   background-color: #ffffff;
   border-style: solid;
   border-color: #B509AC;
+  
   margin-top: 5%;
+  margin: auto;
   width: 800px;
-  height: 400px;
-
-
+  height: 600px;
+  padding: 0 0 6px 0;
 }
 
-.inner {
-  width: 300px;
-  height: 200px;
+.inner /*blue*/ {
+  width: 465px;
+  height: 600px;
   border-style: solid;
   border-color: #2698BA;
   float: left;
 }
 
-.desc{
+.desc {
   background-color: #ffffff;
   border-style: solid;
   text-align: center;
-  margin: 0px 50px 0 50px;
+  float: right;
+  width: 323px;
+  height: 600px;
+  margin-top: 0px;
 }
 
 .lightbox .inner:hover .right {
@@ -87,17 +93,19 @@ nav h1 {
   transition-duration: .7s;
 }
 
-/*.right {
+.next {
+  position: absolute;
+  top: 170px;
+  right: 0px;
+}
+
+
+/*
+.right {
   position: absolute;
   top: 175px;
   right: 60px;
   opacity: 0;
-}
-
-.next {
-  position: absolute;
-  top: 170px;
-  right: 10px;
 }
 
 .close {
