@@ -14,7 +14,7 @@ nav h1 {
   border-style: solid;
   border-color: #FF3636;
 }
-
+        
 .thumbs {
   display: inline-block;
   width: 293px;
@@ -44,8 +44,6 @@ nav h1 {
 .lightbox:target {
   visibility: visible;
 }
-
-
 /****************************************/
 
 .container {
@@ -70,10 +68,11 @@ nav h1 {
 
 .inner /*blue*/ {
   width: 465px;
-  height: 600px;
+  height: 300px;
   border-style: solid;
   border-color: #2698BA;
   float: left;
+  position: relative;
 }
 
 .desc {
@@ -86,9 +85,16 @@ nav h1 {
   margin-top: 0px;
 }
 
-.lightbox .inner:hover .right {
+.inner:hover .right {
   opacity: 1;
   transition-duration: .7s;
+}
+
+.right {
+  position: absolute;
+  top: 280px;
+  right: 60px;
+  opacity: 0;
 }
 
 .next {
@@ -99,16 +105,8 @@ nav h1 {
 
 .close {
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 70px;
-}
-
-/*
-.right {
-  position: absolute;
-  top: 175px;
-  right: 60px;
-  opacity: 0;
 }
 
 /* IG effect. to align content vertically
@@ -120,11 +118,6 @@ nav h1 {
   height: 293px;
 }
 */
-
-
-/*div.gallery:hover {
-    border: 1px solid #777;
-}*/
 
 /**
  * Pagination   **********************************************************
@@ -143,10 +136,6 @@ color: $theme-color;
     }
 }
 */
-
-
-
-
 
 /**
  * Portfolio grid **********************************************************
