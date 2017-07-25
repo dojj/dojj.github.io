@@ -1,28 +1,57 @@
-nav h1 {
-  text-align: center;
-  margin: 0 0 3% 0;
+body {
+  background-color: #F8F8F8;
+  width: 935px;
+  height: 1300px;
+  margin: auto;
 }
 
- body {
-    background-color: #FAFAFA;
-  }
+header {
+  margin: 17% 0 0 0;
+}
+
+nav h1 {
+  text-align: left;
+  margin: 0 0 10% 0;
+  border-style: solid;
+  width: 935px;
+}
+
+.content {
+  border-style: solid;
+  border-color: blue;
+  background-color: #F8F8F8;
+  width: 935px;
+  height: 927px;
+}
 
 .gallery {
-  margin: auto;
   width: 935px;
   height: 293px;
-  border-style: solid;
-  border-color: #FF3636;
+  background-color: #F8F8F8;
 }
-        
+
+.gallery2 {
+  height: 293px;
+  margin: 24px 0;
+  background-color: #F8F8F8;
+}
+
 .thumbs {
   display: inline-block;
   width: 293px;
   height: 293px;
 }
 
+.left {
+  margin: 24px 0;
+}
+
 .middle {
   margin: 0 24px;
+}
+
+.right {
+  margin: 24px 0;
 }
 
 .thumbs img {
@@ -32,57 +61,78 @@ nav h1 {
 }
 
 .lightbox {
-  visibility: hidden;
-  position: fixed;
+  display: none;
+  /*visibility: hidden;*/
+  position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(56, 56, 56, .8);
   height: 100%;
   width: 100%;
 }
 
 .lightbox:target {
-  visibility: visible;
+  outline: none;
+  display: block;
+  /*visibility: visible;*/
 }
+
+
 /****************************************/
+.exit {
+  background-color: #ffffff;
+  opacity: .9;
+  cursor: default;
+  position: fixed;
+  display: block;
+  top: 0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*"max" sets cap on height&width
+overrides "width&height"
+*/
 
 .container {
-  background-color: #ffffff;
-  border-style: dotted;
-  width: 935px;
-  height: 640px;
+  /*border-style: dotted;*/
+  width: 800px;
+  height: 700px;
   margin: auto;
+  margin-top: 1%;
   position: relative;
-  padding: 40px 6px 12px 0;
+  padding: 0 6px 10px 0;
+
 }
 
 .outer /*purple*/ {
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   border-style: solid;
   border-color: #B509AC;
   margin: auto;
   width: 800px;
-  height: 600px;
+  height: 100%;
   padding: 0 0 6px 0;
 }
 
 .inner /*blue*/ {
   width: 465px;
   height: 300px;
-  border-style: solid;
+  /*border-style: solid;*/
   border-color: #2698BA;
   float: left;
   position: relative;
+  padding: 0 0 0 0;
 }
 
 .desc {
   background-color: #ffffff;
-  border-style: solid;
+  /*border-style: solid;*/
   text-align: center;
   float: right;
-  width: 323px;
-  height: 600px;
-  margin-top: 0px;
+  width: 250px;
+  height: 100%;
 }
 
 .inner:hover .right {
@@ -105,8 +155,8 @@ nav h1 {
 
 .close {
   position: absolute;
-  top: 0px;
-  right: 70px;
+  top: 5%;
+  right: 15%;
 }
 
 /* IG effect. to align content vertically

@@ -167,27 +167,51 @@ pre {
 /**
  * Clearfix
  */
-nav h1 {
-  text-align: center;
-  margin: 0 0 3% 0; }
-
 body {
-  background-color: #FAFAFA; }
+  background-color: #F8F8F8;
+  width: 935px;
+  height: 1300px;
+  margin: auto; }
+
+header {
+  margin: 17% 0 0 0; }
+
+nav h1 {
+  text-align: left;
+  margin: 0 0 10% 0;
+  border-style: solid;
+  width: 935px; }
+
+.content {
+  border-style: solid;
+  border-color: blue;
+  background-color: #F8F8F8;
+  width: 935px;
+  height: 927px; }
 
 .gallery {
-  margin: auto;
   width: 935px;
   height: 293px;
-  border-style: solid;
-  border-color: #FF3636; }
+  background-color: #F8F8F8; }
+
+.gallery2 {
+  height: 293px;
+  margin: 24px 0;
+  background-color: #F8F8F8; }
 
 .thumbs {
   display: inline-block;
   width: 293px;
   height: 293px; }
 
+.left {
+  margin: 24px 0; }
+
 .middle {
   margin: 0 24px; }
+
+.right {
+  margin: 24px 0; }
 
 .thumbs img {
   float: left;
@@ -195,70 +219,89 @@ body {
   height: 100%; }
 
 .lightbox {
-  visibility: hidden;
-  position: fixed;
+  display: none;
+  /*visibility: hidden;*/
+  position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(56, 56, 56, 0.8);
   height: 100%;
   width: 100%; }
 
 .lightbox:target {
-  visibility: visible; }
+  outline: none;
+  display: block;
+  /*visibility: visible;*/ }
 
 /****************************************/
-.container {
+.exit {
   background-color: #ffffff;
-  border-style: dotted;
+  opacity: .9;
+  cursor: default;
+  position: fixed;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
+
+/*"max" sets cap on height&width
+overrides "width&height"
+*/
+.container {
+  /*border-style: dotted;*/
   width: 800px;
   height: 700px;
   margin: auto;
-  padding-right: 6px; }
+  margin-top: 1%;
+  position: relative;
+  padding: 0 6px 10px 0; }
 
 .outer {
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   border-style: solid;
   border-color: #B509AC;
-  margin-top: 5%;
+  margin: auto;
   width: 800px;
-  height: 400px; }
+  height: 100%;
+  padding: 0 0 6px 0; }
 
 .inner {
-  width: 300px;
-  height: 200px;
-  border-style: solid;
+  width: 465px;
+  height: 300px;
+  /*border-style: solid;*/
   border-color: #2698BA;
-  float: left; }
+  float: left;
+  position: relative;
+  padding: 0 0 0 0; }
 
 .desc {
   background-color: #ffffff;
-  border-style: solid;
+  /*border-style: solid;*/
   text-align: center;
-  margin: 0px 50px 0 50px; }
+  float: right;
+  width: 250px;
+  height: 100%; }
 
-.lightbox .inner:hover .right {
+.inner:hover .right {
   opacity: 1;
   transition-duration: .7s; }
 
-/*.right {
+.right {
   position: absolute;
-  top: 175px;
+  top: 280px;
   right: 60px;
-  opacity: 0;
-}
+  opacity: 0; }
 
 .next {
   position: absolute;
   top: 170px;
-  right: 10px;
-}
+  right: 0px; }
 
 .close {
   position: absolute;
-  top: 8px;
-  right: 60px;
-}
-*/
+  top: 5%;
+  right: 15%; }
+
 /* IG effect. to align content vertically
 .gallery {
   display: block;
@@ -268,9 +311,6 @@ body {
   height: 293px;
 }
 */
-/*div.gallery:hover {
-    border: 1px solid #777;
-}*/
 /**
  * Pagination   **********************************************************
 
