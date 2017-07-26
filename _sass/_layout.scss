@@ -1,7 +1,12 @@
+html {
+
+  height: 100%;
+}
+
 body {
   background-color: #F8F8F8;
   width: 935px;
-  height: 1300px;
+  height: 100%;
   margin: auto;
 }
 
@@ -16,12 +21,20 @@ nav h1 {
   width: 935px;
 }
 
+footer {
+  margin-bottom: 15%;
+  border-style: solid;
+  height: 25%;
+  width: 935px;
+}
+
 .content {
   border-style: solid;
   border-color: blue;
   background-color: #F8F8F8;
   width: 935px;
   height: 927px;
+  overflow: hidden;
 }
 
 .gallery {
@@ -68,6 +81,7 @@ nav h1 {
   left: 0;
   height: 100%;
   width: 100%;
+
 }
 
 .lightbox:target {
@@ -79,7 +93,7 @@ nav h1 {
 
 /****************************************/
 .exit {
-  background-color: #ffffff;
+  background-color: pink;
   opacity: .9;
   cursor: default;
   position: fixed;
@@ -96,7 +110,7 @@ overrides "width&height"
 */
 
 .container {
-  /*border-style: dotted;*/
+  border-style: dotted;
   width: 800px;
   height: 700px;
   margin: auto;
