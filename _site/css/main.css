@@ -167,37 +167,33 @@ pre {
 /**
  * Clearfix
  */
-html {
-  height: 100%; }
-
 body {
+  margin: 0px;
   background-color: #F8F8F8;
-  width: 935px;
-  height: 100%;
-  margin: auto; }
-
-header {
-  margin: 17% 0 0 0; }
+  height: 100%; }
 
 nav h1 {
   text-align: left;
   margin: 0 0 10% 0;
   border-style: solid;
-  width: 935px; }
+  height: 250px;
+  width: 935px;
+  margin: auto; }
 
 footer {
   margin-bottom: 15%;
   border-style: solid;
-  height: 25%;
-  width: 935px; }
+  height: 250px;
+  width: 935px;
+  margin: auto; }
 
-.content {
+.container {
+  margin: 0 auto;
   border-style: solid;
   border-color: blue;
   background-color: #F8F8F8;
   width: 935px;
-  height: 927px;
-  overflow: hidden; }
+  height: 927px; }
 
 .gallery {
   width: 935px;
@@ -257,15 +253,16 @@ footer {
 /*"max" sets cap on height&width
 overrides "width&height"
 */
-.container {
+/*.container {
   border-style: dotted;
   width: 800px;
   height: 700px;
   margin: auto;
   margin-top: 1%;
   position: relative;
-  padding: 0 6px 10px 0; }
+  padding: 0 6px 10px 0;
 
+}*/
 .outer {
   background-color: #FAFAFA;
   border-style: solid;
