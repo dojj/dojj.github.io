@@ -1,0 +1,290 @@
+body {
+  margin: 0px;
+  background-color: #F8F8F8;
+  height: 100%;
+}
+
+nav h1 {
+  text-align: left;
+  margin: 0 0 10% 0;
+  border-style: solid;
+  height: 250px;
+  width: 935px;
+  margin: auto;
+}
+
+footer {
+  margin-bottom: 15%;
+  border-style: solid;
+  height: 250px;
+  width: 935px;
+  margin: auto;
+}
+
+.container {
+  margin: 0 auto;
+  border-style: solid;
+  border-color: blue;
+  background-color: #F8F8F8;
+  width: 935px;
+  height: 927px;
+}
+
+.gallery {
+  width: 935px;
+  height: 293px;
+  background-color: #F8F8F8;
+}
+
+.gallery2 {
+  height: 293px;
+  margin: 24px 0;
+  background-color: #F8F8F8;
+}
+
+.thumbs {
+  display: inline-block;
+  width: 293px;
+  height: 293px;
+}
+
+.left {
+  margin: 24px 0;
+}
+
+.middle {
+  margin: 0 24px;
+}
+
+.right {
+  margin: 24px 0;
+}
+
+.thumbs img {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox {
+  display: none;
+  /*visibility: hidden;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.lightbox:target {
+  outline: none;
+  display: block;
+  /*visibility: visible;*/
+}
+
+/****************************************/
+.exit {
+  background-color: pink;
+  opacity: .9;
+  cursor: default;
+  position: fixed;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/*"max" sets cap on height&width
+overrides "width&height"
+*/
+
+/*.container {
+  border-style: dotted;
+  width: 800px;
+  height: 700px;
+  margin: auto;
+  margin-top: 1%;
+  position: relative;
+  padding: 0 6px 10px 0;
+
+}*/
+
+.outer {
+  background-color: #FAFAFA;
+  border-style: solid;
+  border-color: #B509AC;
+  margin: auto;
+  width: 800px;
+  height: 100%;
+  padding: 0 0 6px 0;
+}
+
+.inner {
+  width: 465px;
+  height: 300px;
+  /*border-style: solid;*/
+  border-color: #2698BA;
+  float: left;
+  position: relative;
+  padding: 0 0 0 0;
+}
+
+.desc {
+  background-color: #ffffff;
+  /*border-style: solid;*/
+  text-align: center;
+  float: right;
+  width: 250px;
+  height: 100%;
+}
+
+.inner:hover .right {
+  opacity: 1;
+  transition-duration: .7s;
+}
+
+.right {
+  position: absolute;
+  top: 280px;
+  right: 60px;
+  opacity: 0;
+}
+
+.next {
+  position: absolute;
+  top: 170px;
+  right: 0px;
+}
+
+.close {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+}
+
+/* IG effect. to align content vertically
+.gallery {
+  display: block;
+  margin: 0 auto;
+  border: 0 solid #ccc;
+  width: 293px;
+  height: 293px;
+}
+*/
+
+/**
+ * Pagination   **********************************************************
+
+.pagination{
+max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+text-align: center;
+width: 100%;
+position: fixed;
+bottom: 50px;
+}
+.paginationicon {
+font-size: 50px;
+a {
+color: $theme-color;
+    }
+}
+*/
+
+/**
+ * Portfolio grid **********************************************************
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+content: " ";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+.project {
+width: 33.33%;
+height: 250px;
+float: left;
+vertical-align: middle;
+box-sizing: border-box;
+padding: 10px;
+}
+.thumbnail{
+width: 100%;
+height: 230px;
+overflow: hidden;
+}
+.thumbnail img{
+width: 500px;
+height: auto;
+position: relative;
+left: -25%;
+top: -5%;
+}
+.thumbnail a{
+float: left;
+position: relative;
+width: 100%;
+height: 230px;
+}
+.thumbnail a span {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: rgba(0,0,0,0.4);
+color: $grey-color-light;
+padding: 40px;
+text-align: center;
+}
+.thumbnail a:hover span {
+display: block;
+}
+*/
+
+/**
+ * Portfolio pages **********************************************************
+
+.blankbox{
+background: $theme-color;
+}
+.img_row{
+height: $img_height;
+width: 100%;
+overflow: hidden;
+box-sizing:border-box;
+padding: $img_spacing;
+}
+.col{
+width: 100%;
+height: 100%;
+float: left;
+object-fit: cover;
+box-sizing:border-box;
+padding: $img_spacing;
+}
+.right{
+float: right;
+}
+.one {
+width:33.33%;
+}
+.two {
+width: 66.66%;
+}
+.three{
+width: 100%;
+}
+.caption{
+height: 100%;
+color: $caption_color;
+text-align: center;
+vertical-align: middle;
+font-size: $caption_font_size;
+}
+*/
