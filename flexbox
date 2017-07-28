@@ -1,0 +1,61 @@
+<head>
+  <link rel="stylesheet" href="/css/main.css" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="box one">
+      </div>
+      <div class="box two">
+      </div>
+      <div class="box three">
+      </div>
+    </div>
+  </div>
+  <footer>
+  </footer>
+</body>
+
+body {
+  margin: 0;
+  background-color: #F8F8F8;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 293px) {
+  .container {
+    display: flex;
+    border-style: solid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 30%;
+  }
+  .box {
+    height: 293px;
+    flex: 0 1 293px;
+   
+  }  
+  
+}
+
+.one {
+  border-style: solid;
+  border-color: red;
+}
+
+.two {
+  border-style: solid;
+  border-color: blue;
+}
+
+.three {
+  border-style: solid;
+  border-color: green;
+}
