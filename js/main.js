@@ -31,5 +31,3 @@
   };
 
 })( jQuery );
-
-$(".a").fitText(1.5, { minFontSize: '29px', maxFontSize: '72px' });
