@@ -168,7 +168,6 @@ pre {
  * Clearfix
  */
 body {
-  margin: 0;
   height: 100%; }
 
 /*@media screen and (min-width: 700px) {*/
@@ -192,7 +191,7 @@ body {
   border: solid blue;
   /*height: 100%;*/
   max-width: 900px;
-  margin: 0 auto; }
+  margin: auto; }
 
 .billboard {
   margin-left: auto !important;
@@ -205,12 +204,11 @@ body {
   word-wrap: break-word; }
 
 .box {
-  border: dotted;
-  flex: 0 0 0; }
+  border: solid pink; }
 
 .box img {
+  display: block;
   width: 100%;
-  height: 100%;
   object-fit: contain; }
 
 /**
