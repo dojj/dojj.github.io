@@ -1,23 +1,17 @@
+/*body*****************************************/
 html {
   height: 100%;
 }
 
 body {
+  max-width: 1200px;
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
 
 header {
-  border: solid red;
-  height: 30%;
-  margin: 0 0 10% 0;
-}
 
-header p {
-  border: solid;
-  text-align: center;
-  word-wrap: break-word;
 }
 
 footer {
@@ -27,6 +21,7 @@ footer {
   margin: auto;
 }
 
+/*sizing*****************************************/
 @media screen and (min-width: 850px) {
   .container {
     display: flex;
@@ -57,30 +52,24 @@ footer {
 }
 
 @media screen and (max-width: 850px) {
+  header {
+    margin: 0 0 5% 0;
+  }
   .demo {
     height: 600px;
-    width: 300px;
+    max-width: 300px;
     border: solid;
     margin: auto;
   }
+  .info {
+    display: none;
+  }
 }
 
+/*boxes*****************************************/
 .content {
   max-width: 1350px;
   margin: auto;
-}
-
-.word {
-  text-align: center;
-  word-wrap: break-word;
-  margin: 10% 0 20% 0;
-  padding: 0 10%;
-}
-
-.title {
-  font-size: 20px;
-  text-align: center;
-  margin: 0 0 5% 0;
 }
 
 .container {
@@ -93,4 +82,22 @@ footer {
   display: block;
   width: 100%;
   object-fit: contain;
+}
+
+/*words*****************************************/
+.info {
+  margin: 10% 0 8% 0;
+}
+
+.title {
+  word-wrap: break-word;
+  text-align: center;
+  margin: 0 0 5% 0;
+}
+
+.desc {
+  word-wrap: break-word;
+  text-align: center;
+  margin: 40px 0 22% 0;
+  padding: 0 20%;
 }
