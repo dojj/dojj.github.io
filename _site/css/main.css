@@ -187,7 +187,7 @@ footer {
 /*sizing*****************************************/
 @media screen and (min-width: 850px) {
   body {
-    max-width: 95%; }
+    max-width: 65%; }
 
   .container {
     display: flex;
@@ -202,6 +202,16 @@ footer {
     width: 390px;
     margin: 2% auto;
     border: dotted; }
+
+  /*
+    .box {
+      background: #f8f8f9;
+      padding: 40px;
+    }
+  */
+  .payroll {
+    width: 100%;
+    margin: auto; }
 
   .photo1 {
     width: 50%; }
@@ -306,6 +316,10 @@ h4 {
   margin: 0 auto 28px;
   font-size: 17px;
   color: #534D4D; }
+
+u {
+  text-decoration: none;
+  border-bottom: 4px solid #3498db; }
 
 .desc {
   line-height: 24px;
