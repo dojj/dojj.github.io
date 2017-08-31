@@ -259,10 +259,10 @@ p {
   letter-spacing: 0.5px; }
 
 ul {
+  font-size: 18px;
   margin: auto;
   padding: 0;
   list-style: none;
-  border: dotted;
   text-align: center;
   letter-spacing: 0.5px; }
 
