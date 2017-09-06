@@ -1,6 +1,3 @@
-/*
-body
-*/
 body {
   margin: auto;
   font-family: 'Roboto', Georgia;
@@ -24,13 +21,14 @@ sizing
 */
 @media screen and (min-width: 850px) {
   body {
-    max-width: 1200px;
+    max-width: 1350px;
   }
 
   .container {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 230px;
+    padding-bottom: 220px;
+    //border: dotted;
   }
 
   .faxcoversheet {
@@ -61,13 +59,21 @@ sizing
   }
 
   .photo1 {
-    width: 48%;
-    border: dotted;
+    width: 48.5%;
+    margin: 0 0.5% 0 1%;
+    //border: dotted;
   }
 
   .photo2 {
-    width: 48%;
-    border: dotted;
+    width: 48.5%;
+    margin: 0 1% 0 0.5%;
+    //border: dotted;
+  }
+
+  .photo3 {
+    width: 48.5%;
+    margin: 1% 11% 0 1%;
+    //border: dotted;
   }
 
   .title,
@@ -115,6 +121,12 @@ sizing
     margin: auto;
   }
 
+  .photo1,
+  .photo2,
+  .photo3 {
+    margin-bottom: 20px;
+  }
+
   p,
   ul {
     font-size: 16px;
@@ -122,13 +134,12 @@ sizing
 
   .desc {
     font-size: 15px;
-    padding: 30px 150px 0;
+    padding: 10px 150px 0;
   }
 }
 @media screen and (max-width: 580px) {
   .desc {
     font-size: 15px;
-    text-align: center;
     padding: 20px;
   }
 }
@@ -187,4 +198,6 @@ a:hover {
 .desc {
   line-height: 24px;
   word-wrap: break-word;
+  text-align: center;
+  //border: dotted;
 }
