@@ -175,7 +175,7 @@ body {
   font-family: 'Roboto', Georgia; }
 
 header {
-  margin: 12% 0; }
+  margin: 120px 0 200px; }
 
 .pic {
   display: block;
@@ -183,19 +183,19 @@ header {
   object-fit: contain; }
 
 footer {
-  margin: 12% 0; }
+  margin: 200px 0 120px; }
 
 /*
 sizing
 */
 @media screen and (min-width: 850px) {
   body {
-    max-width: 1000px; }
+    max-width: 1200px; }
 
   .container {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 15%; }
+    padding-bottom: 230px; }
 
   .faxcoversheet {
     display: flex;
@@ -215,23 +215,30 @@ sizing
     width: 100%;
     margin: auto; }
 
+  .box {
+    display: flex;
+    flex-wrap: wrap; }
+
   .photo1 {
-    width: 50%; }
+    width: 48%; }
 
   .photo2 {
-    width: 50%; }
+    width: 48%; }
 
-  p {
+  .title,
+  ul {
     font-size: 18px; }
 
   .desc {
     font-size: 17px;
-    padding: 0 0 0 26px;
     width: 40%;
-    margin: 5% 0 10%; } }
+    margin: 50px auto 0; } }
 @media screen and (max-width: 850px) {
-  body {
-    width: 100%; }
+  header {
+    margin: 40px 0 135px; }
+
+  .container {
+    padding-bottom: 100px; }
 
   .demobox {
     padding: 2% 0;
@@ -243,13 +250,22 @@ sizing
     border: dotted;
     margin: auto; }
 
-  p {
+  .payroll {
+    width: 100%;
+    margin: auto; }
+
+  p,
+  ul {
     font-size: 16px; }
 
   .desc {
     font-size: 15px;
+    padding: 30px 150px 0; } }
+@media screen and (max-width: 580px) {
+  .desc {
+    font-size: 15px;
     text-align: center;
-    padding: 0 125px; } }
+    padding: 20px; } }
 /*
 TEXT
 */
@@ -259,7 +275,6 @@ p {
   letter-spacing: 0.5px; }
 
 ul {
-  font-size: 18px;
   margin: auto;
   padding: 0;
   list-style: none;
@@ -281,7 +296,7 @@ a:hover {
   color: #131313; }
 
 .title {
-  width: 90%;
+  width: 100%;
   word-wrap: break-word;
   text-align: center;
   margin: 0 auto;
@@ -289,7 +304,7 @@ a:hover {
 
 .t {
   color: #a0a0a0;
-  width: 80%;
+  width: 100%;
   word-wrap: break-word;
   text-align: center;
   margin: 0 auto 30px;

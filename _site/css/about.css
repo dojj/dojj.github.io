@@ -1,177 +1,159 @@
+body {
+  background-color: #131313; }
+
+header {
+  margin: 120px 0 !important; }
+
+.about {
+  margin: auto;
+  width: 95%; }
+
+.post {
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center; }
+
+a,
+p {
+  color: #fff !important; }
+
+a:hover {
+  color: #a0a0a0 !important; }
+
 /*
 body
 */
 body {
   margin: auto;
-  font-family: 'Roboto', Georgia;
-}
+  font-family: 'Roboto', Georgia; }
 
 header {
-  margin: 120px 0 200px;
-}
+  margin: 120px 0 200px; }
 
 .pic {
   display: block;
   width: 100%;
-  object-fit: contain;
-}
+  object-fit: contain; }
 
 footer {
-  margin: 200px 0 120px;
-}
+  margin: 200px 0 120px; }
+
 /*
 sizing
 */
 @media screen and (min-width: 850px) {
   body {
-    max-width: 1200px;
-  }
+    max-width: 1200px; }
 
   .container {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 230px;
-  }
+    padding-bottom: 230px; }
 
   .faxcoversheet {
     display: flex;
-    flex-wrap: wrap;
-  }
+    flex-wrap: wrap; }
 
   .demobox {
     width: 100%;
-    background: #f8f8f9;
-  }
+    background: #f8f8f9; }
 
   .demo {
     height: 700px;
     width: 390px;
     margin: 2% auto;
-    border: dotted;
-  }
+    border: dotted; }
 
   .payroll {
     width: 100%;
-    margin: auto;
-  }
+    margin: auto; }
 
   .box {
     display: flex;
-    flex-wrap: wrap;
-  }
+    flex-wrap: wrap; }
 
   .photo1 {
-    width: 48%;
-  }
+    width: 48%; }
 
   .photo2 {
-    width: 48%;
-  }
+    width: 48%; }
 
   .title,
   ul {
-    font-size: 18px;
-  }
+    font-size: 18px; }
 
   .desc {
     font-size: 17px;
     width: 40%;
-    margin: 50px auto 0;
-  }
-}
+    margin: 50px auto 0; } }
 @media screen and (max-width: 850px) {
-  body {
-    //width: 100%;
-  }
-
   header {
-    margin: 40px 0 135px;
-  }
+    margin: 40px 0 135px; }
 
   .container {
-    padding-bottom: 100px;
-  }
-
-  .info {
-    //display: none;
-  }
+    padding-bottom: 100px; }
 
   .demobox {
     padding: 2% 0;
-    background: #f8f8f9;
-  }
+    background: #f8f8f9; }
 
   .demo {
     height: 600px;
     max-width: 300px;
     border: dotted;
-    margin: auto;
-  }
+    margin: auto; }
 
   .payroll {
     width: 100%;
-    margin: auto;
-  }
+    margin: auto; }
 
   p,
   ul {
-    font-size: 16px;
-  }
+    font-size: 16px; }
 
   .desc {
     font-size: 15px;
-    padding: 30px 150px 0;
-  }
-}
+    padding: 30px 150px 0; } }
 @media screen and (max-width: 580px) {
   .desc {
     font-size: 15px;
     text-align: center;
-    padding: 20px;
-  }
-}
+    padding: 20px; } }
 /*
 TEXT
 */
 p {
   color: #1e1e1c;
   line-height: 26px;
-  letter-spacing: 0.5px;
-}
+  letter-spacing: 0.5px; }
 
 ul {
   margin: auto;
   padding: 0;
   list-style: none;
   text-align: center;
-  letter-spacing: 0.5px;
-}
+  letter-spacing: 0.5px; }
 
 li {
   display: inline-block;
-  padding: 0 12px;
-}
+  padding: 0 12px; }
 
 .wk {
-  color: #1e1e1c;
-}
+  color: #1e1e1c; }
 
 a {
   color: #a0a0a0;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a:hover {
-  color: #131313;
-}
+  color: #131313; }
 
 .title {
   width: 100%;
   word-wrap: break-word;
   text-align: center;
   margin: 0 auto;
-  letter-spacing: 0.6px;
-}
+  letter-spacing: 0.6px; }
 
 .t {
   color: #a0a0a0;
@@ -179,10 +161,8 @@ a:hover {
   word-wrap: break-word;
   text-align: center;
   margin: 0 auto 30px;
-  letter-spacing: 0.6px;
-}
+  letter-spacing: 0.6px; }
 
 .desc {
   line-height: 24px;
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
