@@ -220,10 +220,12 @@ sizing
     flex-wrap: wrap; }
 
   .photo1 {
-    width: 48%; }
+    width: 48%;
+    border: dotted; }
 
   .photo2 {
-    width: 48%; }
+    width: 48%;
+    border: dotted; }
 
   .title,
   ul {
