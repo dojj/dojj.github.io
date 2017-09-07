@@ -59,7 +59,8 @@ sizing
   .demo {
     height: 670px;
     width: 380px;
-    padding: 2% 0; }
+    padding: 5% 0;
+    margin: auto; }
 
   .payroll {
     width: 100%;
@@ -115,8 +116,7 @@ sizing
 
   .demo {
     height: 570px;
-    max-width: 320px;
-    margin: auto; }
+    max-width: 320px; }
 
   .payroll {
     width: 100%;
