@@ -203,10 +203,9 @@ sizing
     background: #f8f8f9; }
 
   .demo {
-    height: 700px;
-    width: 390px;
-    margin: 2% auto;
-    border: dotted; }
+    height: 670px;
+    width: 380px;
+    margin: 2% auto; }
 
   .payroll {
     width: 100%;
@@ -261,9 +260,8 @@ sizing
     background: #f8f8f9; }
 
   .demo {
-    height: 600px;
-    max-width: 300px;
-    border: dotted;
+    height: 570px;
+    max-width: 320px;
     margin: auto; }
 
   .payroll {
