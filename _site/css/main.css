@@ -172,7 +172,7 @@ body {
   font-family: 'Roboto', Georgia; }
 
 header {
-  margin: 120px 0 200px; }
+  margin: 120px 0 120px; }
 
 .pic {
   display: block;
@@ -227,6 +227,19 @@ sizing
   .photo3 {
     width: 48.5%;
     margin: 1% 11% 0 1%; }
+
+  .r1 {
+    width: 48.5%;
+    margin: 0 0.5% 0 1%;
+    padding: 2% 0 0 0; }
+
+  .r2 {
+    width: 48.5%;
+    margin: 0 1% 0 0.5%; }
+
+  .r3 {
+    width: 48.5%;
+    margin: 2% 11% 0 1%; }
 
   .title,
   ul {

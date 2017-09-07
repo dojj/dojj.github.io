@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  margin: 120px 0 200px;
+  margin: 120px 0 120px;
 }
 
 .pic {
@@ -61,19 +61,32 @@ sizing
   .photo1 {
     width: 48.5%;
     margin: 0 0.5% 0 1%;
-    //border: dotted;
   }
 
   .photo2 {
     width: 48.5%;
     margin: 0 1% 0 0.5%;
-    //border: dotted;
   }
 
   .photo3 {
     width: 48.5%;
     margin: 1% 11% 0 1%;
-    //border: dotted;
+  }
+
+  .r1 {
+    width: 48.5%;
+    margin: 0 0.5% 0 1%;
+    padding: 2% 0 0 0;
+  }
+
+  .r2 {
+    width: 48.5%;
+    margin: 0 1% 0 0.5%;
+  }
+
+  .r3 {
+    width: 48.5%;
+    margin: 2% 11% 0 1%;
   }
 
   .title,
