@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  margin: 120px 0 120px;
+  margin: 120px 0;
 }
 
 .pic {
@@ -37,9 +37,9 @@ sizing
 
   .demobox {
     width: 100%;
-    padding: 2% 0;
     background: #f8f8f9;
-    //margin: auto;
+    margin: 0 1%;
+    padding: 2% 0;
   }
 
   .demo {
@@ -47,12 +47,12 @@ sizing
     width: 380px;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .payroll {
+    padding: 0 1%;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .box {
@@ -78,7 +78,7 @@ sizing
   .r1 {
     width: 48.5%;
     margin: 0 0.5% 0 1%;
-    padding: 2% 0 0 0;
+    padding: 2% 0 0;
   }
 
   .r2 {
@@ -91,6 +91,7 @@ sizing
     margin: 2% 11% 0 1%;
   }
 
+  .t,
   .title,
   ul {
     font-size: 18px;
@@ -98,8 +99,8 @@ sizing
 
   .desc {
     font-size: 17px;
-    width: 40%;
-    margin: 50px auto 0;
+    width: 60%;
+    margin: 50px 0 0 15%;
   }
 }
 @media screen and (max-width: 850px) {
@@ -127,6 +128,8 @@ sizing
   .demo {
     height: 570px;
     max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .payroll {
@@ -211,6 +214,4 @@ a:hover {
 .desc {
   line-height: 24px;
   word-wrap: break-word;
-  text-align: center;
-  //border: dotted;
 }

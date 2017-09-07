@@ -25,7 +25,7 @@ body {
   font-family: 'Roboto', Georgia; }
 
 header {
-  margin: 120px 0 120px; }
+  margin: 120px 0; }
 
 .pic {
   display: block;
@@ -53,8 +53,9 @@ sizing
 
   .demobox {
     width: 100%;
-    padding: 2% 0;
-    background: #f8f8f9; }
+    background: #f8f8f9;
+    margin: 0 1%;
+    padding: 2% 0; }
 
   .demo {
     height: 670px;
@@ -63,8 +64,9 @@ sizing
     margin-right: auto; }
 
   .payroll {
+    padding: 0 1%;
     width: 100%;
-    margin: auto; }
+    margin: 0 auto; }
 
   .box {
     display: flex;
@@ -85,7 +87,7 @@ sizing
   .r1 {
     width: 48.5%;
     margin: 0 0.5% 0 1%;
-    padding: 2% 0 0 0; }
+    padding: 2% 0 0; }
 
   .r2 {
     width: 48.5%;
@@ -95,14 +97,15 @@ sizing
     width: 48.5%;
     margin: 2% 11% 0 1%; }
 
+  .t,
   .title,
   ul {
     font-size: 18px; }
 
   .desc {
     font-size: 17px;
-    width: 40%;
-    margin: 50px auto 0; } }
+    width: 60%;
+    margin: 50px 0 0 15%; } }
 @media screen and (max-width: 850px) {
   header {
     margin: 40px 0 135px; }
@@ -116,7 +119,9 @@ sizing
 
   .demo {
     height: 570px;
-    max-width: 320px; }
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto; }
 
   .payroll {
     width: 100%;
@@ -184,5 +189,4 @@ a:hover {
 
 .desc {
   line-height: 24px;
-  word-wrap: break-word;
-  text-align: center; }
+  word-wrap: break-word; }
