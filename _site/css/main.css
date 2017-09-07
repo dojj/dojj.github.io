@@ -203,6 +203,8 @@ sizing
     background: #f8f8f9; }
 
   .demo {
+    height: 700px;
+    width: 400px;
     margin: 2% auto; }
 
   .payroll {
