@@ -36,15 +36,17 @@ sizing
   }
 
   .demobox {
+    height: 700px;
     width: 100%;
-    //padding: 2% 0;
+    padding: 2% 0;
     background: #f8f8f9;
-    margin: auto;
   }
 
   .demo {
     height: 670px;
     width: 380px;
+    padding: 2% 0;
+    margin: auto;
   }
 
   .payroll {

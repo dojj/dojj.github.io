@@ -199,13 +199,16 @@ sizing
     flex-wrap: wrap; }
 
   .demobox {
+    height: 700px;
     width: 100%;
-    background: #f8f8f9;
-    margin: auto; }
+    padding: 2% 0;
+    background: #f8f8f9; }
 
   .demo {
     height: 670px;
-    width: 380px; }
+    width: 380px;
+    padding: 2% 0;
+    margin: auto; }
 
   .payroll {
     width: 100%;
