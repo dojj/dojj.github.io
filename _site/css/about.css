@@ -52,15 +52,14 @@ sizing
     flex-wrap: wrap; }
 
   .demobox {
-    width: 100%;
-    padding: 2% 0;
-    background: #f8f8f9; }
-
-  .demo {
     height: 670px;
     width: 380px;
-    padding: 5% 0;
+    padding: 2% 0;
+    background: #f8f8f9;
     margin: auto; }
+
+  .demo {
+    padding: 5% 0; }
 
   .payroll {
     width: 100%;
