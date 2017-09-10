@@ -206,7 +206,7 @@ sizing
 
   .demo {
     height: 650px;
-    width: 345px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto; }
 
@@ -241,8 +241,8 @@ sizing
     margin: 0 1% 0 0.5%; }
 
   .r3 {
-    width: 48.5%;
-    margin: 2% 11% 0 1%; }
+    width: 70%;
+    margin: 2% auto 0 auto; }
 
   .t,
   .title,
