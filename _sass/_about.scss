@@ -3,7 +3,8 @@ body {
 }
 
 header {
-  margin: 120px 0 !important;
+  margin-bottom: 200px;
+  padding: 20px 10px 0 0;
 }
 
 .about {
@@ -24,4 +25,5 @@ p {
 
 a:hover {
   color: #a0a0a0!important;
+  border-bottom: 2px solid #fff !important;
 }
