@@ -5,7 +5,7 @@ body {
 
 header {
   margin-bottom: 200px;
-  padding: 20px 15px 0 0;
+  padding: 20px 10px 0 0;
 }
 
 .content {
@@ -36,7 +36,6 @@ header {
 
 .demobox {
   width: 100%;
-  //background: #f8f8f9;
 }
 
 .demo {
@@ -44,6 +43,7 @@ header {
   width: 380px;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #EDEEEE;
 }
 
 .box {
@@ -135,7 +135,7 @@ ul {
 
 li {
   display: inline-block;
-  padding: 0 12px;
+  padding: 0 15px;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 0.3px;
