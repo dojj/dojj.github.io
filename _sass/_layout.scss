@@ -1,123 +1,94 @@
 body {
-  margin: auto;
+  margin: 0;
   font-family: 'Roboto', Georgia;
 }
 
 header {
-  margin: 120px 0;
+  margin-bottom: 200px;
+  padding: 20px 15px 0 0;
+}
+
+.content {
+  max-width: 960px;
+  margin: auto;
 }
 
 .pic {
   display: block;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
-footer {
-  margin: 200px 0 120px;
+.container {
+  background-color: #ffffff;
+  border: 1px solid #EDEEEE;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-bottom: 45px;
 }
-/*
-sizing
-*/
-@media screen and (min-width: 850px) {
-  body {
-    max-width: 1350px;
-  }
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 220px;
-  }
-
-  .faxcoversheet {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .demobox {
-    width: 100%;
-    background: #f8f8f9;
-    margin: 0 1%;
-    padding: 2% 0;
-  }
-
-  .demo {
-    height: 650px;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .payroll {
-    padding: 0 1%;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .box {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .photo1 {
-    width: 48.5%;
-    margin: 0 0.5% 0 1%;
-  }
-
-  .photo2 {
-    width: 48.5%;
-    margin: 0 1% 0 0.5%;
-  }
-
-  .photo3 {
-    width: 48.5%;
-    margin: 1% 11% 0 1%;
-  }
-
-  .r1 {
-    width: 48.5%;
-    margin: 0 0.5% 0 1%;
-    padding: 2% 0 0;
-  }
-
-  .r2 {
-    width: 48.5%;
-    margin: 0 1% 0 0.5%;
-  }
-
-  .r3 {
-    width: 70%;
-    margin: 2% auto 0 auto;
-  }
-
-  .t,
-  .title,
-  ul {
-    font-size: 18px;
-  }
-
-  .desc {
-    font-size: 17px;
-    width: 60%;
-    margin: 50px 0 0 15%;
-  }
+.faxcoversheet {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.demobox {
+  width: 100%;
+  //background: #f8f8f9;
+}
+
+.demo {
+  height: 670px;
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo1 {
+  width: 49.5%;
+  margin: 0 .5% 0 0;
+}
+
+.photo2 {
+  width: 49.5%;
+  margin: 0 0 0 .5%;
+}
+
+.photo3 {
+  width: 48.5%;
+  margin: 1% 11% 0 1%;
+}
+
+.r1 {
+  width: 48.5%;
+  margin: 0 0.5% 0 1%;
+  padding: 2% 0 0 0;
+}
+
+.r2 {
+  width: 48.5%;
+  margin: 0 1% 0 0.5%;
+}
+
+.r3 {
+  width: 48.5%;
+  margin: 2% 11% 0 1%;
+}
+
 @media screen and (max-width: 850px) {
-  body {
-    //width: 100%;
-  }
-
   header {
     margin: 40px 0 135px;
   }
 
   .container {
     padding-bottom: 100px;
-  }
-
-  .info {
-    //display: none;
   }
 
   .demobox {
@@ -128,8 +99,6 @@ sizing
   .demo {
     height: 570px;
     max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .payroll {
@@ -137,14 +106,11 @@ sizing
     margin: auto;
   }
 
-  .photo1,
-  .photo2,
-  .photo3 {
+  .photo1, .photo2, .photo3 {
     margin-bottom: 20px;
   }
 
-  p,
-  ul {
+  h3, p, ul {
     font-size: 16px;
   }
 
@@ -153,65 +119,61 @@ sizing
     padding: 10px 150px 0;
   }
 }
-@media screen and (max-width: 580px) {
-  .desc {
-    font-size: 15px;
-    padding: 20px;
-  }
-}
 /*
 TEXT
 */
-p {
-  color: #1e1e1c;
+p, .title {
+  //color: #1e1e1c;
   line-height: 26px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 ul {
-  margin: auto;
-  padding: 0;
   list-style: none;
-  text-align: center;
-  letter-spacing: 0.5px;
+  text-align: right;
 }
 
 li {
   display: inline-block;
   padding: 0 12px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.3px;
 }
 
 .wk {
-  color: #1e1e1c;
+  color: #484848;
 }
 
 a {
   color: #a0a0a0;
   text-decoration: none;
+  padding-bottom: 5px;
 }
 
 a:hover {
   color: #131313;
+  border-bottom: 2px solid #484848;
 }
 
 .title {
-  width: 100%;
+  color: #484848;
   word-wrap: break-word;
-  text-align: center;
-  margin: 0 auto;
-  letter-spacing: 0.6px;
+  margin: 0 0 5px 0;
 }
 
 .t {
-  color: #a0a0a0;
+  font-size: 17px;
+  color: #484848;
   width: 100%;
   word-wrap: break-word;
-  text-align: center;
   margin: 0 auto 30px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
 }
-
 .desc {
-  line-height: 24px;
+  line-height: 24px !important;
   word-wrap: break-word;
+  width: 60%;
+  font-size: 17px;
+  margin: 50px 0 0 0;
 }
