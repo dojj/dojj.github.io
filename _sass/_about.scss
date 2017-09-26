@@ -1,9 +1,11 @@
 body {
+  margin: 0 !important;
   background-color: #131313!important;
 }
 
-ul {
-  margin-top: 0 !important;
+header {
+  margin-bottom: 200px !important;
+  padding: 20px 10px 0 0;
 }
 
 .about {
@@ -19,9 +21,10 @@ ul {
 
 a,
 p {
-  color: #fff !important;
+  color: #fff!important;
 }
 
 a:hover {
+  //color: #a0a0a0!important;
   border-bottom: 2px solid #fff !important;
 }
