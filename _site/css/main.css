@@ -78,6 +78,11 @@ li {
 /**
  * Headings
  */
+/*
+h1, h2, h3, h4, h5, h6 {
+    //font-weight: 100;
+}
+*/
 /**
  * Links
  */
@@ -323,7 +328,7 @@ h3 {
   font-size: 17px;
   line-height: 20px;
   color: #2e3b4e;
-  font-weight: 600;
+  font-weight: 800;
   margin-top: 15px;
   margin-bottom: 7px; }
 
