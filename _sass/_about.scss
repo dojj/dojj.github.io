@@ -1,62 +1,26 @@
 body {
-  //margin: 0 !important;
-  background-color: #131313!important;
-}
-
-header {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 150px;
-  display: flex;
-  border-bottom: none !important;
-  margin-bottom: 200px !important;
-}
-
-.placeholder {
-  margin-top: 13px;
-  margin-bottom: 7px;
-  width: 35px;
-  height: 46px !important;
-}
-
-ul {
-  list-style: none;
-  margin: auto 0 0 auto;
+  background-color: #131313 !important;
 }
 
 li {
-  display: inline-block;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  padding-bottom: 12px;
-}
-
-.about {
-  margin: auto;
-  width: 80%;
+  letter-spacing: 0.8px !important;
 }
 
 .post {
   font-size: 44px;
+  letter-spacing: 1px;
   line-height: 60px;
   text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .work,
 a,
 p {
   color: #fff!important;
-  border-bottom: none !important;
-}
-
-.about-me {
-  border-bottom: 2px solid #fff !important;
 }
 
 a:hover {
-  //color: #a0a0a0!important;
-  //border-bottom: 2px solid #fff !important;
+  color: #a0a0a0!important;
 }
