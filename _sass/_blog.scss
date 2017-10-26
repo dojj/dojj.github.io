@@ -1,45 +1,8 @@
-.name {
-  float: left;
-  text-align: left;
-  width: 26%;
-}
-
 .name a,
 .blog a {
   color: #484848;
 }
 
-.blog {
-  padding: 0 24px;
-}
-
-.email {
-  width: 26%;
-  float: right;
-  text-align: right;
-}
-
-ul {
-  text-align: center;
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  font-size: 17.5px;
-  font-weight: 100;
-  letter-spacing: 0.3px;
-}
-
 a {
-  /*hyperlinks*/
   color: #889198;
-  //color: #a0a0a0; /*slightly lighter shade of grey*/
-  text-decoration: none;
-}
-
-a:hover {
-  color: #484848;
-  //color: #131313;
 }
