@@ -1,19 +1,26 @@
-body {
-  background-color: #131313; }
+.name a,
+.blog a {
+  color: #1e1e1c !important; }
 
-li {
-  letter-spacing: 0.8px !important; }
+.work a {
+  color: #889198 !important; }
 
-.post {
-  font-size: 44px;
-  letter-spacing: 1px;
-  line-height: 60px;
-  text-align: center;
-  max-width: 80%;
-  margin: 0 auto; }
+a {
+  color: #889198 !important; }
 
 a:hover {
-  color: #a0a0a0 !important; }
+  color: #1e1e1c !important; }
+
+.device-container.browser-ui:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 999em;
+  background-color: #e0e0e0;
+  padding: 3px;
+  margin: 6px;
+  box-shadow: 9px 0 0 #e0e0e0, 18px 0 0 #e0e0e0; }
 
 body {
   font-family: "Roboto", sans-serif; }
