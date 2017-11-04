@@ -9,6 +9,11 @@ dl, dd, ol, ul, figure {
 }
 
 
+@font-face {
+    font-family: SEA;
+    src: url(https://dojj.github.io/portfolio/css/SEA.otf);
+}
+
 
 /** Variables **********************************************/
 $base-font-family:              Helvetica, sans-serif;
@@ -17,21 +22,6 @@ $horizontal-spacing-unit:       50px;
 $vertical-spacing-unit:         40px;
 $nav-height:                    100px;
 
-/* portfolio tinkering
-$img_spacing: 5px;
-$img_height: 293px;
-$caption_font_size: 12px;
-$caption_color: #aaa;
-*/
-
-/* COLORS  */
-$black: 000000;
-$red:  #FF3636;
-$orange: #F29105;
-$blue: #2698BA;
-$green: #11D68B;
-$lime_green: #B7D12A;
-$purple: #B509AC;
 
 
 $grey-color-dark: #333;   /* footer */
@@ -73,56 +63,6 @@ ul, ol, dl, figure,
 }
 
 
-hr{
-    /* Inset, by Dan Eden */
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-
-}
-
-
-/**
- * Figures
-
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-*/
-
-
-/**
- * Lists
-
-ul, ol {
-    margin-left: $horizontal-spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-*/
-
-/**
- * Headings
- */
-
-/*
-h1, h2, h3, h4, h5, h6 {
-    //font-weight: 100;
-}
-*/
-/**
- * Links
- */
 a {
     color: $text-color;
     text-decoration: none;
@@ -191,28 +131,6 @@ pre {
 }
 
 
-
-/**
- * Wrapper
-
-
-.wrapper {
-    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-    max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $horizontal-spacing-unit;
-    padding-left: $horizontal-spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit}));
-        max-width:         calc(800px - (#{$horizontal-spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-*/
 
 /**
  * Clearfix
