@@ -1,6 +1,6 @@
 body {
   //font-family: "Roboto", sans-serif;
-  font-family: "SEA", sans-serif;
+  font-family: "sea-ui", sans-serif;
 }
 
 header, footer {
@@ -29,7 +29,7 @@ footer p {
 	padding: 0;
 	width: 25%;
 	line-height: 32px;
-	font-size: 18px;
+	//font-size: 18px;
 	}
 
 header ol,
@@ -186,14 +186,15 @@ footer ol a {
 
 
 /* Styles */
+h1, h2, h5, ol, li, p {
+  font-size: 20px;
+}
+
 .name a,
 .work a {
   color: #1e1e1c;
 }
 
-.blog {
-  //padding: 0 24px;
-}
 
 ul {
   text-align: center;
@@ -203,7 +204,6 @@ ul {
 }
 
 li {
-  font-size: 17.5px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -221,7 +221,7 @@ a:hover {
 
 h2, h5 {
   text-align: center;
-  font-size: 17.5px;
+  //font-size: 17.5px;
   line-height: 26px;
   letter-spacing: .5px;
   font-weight: inherit;
@@ -247,7 +247,7 @@ h5 {
 }
 
 p {
-  font-size: 17.5px;
+  //font-size: 17.5px;
   color: #1e1e1c;
   line-height: 26px;
   margin-left: auto;
@@ -337,7 +337,7 @@ footer h1 {
 	padding: 0;
 	width: 100%;
 	line-height: 24px;
-	font-size: 16px;
+	//font-size: 18px;
 	}
 
 header ol,
