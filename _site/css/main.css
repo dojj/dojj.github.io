@@ -15,7 +15,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 */
 @font-face {
-  font-family: SF;
+  font-family: "SF";
   src: url(https://dojj.github.io/portfolio/css/UI-Display-Ultralight.otf);
   font-family: "univ";
   src: url(https://dojj.github.io/portfolio/css/univ.otf); }
