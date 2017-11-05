@@ -15,12 +15,10 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 */
 @font-face {
-  font-family: "SF";
-  src: url(https://dojj.github.io/portfolio/css/UI-Display-Ultralight.otf);
   font-family: "univ";
-  src: url(https://dojj.github.io/portfolio/css/univ.otf); }
+  src: url(https://dojj.github.io/portfolio/css/u.ttf); }
 body {
-  font-family: "SF", sans-serif; }
+  font-family: "univ", sans-serif; }
 
 header, footer {
   max-width: 1440px;
