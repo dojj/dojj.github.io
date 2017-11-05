@@ -24,13 +24,12 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 
 @font-face {
-    //font-family: "SF";
+    font-family: "SF";
+    src: url(https://dojj.github.io/portfolio/css/Compact-Text-Light.otf);
     //src: url(https://dojj.github.io/portfolio/css/UI-Display-Ultralight.otf);
     //src: url(https://dojj.github.io/portfolio/css/sea-ui.otf);
     //src: url(https://dojj.github.io/portfolio/css/SEA.otf);
-    font-family: "univ";
-    src: url(https://dojj.github.io/portfolio/css/u.ttf);
-    //src: url(https://dojj.github.io/portfolio/css/Uni.ttf);
+    //font-family: "univ";
     //src: url(https://dojj.github.io/portfolio/css/univ.otf);
 }
 

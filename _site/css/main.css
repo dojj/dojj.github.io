@@ -15,10 +15,10 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 */
 @font-face {
-  font-family: "univ";
-  src: url(https://dojj.github.io/portfolio/css/u.ttf); }
+  font-family: "SF";
+  src: url(https://dojj.github.io/portfolio/css/Compact-Text-Light.otf); }
 body {
-  font-family: "univ", sans-serif; }
+  font-family: "SF", sans-serif; }
 
 header, footer {
   max-width: 1440px;
@@ -173,7 +173,6 @@ footer ol a {
 /* Styles */
 h1, h2, h5, ol, li, ul, p, a {
   font-size: 18px;
-  font-weight: 100;
   letter-spacing: .3px; }
 
 .name a,
