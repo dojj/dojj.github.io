@@ -1,8 +1,26 @@
+/*
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #585858 #000000;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+*/
 @font-face {
+  font-family: SF;
+  src: url(https://dojj.github.io/portfolio/css/UI-Display-Ultralight.otf);
   font-family: "univ";
   src: url(https://dojj.github.io/portfolio/css/univ.otf); }
 body {
-  font-family: "univ", sans-serif; }
+  font-family: "SF", sans-serif; }
 
 header, footer {
   max-width: 1440px;
@@ -155,8 +173,10 @@ footer ol a {
   margin: 2% 11% 0 1%; }
 
 /* Styles */
-h1, h2, h5, ol, li, p {
-  font-size: 18px; }
+h1, h2, h5, ol, li, ul, p, a {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: .3px; }
 
 .name a,
 .work a {
@@ -174,6 +194,7 @@ li {
 
 a {
   color: #a0a0a0;
+  font-weight: inherit;
   text-decoration: none; }
 
 a:hover {
@@ -182,7 +203,6 @@ a:hover {
 h2, h5 {
   text-align: center;
   line-height: 26px;
-  letter-spacing: .5px;
   font-weight: inherit;
   max-width: 640px;
   margin-left: auto;
@@ -191,11 +211,13 @@ h2, h5 {
 h2 {
   color: #1e1e1c;
   margin-bottom: 0;
+  letter-spacing: .7px;
   display: block; }
 
 h5 {
   color: #a0a0a0;
-  margin-bottom: 26px; }
+  margin-bottom: 26px;
+  letter-spacing: .3px; }
 
 .item {
   margin-left: auto;
@@ -208,7 +230,7 @@ p {
   margin-right: auto;
   margin-bottom: 26px;
   word-wrap: break-word;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   text-align: left;
   max-width: 640px; }
 

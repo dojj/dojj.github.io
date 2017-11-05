@@ -1,7 +1,7 @@
 body {
   //font-family: "Roboto", sans-serif;
-  //font-family: "sea-ui", sans-serif;
-  font-family: "univ", sans-serif;
+  font-family: "SF", sans-serif;
+  //font-family: "univ", sans-serif;
 }
 
 header, footer {
@@ -30,7 +30,6 @@ footer p {
 	padding: 0;
 	width: 25%;
 	line-height: 32px;
-	//font-size: 18px;
 	}
 
 header ol,
@@ -187,8 +186,10 @@ footer ol a {
 
 
 /* Styles */
-h1, h2, h5, ol, li, p {
+h1, h2, h5, ol, li, ul, p, a {
   font-size: 18px;
+  font-weight: 100;
+  letter-spacing: .3px;
 }
 
 .name a,
@@ -210,8 +211,8 @@ li {
 }
 
 a {
-  //color: #d8d8d8;
   color: #a0a0a0;
+  font-weight: inherit;
   text-decoration: none;
 }
 
@@ -222,9 +223,7 @@ a:hover {
 
 h2, h5 {
   text-align: center;
-  //font-size: 17.5px;
   line-height: 26px;
-  letter-spacing: .5px;
   font-weight: inherit;
   max-width: 640px;
   margin-left: auto;
@@ -234,12 +233,14 @@ h2, h5 {
 h2 {
   color: #1e1e1c;
   margin-bottom: 0;
+  letter-spacing: .7px;
   display: block;
 }
 
 h5 {
   color: #a0a0a0;
   margin-bottom: 26px;
+  letter-spacing: .3px;
 }
 
 .item {
@@ -248,14 +249,13 @@ h5 {
 }
 
 p {
-  //font-size: 17.5px;
   color: #1e1e1c;
   line-height: 26px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 26px;
   word-wrap: break-word;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   text-align: left;
   max-width: 640px;
 
