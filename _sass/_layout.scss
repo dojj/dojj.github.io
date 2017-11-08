@@ -1,7 +1,14 @@
 body {
   //font-family: "Roboto", sans-serif;
   font-family: "SF", sans-serif;
-  //font-family: "univ", sans-serif;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
+#posts {
+  padding: 0;
 }
 
 header, footer {
@@ -12,7 +19,7 @@ header, footer {
 	}
 
 footer {
-//margin-top: 20vh;
+margin-top: 20vh;
 }
 
 #blog footer {
@@ -163,11 +170,6 @@ footer ol a {
   margin: 0 0 0 0.5%;
 }
 
-.photo3 {
-  width: 48.5%;
-  margin: 1% 11% 0 1%;
-}
-
 .r1 {
   width: 48.5%;
   margin: 0 0.5% 0 1%;
@@ -179,19 +181,11 @@ footer ol a {
   margin: 0 1% 0 0.5%;
 }
 
-.r3 {
-  width: 48.5%;
-  margin: 2% 11% 0 1%;
-}
-
 
 /* Styles */
 h1, h2, h5, ol, li, ul, p, a {
   font-size: 18px;
   font-weight: inherit;
-  //letter-spacing: .3px;
-  letter-spacing: -0.1px;
-
 }
 
 .name a,
@@ -214,7 +208,6 @@ li {
 
 a {
   color: #a0a0a0;
-  font-weight: inherit;
   text-decoration: none;
 }
 
@@ -226,7 +219,6 @@ a:hover {
 h2, h5 {
   text-align: center;
   line-height: 26px;
-  //font-weight: inherit;
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
@@ -235,19 +227,13 @@ h2, h5 {
 h2 {
   color: #1e1e1c;
   margin-bottom: 0;
-  //letter-spacing: .7px;
   display: block;
 }
 
 h5 {
   color: #a0a0a0;
+  margin-top: 0;
   margin-bottom: 26px;
-  //letter-spacing: .3px;
-}
-
-.item {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 p {
@@ -257,7 +243,6 @@ p {
   margin-right: auto;
   margin-bottom: 26px;
   word-wrap: break-word;
-  letter-spacing: -0.1px;
   text-align: left;
   max-width: 640px;
 
@@ -296,13 +281,8 @@ p {
 #about {
     background-color: #131313;
 
-  li {
-    letter-spacing: 0.8px;
-  }
-
-  .post {
-    font-size: 46px;
-    letter-spacing: 1.5px;
+.me {
+    font-size: 44px;
     line-height: 60px;
     text-align: center;
     max-width: 75%;
@@ -323,6 +303,7 @@ p {
 /* Mobile
    -------------------------------------*/
 @media screen and (max-width: 960px) {
+
 header, footer {
 	margin: 0 auto 12vh;
 	}
@@ -340,7 +321,6 @@ footer h1 {
 	padding: 0;
 	width: 100%;
 	line-height: 24px;
-	//font-size: 18px;
 	}
 
 header ol,
@@ -359,6 +339,23 @@ footer p {
 header ol a,
 footer ol a {
 	padding: 7px 12px;
+	}
+
+#about .post p {
+
+  max-width: 90%!important;
+	text-align: left;
+	font-size: 36px;
+	line-height: 48px;
+	}
+
+}
+
+@media screen and (max-width: 560px) {
+
+#about .post p {
+  font-size: 26px;
+	line-height: 38px;
 	}
 
 }

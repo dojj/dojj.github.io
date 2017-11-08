@@ -3,40 +3,13 @@
 ---
 @charset "utf-8";
 
-
-
-/*
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #585858 #000000;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-*/
-
-
 @font-face {
     font-family: "SF";
-    //src: url(https://dojj.github.io/portfolio/css/UI-Text-Light.otf);
-    src: url(https://dojj.github.io/portfolio/css/SFText-Light.otf);
-    //src: url(https://dojj.github.io/portfolio/css/UI-Display-Ultralight.otf);
-    //src: url(https://dojj.github.io/portfolio/css/sea-ui.otf);
-    //src: url(https://dojj.github.io/portfolio/css/SEA.otf);
-    //font-family: "univ";
-    //src: url(https://dojj.github.io/portfolio/css/univ.otf);
+    src: url(https://dojj.github.io/portfolio/css/UI-Text-Light.otf);
 }
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "layout"
-;
+  "layout";

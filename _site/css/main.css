@@ -1,30 +1,24 @@
-/*
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #585858 #000000;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-*/
 @font-face {
   font-family: "SF";
-  src: url(https://dojj.github.io/portfolio/css/SFText-Light.otf); }
+  src: url(https://dojj.github.io/portfolio/css/UI-Text-Light.otf); }
 body {
-  font-family: "SF", sans-serif; }
+  font-family: "SF", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased; }
+
+#posts {
+  padding: 0; }
 
 header, footer {
   max-width: 1440px;
   margin: 10vh auto;
   height: 32px;
   padding: 21px 2% 19px; }
+
+footer {
+  margin-top: 20vh; }
 
 #blog footer {
   margin-top: 0; }
@@ -153,10 +147,6 @@ footer ol a {
   width: 49.5%;
   margin: 0 0 0 0.5%; }
 
-.photo3 {
-  width: 48.5%;
-  margin: 1% 11% 0 1%; }
-
 .r1 {
   width: 48.5%;
   margin: 0 0.5% 0 1%;
@@ -166,15 +156,10 @@ footer ol a {
   width: 48.5%;
   margin: 0 1% 0 0.5%; }
 
-.r3 {
-  width: 48.5%;
-  margin: 2% 11% 0 1%; }
-
 /* Styles */
 h1, h2, h5, ol, li, ul, p, a {
   font-size: 18px;
-  font-weight: inherit;
-  letter-spacing: -0.1px; }
+  font-weight: inherit; }
 
 .name a,
 .work a {
@@ -192,7 +177,6 @@ li {
 
 a {
   color: #a0a0a0;
-  font-weight: inherit;
   text-decoration: none; }
 
 a:hover {
@@ -212,11 +196,8 @@ h2 {
 
 h5 {
   color: #a0a0a0;
+  margin-top: 0;
   margin-bottom: 26px; }
-
-.item {
-  margin-left: auto;
-  margin-right: auto; }
 
 p {
   color: #1e1e1c;
@@ -225,7 +206,6 @@ p {
   margin-right: auto;
   margin-bottom: 26px;
   word-wrap: break-word;
-  letter-spacing: -0.1px;
   text-align: left;
   max-width: 640px; }
 
@@ -252,11 +232,8 @@ p {
    -------------------------------------*/
 #about {
   background-color: #131313; }
-  #about li {
-    letter-spacing: 0.8px; }
-  #about .post {
-    font-size: 46px;
-    letter-spacing: 1.5px;
+  #about .me {
+    font-size: 44px;
     line-height: 60px;
     text-align: center;
     max-width: 75%;
@@ -300,4 +277,14 @@ p {
 
   header ol a,
   footer ol a {
-    padding: 7px 12px; } }
+    padding: 7px 12px; }
+
+  #about .post p {
+    max-width: 90% !important;
+    text-align: left;
+    font-size: 36px;
+    line-height: 48px; } }
+@media screen and (max-width: 560px) {
+  #about .post p {
+    font-size: 26px;
+    line-height: 38px; } }
