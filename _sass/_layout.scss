@@ -303,6 +303,15 @@ p {
    -------------------------------------*/
 @media screen and (max-width: 960px) {
 
+h1, h2, h5, ol, li, ul, p, a {
+	font-size: 16px;
+	line-height: 24px;
+	}
+	
+.container {
+  padding: 0;
+  }
+	
 header, footer {
 	margin: 0 auto 12vh;
 	}
