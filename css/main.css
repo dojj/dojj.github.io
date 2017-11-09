@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: "SF";
+    src: url(https://dojj.github.io/portfolio/css/UI-Text-Light.otf);
+}
+
 body {
 	font-family: "SF", sans-serif;
 	text-rendering: optimizeLegibility;
@@ -6,10 +12,6 @@ body {
 	font-smoothing: antialiased;
 }
 
-@font-face {
-    font-family: "SF";
-    src: url(https://dojj.github.io/portfolio/css/UI-Text-Light.otf);
-}
 
 #posts {
   padding: 0;
