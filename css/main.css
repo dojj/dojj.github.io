@@ -239,26 +239,22 @@ p {
 
 /* Blog
    -------------------------------------*/
-#blog .container {
+#vlog .container {
   max-width: 1080px;
   margin: auto;
-  //border: dotted;
 }
 
-#blog {
-  .name a,
-  .blog a {
+#vlog .name a, .blog a {
     color: #1e1e1c !important;
   }
 
-  .work a {
+  #vlog .work a {
     color: #a0a0a0 !important;
   }
 
-  a:hover {
+  #vlog a:hover {
     color: #1e1e1c !important;
   }
-}
 
 .pictures img {
   max-width: 100%;
