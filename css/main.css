@@ -245,15 +245,15 @@ p {
 }
 
 #vlog .name a, .blog a {
-    color: #1e1e1c !important;
+    color: #1e1e1c;
   }
 
   #vlog .work a {
-    color: #a0a0a0 !important;
+    color: #a0a0a0;
   }
 
   #vlog a:hover {
-    color: #1e1e1c !important;
+    color: #1e1e1c;
   }
 
 .pictures img {
