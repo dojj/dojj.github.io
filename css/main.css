@@ -279,6 +279,7 @@ p {
    -------------------------------------*/
 #about {
     background-color: #131313;
+}
 
 #about .post p {
 		font-size: 44px;
@@ -303,10 +304,9 @@ p {
     color: #fff !important;
   }
 
-  a:hover {
+  #about a:hover {
     color: #a0a0a0 !important;
   }
-}
 
 /* Mobile
    -------------------------------------*/
