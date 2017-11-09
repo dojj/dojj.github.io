@@ -164,20 +164,10 @@ footer ol a {
   margin: 0 0.5% 0 0;
 }
 
-.photo2 {
-  width: 49.5%;
-  margin: 0 0 0 0.5%;
-}
-
 .r1 {
   width: 48.5%;
   margin: 0 0.5% 0 1%;
   padding: 2% 0 0;
-}
-
-.r2 {
-  width: 48.5%;
-  margin: 0 1% 0 0.5%;
 }
 
 
@@ -297,13 +287,13 @@ p {
     margin: 0 auto;
   }
 */
-	
+#about {
   .work,
   a,
   p {
     color: #fff !important;
   }
-
+}
   #about a:hover {
     color: #a0a0a0 !important;
   }
