@@ -181,8 +181,7 @@ footer ol a {
 /* Styles */
 h1, h2, h5, ol, li, ul, p, a {
   font-size: 18px;
-  font-weight: inherit;
-  text-shadow: 0 0 .2px rgba(0,0,0,0.3);
+  font-weight: 100;
 }
 
 .name a,
