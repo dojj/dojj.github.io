@@ -357,8 +357,8 @@ footer ol a {
   line-height: 38px;
 	}
 	
-#vlog .container {
-  witdth: 100%;
+#vlog  {
+  margin: 0;
 	}
 }
 
