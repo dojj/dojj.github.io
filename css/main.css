@@ -354,8 +354,11 @@ footer ol a {
 
 #about .post p {
   font-size: 26px;
-	line-height: 38px;
+  line-height: 38px;
 	}
-
+	
+#vlog {
+  witdth: 100%;
+	}
 }
 
