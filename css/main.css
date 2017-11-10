@@ -10,7 +10,6 @@ body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
-	text-shadow: 0 0 1px rgba(0,0,0,0.3);
 }
 
 
@@ -44,6 +43,7 @@ footer p {
 	padding: 0;
 	width: 25%;
 	line-height: 32px;
+	text-shadow: 0 0 1px rgba(0,0,0,0.3);
 	}
 
 header ol,
@@ -183,6 +183,7 @@ footer ol a {
 h1, h2, h5, ol, li, ul, p, a {
   font-size: 18px;
   font-weight: inherit;
+	text-shadow: 0 0 1px rgba(0,0,0,0.3);
 }
 
 .name a,
