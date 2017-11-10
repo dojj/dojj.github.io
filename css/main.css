@@ -5,11 +5,11 @@
 }
 
 body {
-	font-family: "SF", sans-serif;
+	font-family: "SF", sans-serif !important;
+	background: #fff;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
-	font-smoothing: antialiased;
 }
 
 
