@@ -262,12 +262,14 @@ p {
 
 #about {
 	background: #131313;
+	display: block;
 }
 
 #about .container {
   padding: 0 2%;
   max-width: 1440px;
   margin: 0 auto;
+	display: block;
 }
 
 #about * {
@@ -283,8 +285,7 @@ p {
 	line-height: 60px;
 	text-align: center;
 	max-width: 75%;
-	margin-left: auto;
-	margin-right: auto;
+	display: block;
 }
 
 /* Mobile
