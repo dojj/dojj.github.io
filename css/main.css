@@ -284,14 +284,14 @@ p {
 }
 
 #about .post {
-	padding-bottom: 60px;
+	padding-bottom: 80px;
 	}
 	
 #about .post p  {
 	font-size: 44px;
 	line-height: 60px;
 	text-align: center;
-	max-width: 80%;
+	max-width: 85%;
 }
 
 /* Mobile
