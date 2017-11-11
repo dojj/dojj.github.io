@@ -272,7 +272,7 @@ p {
 	color: #999!important;
 }
 	
-#about .posts p {
+#about .container .posts p .me {
 	font-size: 44px;
 	line-height: 60px;
 	text-align: center;
