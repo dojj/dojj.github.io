@@ -1,19 +1,21 @@
 @font-face {
-	font-family: "SF";
-	src: url(https://dojj.github.io/portfolio/css/UI-Text-Light.otf);
+  font-family: "SF";
+  src: url(https://dojj.github.io/portfolio/css/UI-Text-Light.otf);
 }
 
 body {
-	//font-family: 'Nunito Sans', sans-serif;
 	font-family: "SF", sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 }
 
-
 #posts {
   padding: 0;
+}
+
+#posts li {
+  margin: 0 0 25vh;
 }
 
 header, footer {
@@ -102,21 +104,6 @@ footer ol a {
   box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
 }
 
-.edu,
-.epic,
-.hr,
-.kronos,
-.metrics,
-.payroll,
-.faxcoversheet {
-  //background-color: #ffffff;
-  //border-bottom: 1.3px solid #edeeee;
-  margin: 0 0 25vh;
-}
-
-.epic {
-  padding-top: 0 !important;
-}
 
 .iphone-x {
   height: 600px;
@@ -187,6 +174,10 @@ h1, h2, h5, ol, li, ul, p, a {
 .name a,
 .work a {
   color: #1e1e1c;
+}
+
+.email a {
+  letter-spacing: 0px;
 }
 
 
