@@ -291,7 +291,7 @@ p {
 	font-size: 42px;
 	line-height: 60px;
 	text-align: center;
-	max-width: 83%;
+	max-width: 80%;
 }
 
 /* Mobile
@@ -362,7 +362,7 @@ footer ol a {
 	}
 	
 #vlog  {
-  margin: 0;
+  //margin: 0;
 	}
 }
 
