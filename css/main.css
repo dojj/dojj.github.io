@@ -264,6 +264,12 @@ p {
 	background: #131313;
 }
 
+#about .container {
+  padding: 0 2%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 #about * {
 	color: #fff!important;
 }
