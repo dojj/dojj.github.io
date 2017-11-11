@@ -1,16 +1,15 @@
 
 @font-face {
-	font-family: "SF";
-	src: url(https://dojj.github.io/portfolio/css/UI-Text-Light.otf);
+	//font-family: "SF";
+	//src: url(https://dojj.github.io/portfolio/css/UI-Text-Light.otf);
 }
 
 body {
-	//font-family: 'Roboto', sans-serif;
-	font-family: "SF", sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
+	//font-family: "SF", sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
-	//font-smooth: auto;
 }
 
 
