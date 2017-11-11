@@ -288,10 +288,10 @@ p {
 	}
 	
 #about .post p  {
-	font-size: 44px;
+	font-size: 42px;
 	line-height: 60px;
 	text-align: center;
-	max-width: 85%;
+	max-width: 80%;
 }
 
 /* Mobile
