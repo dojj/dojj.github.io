@@ -1,5 +1,6 @@
 title: portfolio
 description: #
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dojj.github.io" # the base hostname & protocol for your site
 
@@ -8,3 +9,6 @@ markdown: kramdown
 hightlighter: pygments
 
 # root: /portfolio
+
+
+permalink: /event/:title.html
