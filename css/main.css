@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "SF";
+  src: url(https://dojj.github.io/portfolio/css/UI-Text-Light.otf);
+}
+
+body {
+  font-family: "SF", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+section {
+  display: block;
+}
+
+#posts {
+  padding: 0;
+}
+
+#posts li {
+  margin: 0 0 25vh;
+}
+
+
+header, footer {
+  max-width: 1440px;
+  margin: 10vh auto;
+  height: 32px;
+  padding: 21px 2% 19px;
+}
+
+footer {
+  margin-top: 20vh;
+}
+
+#blog footer {
+  margin-top: 0;
+}
+
+header ol, header h1, header p, footer ol, footer h1, footer p {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  line-height: 32px;
+}
+
+header ol, footer ol {
+  text-align: center;
+  width: 50%;
+}
+
+header p, footer p {
+  float: right;
+  text-align: right;
+}
+
+header ol li, footer ol li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 32px;
+  display: inline-block;
+}
+
+header ol a, footer ol a {
+  padding: 7px 12px;
+}
+
+.container {
+  padding: 0 2%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.content {
+  background-color: #f8f8f9;
+  position: relative;
+  padding: 5vh 0;
+  margin-bottom: 1.6vh;
+
+}
+
+.pic {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.browser-mockup {
+  border-top: 2em solid rgba(230, 230, 230, 0.7);
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 3px 3px 0 0;
+}
+
+.browser-mockup:before {
+  display: block;
+  position: absolute;
+  //content: "";
+  //top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  //height: 0.5em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+
+.iphone {
+  height: 600px;
+  width: 300px;
+  display: inline-block;
+  border: 10px solid #080808;
+  border-radius: 44px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  position: relative;
+  padding: 21px 0;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo1 {
+  width: 49.5%;
+  margin: 0 0.5% 0 0;
+}
+
+.r1 {
+  width: 48.5%;
+  margin: 0 0.5% 0 1%;
+  padding: 2% 0 0;
+}
+
+
+/* Styles */
+
+h1, h2, h5, ol, li, ul, p, a {
+  font-size: 18px;
+  font-weight: inherit;
+  text-decoration: none;
+  color: #1e1e1c;
+}
+
+.blog a, .about-me a, .email a {
+  color: #a0a0a0;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+}
+
+li {
+  //margin-left: auto;
+  //margin-right: auto;
+}
+
+a:hover {
+  color: #1e1e1c;
+}
+
+h2, h5 {
+  text-align: center;
+  line-height: 26px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  margin-bottom: 0;
+  display: block;
+}
+
+h5 {
+  color: #a0a0a0;
+  margin-top: 0;
+  margin-bottom: 4vh;
+}
+
+p {
+  line-height: 26px;
+  word-wrap: break-word;
+  text-align: left;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+}
+
+
+/* Blog
+   -------------------------------------*/
+
+#vlog .container {
+  max-width: 1080px;
+  margin: auto;
+}
+
+#vlog .blog a {
+  color: #1e1e1c;
+}
+
+#vlog .work a {
+  color: #a0a0a0;
+}
+
+#vlog a:hover {
+  color: #1e1e1c;
+}
+
+.pictures img {
+  max-width: 100%;
+  margin-bottom: 13px;
+}
+
+
+/* About */
+
+#about {
+  background: #131313;
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#about * {
+  color: #fff!important;
+}
+
+#about header a:hover {
+  color: #999!important;
+}
+
+#about .post {
+  padding-bottom: 15vh;
+}
+
+#about .post p {
+  font-size: 42px;
+  line-height: 60px;
+  text-align: center;
+  max-width: 80%;
+}
+
+
+/* Mobile
+   -------------------------------------*/
+
+@media screen and (max-width: 960px) {
+  h1, h2, h5, ol, li, ul, p, a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container {
+    padding: 0;
+  }
+  header, footer {
+    margin: 0 auto 12vh;
+  }
+  footer {
+    margin-top: 20vh;
+  }
+  header ol, header h1, footer ol, footer h1 {
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 24px;
+  }
+  header ol, footer ol {
+    text-align: center;
+    width: 100%;
+  }
+  header h1, footer h1, header p, footer p {
+    display: none;
+  }
+  header ol a, footer ol a {
+    padding: 7px 12px;
+  }
+  #about .post p {
+    max-width: 90%!important;
+    text-align: left;
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #about .post p {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
