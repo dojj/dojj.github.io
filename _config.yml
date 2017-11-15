@@ -1,18 +1,10 @@
 title: portfolio
 description: #
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog/
-# url:  # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://dojj.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 hightlighter: pygments
 
 # root: /portfolio
-
-links:
-  - name:         Posts
-    url:          /
-    external:     false
-  - name:         About
-    url:          /about
-    #external:     false
