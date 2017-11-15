@@ -8,11 +8,3 @@ markdown: kramdown
 hightlighter: pygments
 
 # root: /portfolio
-
-links:
-    name:         Posts
-    url:          /
-
-    name:         About me
-    url:          /about
-    
