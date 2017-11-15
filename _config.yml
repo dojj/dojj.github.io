@@ -11,4 +11,4 @@ hightlighter: pygments
 # root: /portfolio
 
 
-permalink: /event/:title.html
+permalink: :title.html
