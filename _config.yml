@@ -10,5 +10,6 @@ hightlighter: pygments
 
 # root: /portfolio
 
+repository: dojj.github.io.
 
-permalink: title.html
+# permalink: title.html
