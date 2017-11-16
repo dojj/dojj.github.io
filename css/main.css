@@ -154,11 +154,6 @@ ul {
   list-style: none;
 }
 
-li {
-  //margin-left: auto;
-  //margin-right: auto;
-}
-
 a:hover {
   color: #1e1e1c;
 }
@@ -223,9 +218,6 @@ p {
 
 #about {
   background: #131313;
-  display: block;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 #about * {
