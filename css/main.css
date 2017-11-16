@@ -167,7 +167,7 @@ h2, h5 {
   margin-right: auto;
 }
 
-h2 {
+h2 a {
   margin-bottom: 0;
   display: block;
 }
@@ -176,7 +176,7 @@ h2 a:hover {
   color: #00bf83;
 }
 
-h5 {
+h5 a {
   color: #a0a0a0;
   margin-top: 0;
   margin-bottom: 4vh;
