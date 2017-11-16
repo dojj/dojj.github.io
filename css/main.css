@@ -229,7 +229,7 @@ p {
 }
 
 #about .post {
-  padding-bottom: 15vh;
+  padding-bottom: 60px;
 }
 
 #about .post p {
@@ -287,8 +287,4 @@ p {
     font-size: 26px;
     line-height: 38px;
   }
-  
-  #about .post {
-  padding-bottom: 5vh;
-}
 }
