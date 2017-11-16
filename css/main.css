@@ -154,7 +154,8 @@ ul {
   list-style: none;
 }
 
-a:hover {
+a:hover,
+h5 a:hover {
   color: #1e1e1c;
 }
 
@@ -169,6 +170,10 @@ h2, h5 {
 h2 {
   margin-bottom: 0;
   display: block;
+}
+
+h2 a:hover {
+  color: #00bf83;
 }
 
 h5 {
