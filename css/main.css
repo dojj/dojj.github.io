@@ -74,6 +74,11 @@ header ol a, footer ol a {
   margin: 0 auto;
 }
 
+ul {
+  text-align: center;
+  list-style: none;
+}
+
 .content {
   background-color: #f8f8f9;
   position: relative;
@@ -108,17 +113,6 @@ header ol a, footer ol a {
   box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
 }
 
-.iphone {
-  height: 600px;
-  width: 300px;
-  display: inline-block;
-  border: 10px solid #080808;
-  border-radius: 44px;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  position: relative;
-  padding: 21px 0;
-}
-
 .box {
   display: flex;
   flex-wrap: wrap;
@@ -145,20 +139,6 @@ h1, h2, h5, ol, li, ul, p, a {
   color: #1e1e1c;
 }
 
-.blog a, .about-me a, .email a {
-  color: #a0a0a0;
-}
-
-ul {
-  text-align: center;
-  list-style: none;
-}
-
-a:hover,
-h5 a:hover {
-  color: #1e1e1c;
-}
-
 h2, h5 {
   text-align: center;
   line-height: 26px;
@@ -172,6 +152,14 @@ h2 a {
   display: block;
 }
 
+.blog a, .about-me a, .email a {
+  color: #a0a0a0;
+}
+
+a:hover {
+  color: #1e1e1c;
+}
+
 h2 a:hover {
   color: #00bf83;
 }
@@ -180,6 +168,10 @@ h5 a {
   color: #a0a0a0;
   margin-top: 0;
   margin-bottom: 4vh;
+}
+
+h5 a:hover {
+  color: #131313;
 }
 
 p {
