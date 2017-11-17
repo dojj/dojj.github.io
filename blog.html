@@ -2,26 +2,26 @@
 title: Blog
 permalink: /blog/
 ---
+<!DOCTYPE html>
+  {% include head.html %}
+  {% include header.html %}
 
-{% include head.html %}
-{% include header.html %}
+    <body id="vlog">
 
-  <body id="vlog">
-     
-    <section class="container">
-      <ul id="posts">
-        <li class="new_york">
-          <h2>Milan, Italy</h2>
-          <h5>september 7th</h5>
-          <div class="pictures">
-            <img src="/img/milan.jpg" />
-            <p></p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    
-{% include footer.html %}
+      <section class="container">
+        <ul id="posts">
+          <li class="new_york">
+            <h2>Milan, Italy</h2>
+            <h5>september 7th</h5>
+            <div class="pictures">
+              <img src="/img/milan.jpg" />
+              <p></p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-  </body>
+  {% include footer.html %}
 
+    </body>
+</html>
