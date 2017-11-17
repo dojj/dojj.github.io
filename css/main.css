@@ -3,6 +3,10 @@
   src: url(https://dojj.github.io/css/UI-Text-Light.otf);
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: "SF", sans-serif;
   text-rendering: optimizeLegibility;
