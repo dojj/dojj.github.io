@@ -3,10 +3,6 @@
   src: url(https://dojj.github.io/css/UI-Text-Light.otf);
 }
 
-html {
-  overflow-y: scroll;
-}
-
 body {
   font-family: "SF", sans-serif;
   text-rendering: optimizeLegibility;
@@ -26,8 +22,8 @@ section {
   margin: 0 0 25vh;
 }
 
-
-header, footer {
+header,
+footer {
   max-width: 1440px;
   margin: 10vh auto;
   height: 32px;
@@ -42,7 +38,12 @@ footer {
   margin-top: 0;
 }
 
-header ol, header h1, header p, footer ol, footer h1, footer p {
+header ol,
+header h1,
+header p,
+footer ol,
+footer h1,
+footer p {
   float: left;
   margin: 0;
   padding: 0;
@@ -50,17 +51,20 @@ header ol, header h1, header p, footer ol, footer h1, footer p {
   line-height: 32px;
 }
 
-header ol, footer ol {
+header ol,
+footer ol {
   text-align: center;
   width: 50%;
 }
 
-header p, footer p {
+header p,
+footer p {
   float: right;
   text-align: right;
 }
 
-header ol li, footer ol li {
+header ol li,
+footer ol li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -68,7 +72,8 @@ header ol li, footer ol li {
   display: inline-block;
 }
 
-header ol a, footer ol a {
+header ol a,
+footer ol a {
   padding: 7px 12px;
 }
 
@@ -88,7 +93,6 @@ ul {
   position: relative;
   padding: 5vh 0;
   margin-bottom: 1.6vh;
-
 }
 
 .pic {
@@ -133,17 +137,24 @@ ul {
   padding: 2% 0 0;
 }
 
-
 /* Styles */
 
-h1, h2, h5, ol, li, ul, p, a {
+h1,
+h2,
+h5,
+ol,
+li,
+ul,
+p,
+a {
   font-size: 18px;
   font-weight: inherit;
   text-decoration: none;
   color: #1e1e1c;
 }
 
-h2, h5 {
+h2,
+h5 {
   text-align: center;
   line-height: 26px;
   max-width: 640px;
@@ -151,31 +162,32 @@ h2, h5 {
   margin-right: auto;
 }
 
-h2 a {
+h2 {
   margin-bottom: 0;
   display: block;
 }
 
-.blog a, .about-me a, .email a {
+.blog a,
+.about-me a,
+.email a {
   color: #a0a0a0;
 }
 
 a:hover {
-  color: #1e1e1c;
+  color: #131313;
 }
 
 h2 a:hover {
   color: #00bf83;
 }
 
-h5 a {
-  color: #a0a0a0;
+h5 {
   margin-top: 0;
   margin-bottom: 4vh;
 }
 
-h5 a:hover {
-  color: #131313;
+h5 a {
+  color: #a0a0a0;
 }
 
 p {
@@ -187,7 +199,6 @@ p {
   margin-right: auto;
   margin-bottom: 26px;
 }
-
 
 /* Blog
    -------------------------------------*/
@@ -214,7 +225,6 @@ p {
   margin-bottom: 13px;
 }
 
-
 /* About */
 
 #about {
@@ -222,11 +232,11 @@ p {
 }
 
 #about * {
-  color: #fff!important;
+  color: #fff !important;
 }
 
 #about header a:hover {
-  color: #999!important;
+  color: #999 !important;
 }
 
 #about .post {
@@ -240,43 +250,58 @@ p {
   max-width: 80%;
 }
 
-
 /* Mobile
    -------------------------------------*/
 
 @media screen and (max-width: 960px) {
-  h1, h2, h5, ol, li, ul, p, a {
+  h1,
+  h2,
+  h5,
+  ol,
+  li,
+  ul,
+  p,
+  a {
     font-size: 16px;
     line-height: 24px;
   }
   .container {
     padding: 0;
   }
-  header, footer {
+  header,
+  footer {
     margin: 0 auto 12vh;
   }
   footer {
     margin-top: 20vh;
   }
-  header ol, header h1, footer ol, footer h1 {
+  header ol,
+  header h1,
+  footer ol,
+  footer h1 {
     float: none;
     margin: 0;
     padding: 0;
     width: 100%;
     line-height: 24px;
   }
-  header ol, footer ol {
+  header ol,
+  footer ol {
     text-align: center;
     width: 100%;
   }
-  header h1, footer h1, header p, footer p {
+  header h1,
+  footer h1,
+  header p,
+  footer p {
     display: none;
   }
-  header ol a, footer ol a {
+  header ol a,
+  footer ol a {
     padding: 7px 12px;
   }
   #about .post p {
-    max-width: 90%!important;
+    max-width: 90% !important;
     text-align: left;
     font-size: 36px;
     line-height: 48px;
