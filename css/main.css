@@ -207,20 +207,20 @@ p {
 /* Blog
    -------------------------------------*/
 
-#vlog .container {
+#Blog .container {
   max-width: 1080px;
   margin: auto;
 }
 
-#vlog .blog a {
+#Blog .blog a {
   color: #1e1e1c;
 }
 
-#vlog .work a {
+#Blog .work a {
   color: #a0a0a0;
 }
 
-#vlog a:hover {
+#Blog a:hover {
   color: #1e1e1c;
 }
 
