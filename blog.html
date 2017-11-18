@@ -1,5 +1,29 @@
 ---
 title: Blog
 permalink: /blog/
-layout: dafault
 ---
+
+<!DOCTYPE html>
+  {% include head.html %}
+
+  <body id="vlog">
+
+  {% include header.html %}
+
+    <section class="container">
+      <ul id="posts">
+        <li class="new_york">
+          <h2><a href="">{{ page.title }}</a></h2>
+          <h5><a href="">{{ page.subtitle }}</a></h5>
+          <div class="pictures">
+            <img src="/img/milan.jpg" />
+            <p></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  {% include footer.html %}
+
+  </body>
+</html>
