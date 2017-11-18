@@ -213,7 +213,7 @@ p {
 }
 
 #blog .blog a {
-  color: #1e1e1c;
+  color: #1e1e1c!important;
 }
 
 #blog .work a {
