@@ -38,7 +38,7 @@ footer {
   margin-top: 20vh;
 }
 
-#blog footer {
+#vlog footer {
   margin-top: 0;
 }
 
@@ -207,20 +207,20 @@ p {
 /* Blog
    -------------------------------------*/
 
-#blog .container {
+#vlog .container {
   max-width: 1080px;
   margin: auto;
 }
 
-#blog .blog a {
-  color: #1e1e1c!important;
+#vlog .blog a {
+  color: #1e1e1c;
 }
 
-#blog .work a {
+#vlog .work a {
   color: #a0a0a0;
 }
 
-#blog a:hover {
+#vlog a:hover {
   color: #1e1e1c;
 }
 
