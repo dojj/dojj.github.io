@@ -224,6 +224,10 @@ p {
   color: #1e1e1c;
 }
 
+#vlog h2 a:hover {
+  color: #00bf83;
+}
+
 .pictures img {
   max-width: 100%;
   margin-bottom: 13px;
