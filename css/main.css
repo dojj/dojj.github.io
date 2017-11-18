@@ -207,20 +207,20 @@ p {
 /* Blog
    -------------------------------------*/
 
-#Blog .container {
+#blog .container {
   max-width: 1080px;
   margin: auto;
 }
 
-#Blog .blog a {
+#blog .blog a {
   color: #1e1e1c;
 }
 
-#Blog .work a {
+#blog .work a {
   color: #a0a0a0;
 }
 
-#Blog a:hover {
+#blog a:hover {
   color: #1e1e1c;
 }
 
