@@ -119,6 +119,7 @@ ul {
   box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
 }
 
+
 /* Styles */
 
 h1,
@@ -199,7 +200,7 @@ p {
 }
 
 #vlog a:hover {
-  color: #1e1e1c;
+  color: #131313;
 }
 
 #vlog h2 a:hover {
