@@ -9,8 +9,3 @@ baseurl: "" # the subpath of your site, e.g. /blog
 markdown: kramdown
 hightlighter: pygments
 
-# root: /portfolio
-
-# repository: dojj.github.io.
-
-# permalink: title.html

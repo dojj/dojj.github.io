@@ -4,12 +4,12 @@
   <body>
 
   {% include header.html %}
-
     <section class="container">
      {{ content }}
     </section>
-
+  {% if page.title != 'About' %}    
   {% include footer.html %}
+  {% endif %}
 
   </body>
 </html>

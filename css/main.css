@@ -99,12 +99,6 @@ ul {
   margin-bottom: 1.6vh;
 }
 
-.pic {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
-
 .browser-mockup {
   border-top: 2em solid rgba(230, 230, 230, 0.7);
   box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
@@ -123,22 +117,6 @@ ul {
   border-radius: 50%;
   background-color: #f44;
   box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
-}
-
-.box {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.photo1 {
-  width: 49.5%;
-  margin: 0 0.5% 0 0;
-}
-
-.r1 {
-  width: 48.5%;
-  margin: 0 0.5% 0 1%;
-  padding: 2% 0 0;
 }
 
 /* Styles */
@@ -262,6 +240,10 @@ p {
    -------------------------------------*/
 
 @media screen and (max-width: 960px) {
+  body {
+    margin: 0;
+  }
+
   h1,
   h2,
   h5,
@@ -321,4 +303,5 @@ p {
     font-size: 26px;
     line-height: 38px;
   }
+
 }

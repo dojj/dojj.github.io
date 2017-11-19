@@ -1,17 +1,29 @@
 ---
 title: Work
+layout: default
 ---
-
-<!DOCTYPE html>
-
-  {% include head.html %}
 
   <body id="home">
 
-  {% include header.html %}
-
     <section class="container">
       <ul id="posts">
+
+      <li class="hr">
+          <h2><a href="{{ /posts/hr.html }}"> {{ post.title }} </a></h2>
+          <h5><a href="">Identify and narrow the information gap.</a></h5>
+          <div class="box">
+            <div class="photo1">
+              <div>
+                <img class="pic" src="">
+              </div>
+            </div>
+          </div>
+          <p>
+            To help HR to better understand the challenges within the organization to find and deliver an effective workforce. Designed to educate Revenue Cycle and Employment &amp; Recruiting Analysts how to analyze voluntary attrition, turnover and turnover forecasting
+            data to make operational decisions.
+          </p>
+        </li>
+
         <li class="epic">
           <h2><a href="">A Debugging Tool</a></h2>
           <h5><a href="">Identify and troubleshoot errors.</a></h5>
@@ -22,6 +34,7 @@ title: Work
             For my personal project I created a mobile and tablet-friendly view of the help center using Storyline, CSS and HTML to help users solve common errors that can occur when importing non-Epic data.
           </p>
         </li>
+
         <li class="payroll">
           <h2><a href="">Online Payroll Services</a></h2>
           <h5><a href="">Easily view, update and maintain payroll information.</a></h5>
@@ -34,21 +47,9 @@ title: Work
             An interactive walk-through of the Employee Portal to teach employees how to view and update their paycheck, direct deposit, W-4 and YTD information.
           </p>
         </li>
-        <li class="hr">
-          <h2><a href="">HR Operations</a></h2>
-          <h5><a href="">Identify and address the gaps between the workforce and the needs of the organization.</a></h5>
-          <div class="box">
-            <div class="photo1">
-              <div>
-                <img class="pic" src="https://dojj.github.io/portfolio/img/op.png">
-              </div>
-            </div>
-          </div>
-          <p>
-            To help HR to better understand the challenges within the organization to find and deliver an effective workforce. Designed to educate Revenue Cycle and Employment &amp; Recruiting Analysts how to analyze voluntary attrition, turnover and turnover forecasting
-            data to make operational decisions.
-          </p>
-        </li>
+
+      
+        
         <li class="metrics">
           <h2><a href="">HR KPIs</a></h2>
           <h5><a href="">Get real-time data and consolidate all the tracking and reporting in one place.</a></h5>
@@ -91,8 +92,3 @@ title: Work
         </li>
       </ul>
     </section>
-
-  {% include footer.html %}
-
-  </body>
-</html>
