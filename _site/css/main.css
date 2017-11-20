@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "SF";
+  font-family: "SEA";
   src: url(https://dojj.github.io/css/UI-Text-Light.otf);
 }
 
@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: "SF", sans-serif;
+  font-family: "SEA", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -94,9 +94,16 @@ ul {
 
 .content {
   background-color: #f8f8f9;
-  position: relative;
-  padding: 5vh 0;
-  margin-bottom: 1.6vh;
+  //position: relative;
+  //padding: 24px;
+  //margin-bottom: 1.6vh;
+  //max-width: 1440px;
+  margin-bottom: 13px;
+}
+
+.pictures img {
+  vertical-align: top;
+  max-width: 100%;
 }
 
 .browser-mockup {
@@ -177,10 +184,8 @@ p {
   line-height: 26px;
   word-wrap: break-word;
   text-align: left;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 26px;
+  max-width: 800px;
+  margin: 0 auto 26px;
 }
 
 /* Vlog
@@ -207,9 +212,13 @@ p {
   color: #00bf83;
 }
 
-.pictures img {
+#vlog .pictures img {
   max-width: 100%;
   margin-bottom: 13px;
+}
+
+#vlog p {
+  max-width: 640px;
 }
 
 /* About */

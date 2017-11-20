@@ -1,22 +1,21 @@
 ---
+layout: post
 title: Blog
 permalink: /blog/
-layout: default
 ---
 
-<body id="vlog">
-  
-  <section class="container">
-    <ul id="posts">
-      <li class="new-york">
-        <h2><a href="">Milan, Italy</a></h2>
-        <h5><a href="">:)</a></h5>
-        <div class="pictures">
-          <img src="/img/12.jpg" />
-          <p></p>
-        </div>
-      </li>
+<section class="container">
+    <ul id="posts"> 
+        {% for post in site.posts %} 
+        <li class="">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h5><a href="{{ post.url }}">{{ post.subtitle }}</a></h5>
+                <div class="pictures">
+                    <img src="">
+                </div>
+            <p>
+            </p>
+        </li> 
+        {% endfor %}
     </ul>
-  </section>
-  
-<body>
+</section>
