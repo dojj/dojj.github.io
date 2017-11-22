@@ -2,10 +2,24 @@
 layout: default
 ---
 
-<body id="vlog">
-        
-    <section class="container">
-        {{ content }}
-    </section>
-        
+
 <body>
+
+    <section class="container">
+        <ul id="posts"> 
+            <li class="">
+                <h2><a href="">{{ page.title }}</a></h2>
+                <h5><a href="">{{ page.subtitle }}</a></h5>
+                    <div class="pictures">
+                        {{ content }}
+                    </div>
+                <p>
+                </p>
+            </li>
+        </ul>
+    </section>
+     
+<body>
+
+
+   

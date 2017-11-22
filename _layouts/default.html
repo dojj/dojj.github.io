@@ -1,14 +1,11 @@
 <!DOCTYPE html>
   {% include head.html %}
-
   <body>
 
   {% include header.html %}
-  
-    <section>
-      {{ content }}
-    </section>
 
+   {{ content }}
+  
   {% if page.title != 'About' %}    
   {% include footer.html %}
   {% endif %}

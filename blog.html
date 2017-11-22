@@ -1,21 +1,22 @@
----
-layout: post
-title: Blog
+--- 
+layout: category 
+title: Blog 
 permalink: /blog/
+category: blog 
 ---
 
-<section class="container">
-    <ul id="posts"> 
-        {% for post in site.posts %} 
-        <li class="">
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <h5><a href="{{ post.url }}">{{ post.subtitle }}</a></h5>
-                <div class="pictures">
-                    <img src="">
+<body id="vlog">
+
+    <section class="container">
+        <ul id="posts"> 
+            <li>
+                <div class="content">
+                    <div class="pictures">
+                            {{ post.excerpt }}
+                    </div>
                 </div>
-            <p>
-            </p>
-        </li> 
-        {% endfor %}
-    </ul>
-</section>
+            </li>
+        </ul>
+    </section>
+
+</body>
