@@ -182,7 +182,7 @@ p {
 /* Home
    -------------------------------------*/
 
-#home .content {
+.content {
   background-color: #f8f8f9;
   position: relative;
   padding: 5vh 0;
