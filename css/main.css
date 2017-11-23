@@ -213,6 +213,10 @@ p {
   color: #00bf83;
 }
 
+#vlog .pictures {
+  margin: auto;
+}
+
 #vlog .pictures img {
   max-width: 100%;
   margin: 0 auto 13px;
