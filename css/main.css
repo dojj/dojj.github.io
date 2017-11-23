@@ -213,17 +213,14 @@ p {
   color: #00bf83;
 }
 
-#vlog .pictures {
+#vlog .p img {
   margin: auto;
+  border: dotted;
 }
 
 #vlog .pictures img {
   max-width: 100%;
   margin: 0 auto 13px;
-}
-
-#vlog p {
-  max-width: 640px;
 }
 
 /* About */
