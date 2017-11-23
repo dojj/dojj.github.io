@@ -182,27 +182,23 @@ h5 a {
 
 p {
   line-height: 26px;
+  max-width: 640px;
   word-wrap: break-word;
   text-align: left;
-  max-width: 800px;
-  margin: 0 auto 26px;
+  margin: 0 auto;
 }
 
-#work-post .container {
-  max-width: 1080px;
-  margin: auto;
+/* Home
+   -------------------------------------*/
+
+#home .content {
+  background-color: #f8f8f9;
+  position: relative;
+  padding: 5vh 0;
+  margin-bottom: 1.6vh;
 }
 
-#work-post .pictures img {
-  max-width: 100%;
-  margin-bottom: 13px;
-}
-
-#work-post p {
-  max-width: 640px;
-}
-
-/* Vlog
+/* Blog
    -------------------------------------*/
 
 #vlog .container {
