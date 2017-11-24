@@ -87,6 +87,14 @@ footer ol a {
   margin: 0 auto;
 }
 
+#home .content {
+  background-color: #f8f8f9;
+  //vertical-align: top;
+  //position: relative;
+  //padding: 5vh 0;
+  margin-bottom: 1.6vh;
+}
+
 ul {
   text-align: center;
   list-style: none;
@@ -95,26 +103,6 @@ ul {
 .pictures img {
   vertical-align: top;
   max-width: 100%;
-}
-
-.browser-mockup {
-  border-top: 2em solid rgba(230, 230, 230, 0.7);
-  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
-  position: relative;
-  border-radius: 3px 3px 0 0;
-}
-
-.browser-mockup:before {
-  display: block;
-  position: absolute;
-  //content: "";
-  //top: -1.25em;
-  left: 1em;
-  width: 0.5em;
-  //height: 0.5em;
-  border-radius: 50%;
-  background-color: #f44;
-  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
 }
 
 
@@ -179,16 +167,6 @@ p {
   margin: 0 auto;
 }
 
-/* Home
-   -------------------------------------*/
-
-.content {
-  background-color: #f8f8f9;
-  position: relative;
-  padding: 5vh 0;
-  margin-bottom: 1.6vh;
-}
-
 /* Blog
    -------------------------------------*/
 
@@ -211,11 +189,6 @@ p {
 
 #vlog h2 a:hover {
   color: #00bf83;
-}
-
-#vlog .p img {
-  margin: auto;
-  border: dotted;
 }
 
 #vlog .pictures img {

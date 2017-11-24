@@ -1,19 +1,31 @@
----
-layout: default
+--- 
+layout: default 
 ---
 
-<section class="container">
-  <ul id="posts">
-    <li class="">
-      {% for post in site.categories[page.category] %}
-      <h2><a href="{{ post.url | absolute_url }}">
-      {{ post.title }}
-      </a></h2>
-      <h5><a href="{{ post.url | absolute_url }}">
-        {{ post.subtitle }}
-      </a></h5>
-      {{ post.excerpt }}
-      {% endfor %}
-    </li>
-  </ul>
-</section>
+  <section class="container">
+    {% for post in site.categories[page.category] %}
+    <ul id="posts">
+      <li>
+        <h2>
+          <a href="{{ post.url | absolute_url }}">
+            {{ post.title }}
+          </a>
+        </h2>
+        <h5>
+          <a href="{{ post.url | absolute_url }}">
+            {{ post.subtitle }}
+          </a>
+        </h5>
+        <div class="content">
+          <div class="pictures">
+            {{ post.excerpt }}
+          </div>
+        </div>
+        <p>
+          {{ post.description }}
+        </p>
+      </li>
+    </ul>
+    {% endfor %}
+  </section>
+

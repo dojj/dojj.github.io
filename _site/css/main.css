@@ -38,7 +38,7 @@ footer {
   margin-top: 20vh;
 }
 
-#vlog footer {
+#blog footer {
   margin-top: 0;
 }
 
@@ -87,43 +87,22 @@ footer ol a {
   margin: 0 auto;
 }
 
+#home .content {
+  background-color: #f8f8f9;
+  //vertical-align: top;
+  //position: relative;
+  //padding: 5vh 0;
+  margin-bottom: 1.6vh;
+}
+
 ul {
   text-align: center;
   list-style: none;
 }
 
-.content {
-  background-color: #f8f8f9;
-  //position: relative;
-  //padding: 24px;
-  //margin-bottom: 1.6vh;
-  //max-width: 1440px;
-  margin-bottom: 13px;
-}
-
 .pictures img {
   vertical-align: top;
   max-width: 100%;
-}
-
-.browser-mockup {
-  border-top: 2em solid rgba(230, 230, 230, 0.7);
-  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
-  position: relative;
-  border-radius: 3px 3px 0 0;
-}
-
-.browser-mockup:before {
-  display: block;
-  position: absolute;
-  //content: "";
-  //top: -1.25em;
-  left: 1em;
-  width: 0.5em;
-  //height: 0.5em;
-  border-radius: 50%;
-  background-color: #f44;
-  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
 }
 
 
@@ -182,27 +161,13 @@ h5 a {
 
 p {
   line-height: 26px;
+  max-width: 640px;
   word-wrap: break-word;
   text-align: left;
-  max-width: 800px;
-  margin: 0 auto 26px;
+  margin: 0 auto;
 }
 
-#work-post .container {
-  max-width: 1080px;
-  margin: auto;
-}
-
-#work-post .pictures img {
-  max-width: 100%;
-  margin-bottom: 13px;
-}
-
-#work-post p {
-  max-width: 640px;
-}
-
-/* Vlog
+/* Blog
    -------------------------------------*/
 
 #vlog .container {
@@ -228,11 +193,7 @@ p {
 
 #vlog .pictures img {
   max-width: 100%;
-  margin-bottom: 13px;
-}
-
-#vlog p {
-  max-width: 640px;
+  margin: 0 auto 13px;
 }
 
 /* About */
