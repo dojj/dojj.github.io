@@ -7,25 +7,26 @@ layout: default
     <ul id="posts">
       <li>
         <h2>
-          <a href="{{ post.url | absolute_url }}">
-            {{ post.title }}
-          </a>
+          <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
         </h2>
         <h5>
-          <a href="{{ post.url | absolute_url }}">
-            {{ post.subtitle }}
-          </a>
+          <a href="{{ post.url | absolute_url }}">{{ post.subtitle }}</a>
         </h5>
         <div class="content">
           <div class="pictures">
             {{ post.excerpt }}
           </div>
         </div>
-        <p>
-          {{ post.description }}
-        </p>
+        <a href="{{ post.url | absolute_url }}">
+          {% if page.title == 'Work' %}
+          <h2>
+            <a href="{{ post.url | absolute_url }}">
+              View More
+            </a>
+          </h2> 
+          {% endif %}
+        </a>
       </li>
     </ul>
     {% endfor %}
   </section>
-

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
   {% include head.html %}
-  <body>
+
+  {% if page.title == 'Work'  %}
+    <body id="home">
+  {% endif %}
 
   {% include header.html %}
 
