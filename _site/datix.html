@@ -32,8 +32,6 @@
 	<div class="pictures">
 		<img src="/img/12.jpg" />
 	</div>
-
-	
 	<div class="content">
 		<h4>
 			Improve patient safety and create a culture of learning  
@@ -57,13 +55,14 @@
 			To measure the level of engagement, I used the following xAPI statements to find out which parts of the video were played, skipped or paused during viewing sessions.
 		</p>
 		<div class="snap">
-			<div class="pictures">
+			<div class="pictures statement">
 				<img src="/img/stmt.png" alt="work sample" />
 			</div>
 		</div>
+		<div id="player"></div>
 		<h4>Learner Retention</h4>
 		<p>
-			By monitoring the learner activity, I can use it to get an idea of how how well the video keeps its audience, average view duration, and where in the video people are dropping off.
+			By monitoring the learner activity, I can use it to get an idea of how how well the video keeps its audience,average view duration, and where in the video people are dropping off.
 		</p>
 	</div>
 </body>
@@ -84,6 +83,66 @@
 </footer>
 
   
+  
+  <script type="text/javascript" src="lib/xapiwrapper.min.js"></script>
+  <script type="text/javascript" src="src/videoprofile.js"></script>
+  <script type="text/javascript" src="src/xapi-youtube-statements.js"></script>
+
+  <script>
+
+  var video = "9ZfN87gSjvI"; // Change this to your video ID
+
+  var myXAPI = {};
+
+  ADL.launch(function (err, launchdata, xAPIWrapper) {
+    if (!err) {
+      ADL.XAPIWrapper = xAPIWrapper;
+      myXAPI.actor = launchdata.actor;
+      if (launchdata.customData.content) {
+        myXAPI.context = {contextActivities: {grouping: [{id: launchdata.customData.content}]}};
+      } else {
+        myXAPI.context = {contextActivities: {grouping: [{id: "http://adlnet.gov/event/xapiworkshop/launch/no-customData"}]}};
+      }
+    } else {
+      ADL.XAPIWrapper.changeConfig({
+        "endpoint":"https://lrs.adlnet.gov/xapi/",
+        "user":"xapi-workshop",
+        "password":"password1234"
+      });
+      myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "migos"}};
+      myXAPI.context = {contextActivities: {grouping: [{id: "http://adlnet.gov/event/xapiworkshop/non-launch"}]}};
+    }
+
+    myXAPI.object = {id: "https://www.youtube.com/watch?v="+video, definition: {name: {"en-US": video}}};
+
+    ADL.XAPIYoutubeStatements.changeConfig(myXAPI);
+
+  }, true);
+
+  function initYT() {
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  }
+
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '390',
+      width: '640',
+      videoId: '9ZfN87gSjvI',
+      playerVars: { 'autoplay': 0, 'disablekb': 1 },
+      events: {
+        'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,
+        'onStateChange': ADL.XAPIYoutubeStatements.onStateChange
+      }
+    });
+  }
+
+  initYT();
+
+  </script>
 
   </body>
 </html>
