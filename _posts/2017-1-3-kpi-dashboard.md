@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "KPI Dashboard"
+title: "Key Performance Indicators"
 subtitle: Real-time data and reporting in one place.
-permalink: /kpi-dashboard
+permalink: /kpis
 category: work
 ---
 <body id="work">

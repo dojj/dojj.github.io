@@ -90,6 +90,7 @@ ul {
 }
 
 .pictures img {
+  border-radius: 4px;
   vertical-align: top;
   max-width: 100%;
   margin-bottom: 0;
@@ -99,7 +100,8 @@ ul {
   max-width: 730px;
   margin-left: -45px;
   margin-right: -45px;
-  box-shadow: 0 1px 3px 0 #cfd7df;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+  /* box-shadow: 0 1px 3px 0 #cfd7df; */
   /* box-shadow: 
     0 10px 25px rgba(50, 50, 93, 0.1), 
     0 5px 15px rgba(0, 0, 0, 0.07); */
@@ -108,10 +110,7 @@ ul {
 code {
   border-radius: 4px;
   margin: .5% 0 0;
-  box-shadow: 0 1px 3px 0 #cfd7df;
-  /* box-shadow: 
-    0 10px 25px rgba(50, 50, 93, 0.1), 
-    0 5px 15px rgba(0, 0, 0, 0.07); */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
 }
 
 pre, code{
@@ -166,7 +165,6 @@ h5 {
   text-align: left;
   margin-top: 6%;
   margin-bottom: 2%;
-  color: pink;
 }
 
 p {

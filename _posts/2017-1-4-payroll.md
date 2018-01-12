@@ -1,26 +1,30 @@
 ---
 layout: post
-title: "Payroll"
+title: "Infor Payroll"
 subtitle: Process and manage payroll
-permalink: /payroll
+permalink: /infor-payroll
 category: work
 ---
 <body id="work">
 	<div class="pictures">
 		<img src="/img/12.jpg">
-	</div>
-
-	
+	</div>	
 	<div class="content">
-		<h4>An interactive walk-through of the online payroll</h4>
-		<p>
-			Our goal was to make payroll the easiest thing to do on HR's list. To make payroll fast and easy - Revenue Cycle Management, HR, Educators and I worked together to provide support by helping Payroll team how to:
-		</p>
+		<h4>Engaging Employees through Payroll</h4>
+		<p>Based on the U.S. Bureau of Labor Statistics report from 2017, nearly 64 million Americans say their paychecks are confusing to read or understand.</p>
+		<p>Year-end tax forms don't make it any easier, either. While half of employees say they have never had a problem with W-2 Form, 35% have noticed a mistake, and 15% admit they wouldn't even recognize an error.</p>
+		<p>To help employees better understand the impact of taxes and deductions on their income - HR, Payroll Specialists and I worked together to teach our caregivers to be able to:</p>
+		<ul class="objectives">
+			<li>Add or update direct deposit</li>
+			<li>Claim allowances on W-4 Form</li>
+			<li>View W-2 Form and YTD information</li>
+		</ul>
+		<!-- <p>Our goal was to make payroll the easiest thing to do on HR's list. To make payroll fast and easy - Revenue Cycle Management, HR, Educators and I worked together to provide support by helping Payroll team how to:</p>
 		<ul class="objectives">
 			<li>Get started with payroll</li>
 			<li>Run payroll</li>
 			<li>Manage payroll taxes</li>
-		</ul>
+		</ul> -->
 		<h4>Payroll Errors</h4>
 		<p>
 			Payroll errors are one of the most costly and time-consuming mistakes; plus the IRS has been warning against a major W-2 scam targeting payroll departments.
