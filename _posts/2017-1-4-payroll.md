@@ -33,9 +33,7 @@ category: work
 			As one of the ways to reduce errors, I measured the level of activity to learn if there was a correlation between the level of engagement and payroll errors.
 		</p>
 		<h4>Engagement Rate</h4>
-		<p>
-			Looking at raw numbers doesn't say much; to put the data into context, I focused on the number of engaged learners and the number of total views for each lesson.
-		</p>
+		<p>Looking at raw numbers doesn't say much; to put the data into context, I set a metric that measures the level of engagement based on the number of active learners and the number of total views for each lesson.</p>
 		<p>
 			I used the following formula to calcuate the engagement rate:
 		</p>
