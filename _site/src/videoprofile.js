@@ -428,6 +428,14 @@ ADL.videoprofile =
             "@id": "http://www.w3.org/2001/XMLSchema#integer"
           },
           "maxInclusive": "1.0"
+        },
+        "duration":
+        {
+          "@id": "http://id.tincanapi.com/extension/duration",
+          "@type": "DatatypeProperty",
+          "prefLabel": {
+            "en": "duration"
+          }
         }
     },
     "verbs":
@@ -487,6 +495,17 @@ ADL.videoprofile =
           },
           "closelyRelatedNaturalLanguageTerm": {
             "@id": "http://wordnet-rdf.princeton.edu/wn31/201843112-v"
+          }
+        },
+        "skipped": 
+        {
+          "@id": "http://id.tincanapi.com/verb/skipped",
+          "@type": "Verb",
+          "definition": {
+            "en": "To indicate an actor has passed over or omitted an interval, screen, segment, item, or step."
+          },
+          "prefLabel": {
+            "en": "skipped"
           }
         }
     },

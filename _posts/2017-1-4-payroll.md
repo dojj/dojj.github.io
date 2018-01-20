@@ -1,19 +1,25 @@
 ---
 layout: post
 title: "Infor Payroll"
-subtitle: Process and manage payroll
-permalink: /infor-payroll
+subtitle: Online HR and Payroll Access
+permalink: /payroll
 category: work
 ---
 <body id="work">
-	<div class="pictures">
-		<img src="/img/12.jpg">
-	</div>	
-	<div class="content">
+	<div class="cover-img">
+		<img src="/img/infor.png">
+	</div>
+	<div class="article">
 		<h4>Engaging Employees through Payroll</h4>
-		<p>Based on the U.S. Bureau of Labor Statistics report from 2017, nearly 64 million Americans say their paychecks are confusing to read or understand.</p>
-		<p>Year-end tax forms don't make it any easier, either. While half of employees say they have never had a problem with W-2 Form, 35% have noticed a mistake, and 15% admit they wouldn't even recognize an error.</p>
-		<p>To help employees better understand the impact of taxes and deductions on their income - HR, Payroll Specialists and I worked together to teach our caregivers to be able to:</p>
+		<p>
+			In 2017, the U.S. Bureau of Labor Statistics reported 64 million Americans didn't know how to read their pay stubs.
+		</p>
+		<p>
+			Year-end tax forms don't make it any easier, either. While half of employees say they never had a problem with W-2 Form, 35% have noticed a mistake, and 15% admit they wouldn't even recognize an error.
+		</p>
+		<p>
+			To help employees understand the impact of taxes and deductions on their income - HR, Payroll Specialists and I worked together to teach our caregivers to be able to:
+		</p>
 		<ul class="objectives">
 			<li>Add or update direct deposit</li>
 			<li>Claim allowances on W-4 Form</li>
@@ -25,20 +31,16 @@ category: work
 			<li>Run payroll</li>
 			<li>Manage payroll taxes</li>
 		</ul> -->
-		<h4>Payroll Errors</h4>
-		<p>
-			Payroll errors are one of the most costly and time-consuming mistakes; plus the IRS has been warning against a major W-2 scam targeting payroll departments.
-		</p>
-		<p>
-			As one of the ways to reduce errors, I measured the level of activity to learn if there was a correlation between the level of engagement and payroll errors.
-		</p>
-		<h4>Engagement Rate</h4>
-		<p>
-			Looking at raw numbers doesn't say much; to put the data into context, I focused on the number of engaged learners and the number of total views for each lesson.
-		</p>
-		<p>
-			I used the following formula to calcuate the engagement rate:
-		</p>
+		<h4>Engagement and Payroll Errors</h4>
+		<p>Despite the robust online systems, 82 million american workers are still affected by payroll errors.</p>
+		<p>To help our payroll team, I took the opportunity to learn if the level of engagement and common errors were related and whether one causes the other.</p>
+		<h5>Engagement Rate</h5>
+		<p>Looking at raw numbers does not say much because observations are not actionable. To turn our collected data into actionable insights that we can interpret, I focused on the number of activities and views per topic.</p>
+		<div class="pictures">
+			<img src="/img/payroll-home.png">
+		</div>
+		<figcaption>Monitored topics</figcaption>
+		<p>The following formula was used to calcuate the engagement rate:</p>
 		<div class="snap">
 			<strong>( Likes + Shares + Clicks ) / Total Views</strong>
 		</div>
@@ -55,10 +57,10 @@ category: work
 				<strong>(123 x 100) / 500 = 24.6%</strong>
 			</div>
 		<p>
-			The engagement rate for this course is ~24.6% which is great, according to Gallup's research only 13% of all employees are engaged during training/learning sessions.
+			The engagement rate for this course is nearly 25% which is great, according to Gallup's research only 13% of all employees are engaged during training or learning sessions.
 		</p>
-		<!-- <p>
-			As xAPI access and user-database grows, we will be able to set and use it to benchmark the performance of each of our courses and ensure continuity of learning across all organizations.
-		</p> -->
+		<p>
+			Because of our low sample size and fragmentation within departments, I couldn't account for underlying variabilities of the data to make any conclusions. However, as xAPI access and user-database grows, we will then be able to use it to benchmark the performance and decrease the margin of error to assess the performance accurately.
+		</p>
 	</div>
 </body>

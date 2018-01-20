@@ -1,12 +1,16 @@
 <!DOCTYPE html>
   <head>  
-  <title>Aiden Do / blog two</title>
+  <title>Aiden Do | blog two</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link href="/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/atom-one-light.css">
+  <script type="text/javascript" src="lib/xapiwrapper.min.js"></script>
+  <script type="text/javascript" src="src/videoprofile.js"></script>
+  <script type="text/javascript" src="src/xapi-youtube-statements.js"></script>
   <script src="highlight.pack.js"></script>
+  <link rel="stylesheet" href="/styles/atom-one-light.css">
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 </head>
 
 
@@ -16,19 +20,25 @@
   <h1 class="name"><a href="/">Aiden Do</a></h1>
   <ol>
     <li class="work"><a href="/">Work</a></li>
-    <li class="blog"><a href="/blog/">Blog</a></li>
-    <li class="about-me"><a href="/about/">About</a></li>
+    <li class="blog"><a href="/blog">Blog</a></li>
+    <li class="about"><a href="/about/">About</a></li>
   </ol>
-  <p class="email"><a href="mailto:aidentdo@gmail.com?subject=Inquiry">aidentdo@gmail.com</a></p>
+  <p class="email"><a href="mailto:aidentdo@gmail.com">aidentdo@gmail.com</a></p>
 </header>
 
 
-    <!-- <body id="work"> -->
-<section class="container">
-    <ul id="posts">
-        <li>
-            <h2><a href="">blog two</a></h2>
-            <h3><a href="">okie</a></h3>
+    <body id="work">
+    <section class="container">
+        <!-- <header class="ember">
+            <div class="flex-box">
+                <a href="/" class="post-work">Work</a>
+            </div>
+        </header> -->
+        <ul id="posts">
+            <li class="article-titles">
+                <h1>blog two</h1>
+                <h2>okie</h2>
+            </li>
             <div><body id="vlog">
 	<div class="pictures">
 		<img src="/img/1.jpg" />
@@ -40,12 +50,11 @@
 </body>
 
 </div>
-        </li>
-    </ul>
-</section>
-<!-- </body> -->
+        </ul>
+    </section>
+</body>
    
-      
+  <!--     
   <footer>
   <h1 class="name"><a href="/">Aiden Do</a></h1>
   <ol>
@@ -56,15 +65,12 @@
   <p class="email"><a href="mailto:aidentdo@gmail.com?subject=Inquiry">aidentdo@gmail.com</a></p>
 </footer>
 
+   -->
   
   
-  <script type="text/javascript" src="lib/xapiwrapper.min.js"></script>
-  <script type="text/javascript" src="src/videoprofile.js"></script>
-  <script type="text/javascript" src="src/xapi-youtube-statements.js"></script>
-
   <script>
 
-  var video = "9ZfN87gSjvI"; // Change this to your video ID
+  var video = "Fireworks"; // Change this to your video ID
 
   var myXAPI = {};
 
@@ -79,11 +85,13 @@
       }
     } else {
       ADL.XAPIWrapper.changeConfig({
-        "endpoint":"https://lrs.adlnet.gov/xapi/",
-        "user":"xapi-workshop",
-        "password":"password1234"
+        "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
+        "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
+        // "endpoint":"https://lrs.adlnet.gov/xapi/",
+        // "user":"xapi-workshop",
+        // "password":"password1234"
       });
-      myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "migos"}};
+      myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "Visitor"}};
       myXAPI.context = {contextActivities: {grouping: [{id: "http://adlnet.gov/event/xapiworkshop/non-launch"}]}};
     }
 
@@ -105,8 +113,8 @@
     player = new YT.Player('player', {
       height: '390',
       width: '640',
-      videoId: '9ZfN87gSjvI',
-      playerVars: { 'autoplay': 0, 'disablekb': 1 },
+      videoId: 'ZRCWxuL5bCk',
+      playerVars: { 'autoplay': 0, 'disablekb': 1, 'showinfo': 0 },
       events: {
         'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,
         'onStateChange': ADL.XAPIYoutubeStatements.onStateChange

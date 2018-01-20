@@ -3,4 +3,15 @@ title: About
 permalink: /about/
 layout: about
 ---
-My name is Aiden (JJ), and I'm a Seattle based learning experience designer. Currently at Swedish/Providence as a part of the L&amp;D team. Before that, I helped to narrow the information gap between employees and organization's skill needs as a content developer for ExamWorks.
+<!-- <header>
+    <div class="flex-box">
+        <div class="name">Aiden Do</div>
+        <div class="title">learning experience designer</div>
+        <a class="email" href="mailto:aidentdo@gmail.com">aidentdo@gmail.com</a>
+    </div>
+    <div class="navigation">
+        <a class="work" href="/">Work</a>
+        <a href="/about" class="about" >About</a>
+    </div>
+</header> -->
+My name is Aiden but you can call me JJ. I'm a Seattle based learning experience designer. Currently with Swedish/Providence as a part of the L&amp;D team. Before that, I helped to narrow the information gap as a content developer for ExamWorks.

@@ -1,14 +1,19 @@
 --- 
 layout: default 
 ---
-<!-- <body id="work"> -->
-<section class="container">
-    <ul id="posts">
-        <li>
-            <h2><a href="">{{ page.title }}</a></h2>
-            <h3><a href="">{{ page.subtitle }}</a></h3>
+<body id="work">
+    <section class="container">
+        <!-- <header class="ember">
+            <div class="flex-box">
+                <a href="/" class="post-work">Work</a>
+            </div>
+        </header> -->
+        <ul id="posts">
+            <li class="article-titles">
+                <h1>{{ page.title }}</h1>
+                <h2>{{ page.subtitle }}</h2>
+            </li>
             <div>{{ content }}</div>
-        </li>
-    </ul>
-</section>
-<!-- </body> -->
+        </ul>
+    </section>
+</body>

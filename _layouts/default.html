@@ -2,24 +2,21 @@
   {% include head.html %}
 
   {% if page.title == 'Work' %}
-  <body id="home">
+  <body>
   {% endif %}
 
   {% include header.html %}
 
     {{ content }}
    
-  {% if page.title != 'About' %}    
+  <!-- {% if page.title != 'About' %}    
   {% include footer.html %}
-  {% endif %}
+  {% endif %} -->
   
-  <script type="text/javascript" src="lib/xapiwrapper.min.js"></script>
-  <script type="text/javascript" src="src/videoprofile.js"></script>
-  <script type="text/javascript" src="src/xapi-youtube-statements.js"></script>
-
+  
   <script>
 
-  var video = "9ZfN87gSjvI"; // Change this to your video ID
+  var video = "Fireworks"; // Change this to your video ID
 
   var myXAPI = {};
 
@@ -34,11 +31,13 @@
       }
     } else {
       ADL.XAPIWrapper.changeConfig({
-        "endpoint":"https://lrs.adlnet.gov/xapi/",
-        "user":"xapi-workshop",
-        "password":"password1234"
+        "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
+        "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
+        // "endpoint":"https://lrs.adlnet.gov/xapi/",
+        // "user":"xapi-workshop",
+        // "password":"password1234"
       });
-      myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "migos"}};
+      myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "Visitor"}};
       myXAPI.context = {contextActivities: {grouping: [{id: "http://adlnet.gov/event/xapiworkshop/non-launch"}]}};
     }
 
@@ -60,8 +59,8 @@
     player = new YT.Player('player', {
       height: '390',
       width: '640',
-      videoId: '9ZfN87gSjvI',
-      playerVars: { 'autoplay': 0, 'disablekb': 1 },
+      videoId: 'ZRCWxuL5bCk',
+      playerVars: { 'autoplay': 0, 'disablekb': 1, 'showinfo': 0 },
       events: {
         'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,
         'onStateChange': ADL.XAPIYoutubeStatements.onStateChange
