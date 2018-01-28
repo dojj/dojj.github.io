@@ -236,7 +236,7 @@ p {
 
 figcaption {
   margin-top: 3%;
-  //text-align: left;
+  text-align: left;
   font-size: 15px;
   font-weight: 700;
   color: #6F767E;
