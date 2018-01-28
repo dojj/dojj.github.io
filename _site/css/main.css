@@ -5,7 +5,6 @@
 
 html {
   overflow-y: scroll;
-  font-size: 18px;
   padding: 0;
 }
 
@@ -91,7 +90,7 @@ a {
 .container {
   padding: 0 2%;
   max-width: 1440px;
-  margin: 9% auto 6%;
+  margin: 0 auto 6%;
 }
 
 .article {
@@ -110,49 +109,21 @@ a {
   margin-bottom: 18%;
 }
 
-.ember {
-  margin-top: 9%;
-  font-size: .9em;
-}
-
 .post-work {
   margin: 0 auto;
   color: #a0a0a0;
 }
 
-.article-titles {
-  margin: 30vh auto 32vh;
-}
-
-#posts h1 {
-  font-weight: 600;
-}
-
-#posts h2 {
-  color: #1e1e1c;
-}
-
-
-
-
-
-.cover-img {
+.img-container {
   max-width: 100%;
   margin-top: 0; 
-}
-
-.pictures {
-  margin-top: 6%;
-  margin-bottom: 0;
+  background: #f8f8f9;
 }
 
 img {
-  border-radius: 4px;
   vertical-align: top;
   max-width: 100%;
-  margin-top: 0; 
-  box-shadow: 
-    0 2px 4px rgba(0,0,0,0.18);
+  margin-top: 0;
 }
 
 .snap {
@@ -169,7 +140,6 @@ code {
   border-radius: 4px;
   box-shadow: 
     0 2px 4px rgba(0,0,0,0.18);
-  //border: 1px solid;
 }
 
 pre, code{
@@ -189,55 +159,47 @@ h4,
 h5,
 li,
 ul,
-p { 
+p,
+a { 
+  font-size: 18px;
   font-weight: inherit;
   line-height: 26px;
   text-decoration: none;
   color: #1e1e1c;
 }
 
-h1 {
-  margin-top: 9%;
-  font-size: 2.2em;
-  text-align: center; 
-  margin-bottom: 0;
-  //border: 1px solid green;
-}
-
-header h1 {
-  font-size: inherit;
-  text-align: left; 
-  color: #1e1e1c;
-}
-
-h1 a, .work a {
-  color: #1e1e1c;
-}
-
-
 .work, .about {
   padding: 0 15px;
 }
 
-.blog a, .about a, .email a {
+.blog a, 
+.about a, 
+.email a {
   color: #a0a0a0;
 }
 
-h2 {
-  margin-top: 2%;
+a:hover {
+  color: #1e1e1c;
+}
+
+/* h2 {
+  //margin-top: 2%;
   font-size: 1em;
   text-align: center;
   display: block;
   color: #a0a0a0;
   margin-bottom: 14%;
-}
+} */
 
 h3 {
-  font-size: .95em;
-  color: #a0a0a0;
-  text-weight: inherit
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+h3 a {
+	color: #131313;
+	border: 0;
+	text-decoration: none;
 }
 
 h4 {
@@ -248,10 +210,16 @@ h4 {
 }
 
 h5 {
-  margin-top: 6%;
-  text-align: left;
-  font-size: 18px;
-  margin-bottom: 2%;
+  margin-top: 0;
+	color: #a0a0a0;
+	text-align: center;
+	margin-bottom: 26px;
+}
+
+h5 a {
+	color: #a0a0a0;
+	text-decoration: none;
+	border: 0;
 }
 
 p {
@@ -417,8 +385,14 @@ ul .objectives li {
   font-size:35px;
   color:#E43;
 }
-#down h3 {
+#down h3, a {
   font-size: 20px;
+}
+#down a {
+  color:#999;
+}
+#down h3 a:hover {
+  color: #1e1e1c;
 }
 #down .warning-content {
   margin-top: 15%;

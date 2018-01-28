@@ -6,7 +6,7 @@ permalink: /payroll
 category: work
 ---
 <body id="work">
-	<div class="cover-img">
+	<div class="img-container">
 		<img src="/img/infor.png">
 	</div>
 	<div class="article">

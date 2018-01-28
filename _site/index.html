@@ -1,136 +1,18 @@
 <!DOCTYPE html>
-  <head>  
-  <title>Aiden Do | Work</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-  <link href="/css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet">
-  <script type="text/javascript" src="lib/xapiwrapper.min.js"></script>
-  <script type="text/javascript" src="src/videoprofile.js"></script>
-  <script type="text/javascript" src="src/xapi-youtube-statements.js"></script>
-  <script src="highlight.pack.js"></script>
-  <link rel="stylesheet" href="/styles/atom-one-light.css">
-  <script>hljs.initHighlightingOnLoad();</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <link href="/css/main.css" rel="stylesheet">
+    </head>
+    <body id="down">
 
-
-  
-  <body>
-  
-
-  <header>
-  <h1 class="name"><a href="/">Aiden Do</a></h1>
-  <ol>
-    <li class="work"><a href="/">Work</a></li>
-    <li class="blog"><a href="/blog">Blog</a></li>
-    <li class="about"><a href="/about/">About</a></li>
-  </ol>
-  <p class="email"><a href="mailto:aidentdo@gmail.com">aidentdo@gmail.com</a></p>
-</header>
-
-
-    <body>
-    <!-- <header>
-        <div class="flex-box">
-            <div class="name">Aiden Do</div>
-            <div class="title">learning experience designer</div>
-            <a class="email" href="mailto:aidentdo@gmail.com">aidentdo@gmail.com</a>
+        <div class="warning-content">
+            <h1>
+                Page is under maintenance
+            </h1>
+            <h3>
+                If you'd like to view my page, send me a message at <a href="mailto:aidentdo@gmail.com">aidentdo@gmail.com</a>
+            </h3>
         </div>
-        <div class="navigation">
-            <a class="work" href="/work">Work</a>
-            <a href="/about" class="about" >About</a>
-        </div>
-        </div>
-    </header> -->
-    <div class="container">
-        <div class="article">
-            <div class="projects">
-                <h1><a href="/datix">Datix Limited</a></h1>
-                <h2>Incident reporting and risk management</h2>
 
-                <h1><a href="/payroll">Infor Payroll</a></h1>
-                <h2>Employee engagement with payroll</h2>
-                
-                <h1><a href="/kpi">Kronos Analytics</a></h1>
-                <h2>Real-time data and reporting</h2>
-            </div>
-        </div>
-    </div>
-</body>
-
-
-   
-  <!--     
-  <footer>
-  <h1 class="name"><a href="/">Aiden Do</a></h1>
-  <ol>
-    <li class="work"><a href="/">Work</a></li>
-    <li class="blog"><a href="/blog/">Blog</a></li>
-    <li class="about-me"><a href="/about/">About</a></li>
-  </ol>
-  <p class="email"><a href="mailto:aidentdo@gmail.com?subject=Inquiry">aidentdo@gmail.com</a></p>
-</footer>
-
-   -->
-  
-  
-  <script>
-
-  var video = "Fireworks"; // Change this to your video ID
-
-  var myXAPI = {};
-
-  ADL.launch(function (err, launchdata, xAPIWrapper) {
-    if (!err) {
-      ADL.XAPIWrapper = xAPIWrapper;
-      myXAPI.actor = launchdata.actor;
-      if (launchdata.customData.content) {
-        myXAPI.context = {contextActivities: {grouping: [{id: launchdata.customData.content}]}};
-      } else {
-        myXAPI.context = {contextActivities: {grouping: [{id: "http://adlnet.gov/event/xapiworkshop/launch/no-customData"}]}};
-      }
-    } else {
-      ADL.XAPIWrapper.changeConfig({
-        "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
-        "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
-        // "endpoint":"https://lrs.adlnet.gov/xapi/",
-        // "user":"xapi-workshop",
-        // "password":"password1234"
-      });
-      myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "Visitor"}};
-      myXAPI.context = {contextActivities: {grouping: [{id: "http://adlnet.gov/event/xapiworkshop/non-launch"}]}};
-    }
-
-    myXAPI.object = {id: "https://www.youtube.com/watch?v="+video, definition: {name: {"en-US": video}}};
-
-    ADL.XAPIYoutubeStatements.changeConfig(myXAPI);
-
-  }, true);
-
-  function initYT() {
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  }
-
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '390',
-      width: '640',
-      videoId: 'ZRCWxuL5bCk',
-      playerVars: { 'autoplay': 0, 'disablekb': 1, 'showinfo': 0 },
-      events: {
-        'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,
-        'onStateChange': ADL.XAPIYoutubeStatements.onStateChange
-      }
-    });
-  }
-
-  initYT();
-
-  </script>
-
-  </body>
+    </body>
 </html>
