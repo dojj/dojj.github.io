@@ -4,24 +4,31 @@ layout: default
 
   <section class="container">
     {% for post in site.categories[page.category] %}
-    <ul id="posts">
-      <li>
-        <h3>
-          <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-        </h3>
-        <h5>
-          <a href="{{ post.url | absolute_url }}">{{ post.subtitle }}</a>
-        </h5>
-        <div class="content">
-          <div class="cover-img">
+    <div id="posts">
+      <div class="title">
+        <h3><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h3>
+        <h5><a href="{{ post.url | absolute_url }}">{{ post.subtitle }}</a></h5>
+      </div>
+      <div class="content">
+          <div>
+            {{ post.excerpt }}
+          </div>
+      </div>
+      <a href="{{ post.url | absolute_url }}">
+        {% if page.title == 'Work' %}
+        {% endif %}
+      </a>
+    </div>
+    {% endfor %}
+  </section>
+
+
+        <!-- <div class="content">
+          <div>
             {{ post.excerpt }}
           </div>
         </div>
         <a href="{{ post.url | absolute_url }}">
           {% if page.title == 'Work' %}
           {% endif %}
-        </a>
-      </li>
-    </ul>
-    {% endfor %}
-  </section>
+        </a> -->

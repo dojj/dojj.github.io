@@ -3,12 +3,15 @@ layout: default
 ---
 <body id="work">
     <section class="container">
-        <ul id="posts">
-            <li>
+        <div id="posts">
+            <div class="title">
                 <h3>{{ page.title }}</h3>
                 <h5>{{ page.subtitle }}</h5>
-            </li>
-            <div>{{ content }}</div>
-        </ul>
+            </div>
+            <div class="article">
+
+                {{ content }}
+            </div>
+        </div>
     </section>
 </body>
