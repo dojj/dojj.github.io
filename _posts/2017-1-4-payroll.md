@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Infor Payroll"
-subtitle: Online HR and Payroll Access
+title: "Retirement Plan Participation"
+subtitle: Engaging employees through 401(k)
 permalink: /payroll
 category: work
 ---
@@ -18,21 +18,25 @@ category: work
 	</div>
 </div>
 
-## Project title?
+## Financial Wellness
+To encourage eligible employees to participate in 401(k) plan, HR and I focused on developing a course for providing an overview of 401(k).
+
+## A Comprehensive Approach
+Recognizing that everyone’s situation is different, I designed a course that asks employees a series of questions based on their needs. They can simply answer the “yes” or “no” questions as they go, and, when prompted, respond to questions to help us convert feedback into actionable insights? 
+
+## Learner Satisfaction
+User feedback is important in any organization but it can be time-consuming and hard to formalize. For this reason surveys were a better option to measure and track learner satisfaction.  
 
 
+<!---
+	#### Engaging Employees through Payroll
 
-<!-- <div class="article">
-	<h4>Engaging Employees through Payroll</h4>
-	<p>
-		In 2017, the U.S. Bureau of Labor Statistics reported 64 million Americans didn't know how to read their pay stubs.
-	</p>
-	<p>
-		Year-end tax forms don't make it any easier, either. While half of employees say they never had a problem with W-2 Form, 35% have noticed a mistake, and 15% admit they wouldn't even recognize an error.
-	</p>
-	<p>
-		To help employees understand the impact of taxes and deductions on their income - HR, Payroll Specialists and I worked together to teach our caregivers to be able to:
-	</p>
+	In 2017, the U.S. Bureau of Labor Statistics reported 64 million Americans didn't know how to read their pay stubs.
+
+	Year-end tax forms don't make it any easier, either. While half of employees say they never had a problem with W-2 Form, 35% have noticed a mistake, and 15% admit they wouldn't even recognize an error.
+
+	To help employees understand the impact of taxes and deductions on their income - HR, Payroll Specialists and I worked together to teach our caregivers to be able to:
+
 	<ul class="objectives">
 		<li>Add or update direct deposit</li>
 		<li>Claim allowances on W-4 Form</li>
