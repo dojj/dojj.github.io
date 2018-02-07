@@ -540,6 +540,9 @@ ADL.videoprofile =
           "@type": "Verb",
           "scopeNote": {
             "en": "Used to express that the actor interacted with the player (except play, pause, seek). e.g. mute, unmute, change resolution, change player size, etc"
+          },
+          "prefLabel": {
+            "en": "interacted"
           }
         },
         "terminated":

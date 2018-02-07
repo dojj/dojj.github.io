@@ -1,0 +1,68 @@
+---
+layout: post
+title: "Datix"
+subtitle: Incident reporting and risk management
+# permalink: /datix
+# category: work
+---
+<body id="work">
+	<div class="flexbox">
+		<div class="img-container-datix">
+			<img src="/img/datix-chapters.png">
+		</div>
+		<div class="img-container">
+			<img src="/img/icon-share.png">
+		</div>
+	</div>	
+	<div class="article">
+		<h4>Improve patient safety and create a culture of learning</h4>
+		<p>
+			We wanted to make incident management the easiest thing to do on caregiver's list. To help caregivers capture and assess important details in Datix, I created a video on how to:
+		</p>
+		<!-- <p>
+			Our organization has adopted Datix, a web-based risk management software to provide an integrated healthcare experience.
+		</p>
+		<p>
+			To ensure Datix was well-accepted by caregivers - Quality and Patient Safety team, Risk Management and I worked together to create a video on how to:
+		</p> -->
+		<ul class="objectives">
+			<li>Capture and review data</li>
+			<li>Navigate the Event Status Dashboard</li>
+			<li>Monitor event progress</li>
+		</ul>
+		<h4>Chapters</h4>
+		<p>
+			Included chapters to make it easy for viewers to find relevant content without having to search for it.
+		</p>
+		<!-- <p>
+			A navigable chapter list help viewers navigate, make it easy for them to quickly jump to the section they want without having to aimlessly scroll through the video.
+		</p> -->
+		<h4>Learner Retention</h4>
+		<p>
+			The amount of views is a helpful metric, but that doesn't say too much about the performance of our videos. 
+		</p>
+		<p>
+			By capturing actions like when the video was played, paused, completed, abandoned or skipped makes it easy to turn these metrics into an actionable data.
+		</p>
+		<h5>Demo:</h5>
+		<p>
+			You can interact with the video below to see what your statements would look like. 
+		</p>
+		<!-- <div id="player"></div>
+		<script type="text/javascript" id="waxid-6cfa46f2-e91e-4173-a430-1569475043d1">
+		var _waxr = _waxr || [];
+		(function () {
+			var reportembed = document.createElement('script'); reportembed.defer = true; reportembed.type = 'text/javascript';
+			reportembed.src = 'https://joongjae.waxlrs.com/embed.js';
+			_waxr.push(['report', 'activitystream', 'tXsHQe/30sb7pwwR4rcPXHSg5N0m+j8hLZsJT+S6DqGCcJJYzaiHpV1+6nnKByPAXuH1/j/7XO9ZNWDcdQ+QjbqmuIpiIr0Hcfkz3zpWu4HaGBmy1MzNYYmHnD8mSkZ41J65P0SrI5oV+AIoHI2+Jgh0Tcc0DQ97CRLWjZ5voojWWW577OIxRUwY6CRoeLjRVS8fIVIIGJ8In7DK6Tdl/VhYH0NIpo/VRMiadhzt+sXn9fqHrDBd7LIAXDGooMLbilAS0wFQNCVJ2ueDOGCBLaxk9fKNEqhkG4VpTKcKNwnQTdSEl6VC6qm9KRrcckiomUcJnfRIHsjqwLGKaFmuaTkVM07F786KVD55+0rNcPtH0pVothEifvnU449EvxcZktRkqu78vGiHz84Wc4C3qhN7k9xPchz6mFL90S0ebdA5hzlAAtlVzQMAWZbVgMHHplZV/kKm7F2u/k8nGyy7dFcdbgKhdeak1zaRdxv6OdA4PMoPyWOu9WwrJBMJggU0tKXdxae4ktSMy2mewp6hzQrELqp+4LYNopRzcGQnUAtwWt02v39/6S3LZU0HDC60SgpPXTTyjF0D', reportembed]);
+			var s = document.getElementById('waxid-6cfa46f2-e91e-4173-a430-1569475043d1');
+			s.parentNode.insertBefore(reportembed, s);
+		})();
+		</script> -->
+		<figcaption>Refresh page to view activity results</figcaption>
+		<!-- <h4>Learner Retention</h4>
+		<p>
+			By monitoring the learner activity, I can use it to get an idea of how how well the video keeps its audience,average view duration, and where in the video people are dropping off.
+		</p> -->
+	</div>
+</body>

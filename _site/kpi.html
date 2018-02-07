@@ -1,6 +1,6 @@
 <!DOCTYPE html>
   <head>  
-  <title>Aiden Do | Kronos Analytics</title>
+  <title>Aiden Do | KPI Dashboard</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link href="/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet">
@@ -29,119 +29,188 @@
 
     <body id="work">
     <section class="container">
-        <div id="posts">
+        <div>
             <div class="title">
-                <h3>Kronos Analytics</h3>
+                <h3>KPI Dashboard</h3>
                 <h5>Real-time data and reporting in one place</h5>
             </div>
             <div class="article">
+                <p><img src="/img/kpi.png" alt="Image of Dashboard" /></p>
 
-                <div class="post">
-	<div class="img-container">
-		<img src="/img/kpi.png" />
-	</div>
+<h1 id="focusing-actions-on-the-data-that-matter">Focusing actions on the data that matter</h1>
+<!-- # We wanted to focus core leaders' actions on the data that matter.  -->
+
+<p>The course was designed to provide an opportunity to explore people metrics, functionalities of the dashboard along with exposure to the Scorecard and Executive Summary.</p>
+
+<!-- ## Dashboard Navigation
+
+You often hear about how our attention span has shrunk. In reality, people can and do still pay attention. What has changed is our tolerance for time wasters, and people are more selective about where they devote their attention.
+
+We wanted to learn if the course was relevant enough to hold our learner’s attention. I measured the level of engagement and time spent on a slide to convert these metrics into actionable improvements. -->
+
+<h1 id="measuring-performance">Measuring Performance</h1>
+
+<p>To find out what is working and how we can further optimize our content, I focused on following metrics:</p>
+
+<ul>
+  <li>Views</li>
+  <li>Shares</li>
+  <li>Clicks</li>
+</ul>
+
+<h2 id="views">Views</h2>
+<div class="icon-box">
+	<img src="/img/icon-views.png" />
 </div>
-<p>&lt;div class=flexbox&gt;
-	&lt;div class="img-container"&gt;
-		<img src="/img/1.png" />
-	&lt;/div&gt;
-	&lt;div class="img-container"&gt;
-		<img src="/img/2.png" />
-	&lt;/div&gt;
-&lt;/div&gt;</p>
+<p>The number of views is a quick way to see if your content is resonating with your intended audience.</p>
 
-<h2 id="navigation">Navigation</h2>
+<p>Each chapter was embedded with JavaScript to monitor views per topic.</p>
 
-<h2 id="title">title?</h2>
-<h4 id="learner-engagement">Learner Engagement</h4>
-<h4 id="time-spent-on-a-slide">Time Spent on a Slide</h4>
+<p><img src="/img/kpi-mainmenu.png" alt="Image of Shares" /></p>
 
-<p>Identify features that drive increases in active learners, engagement, and retention by converting raw data into actionable insights.</p>
-
-<p>Create a more focused learning experience by designing courses based on needs.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class="article"&gt;
-	&lt;h4&gt;Identify Key Metrics&lt;/h4&gt;
-	&lt;!-- &lt;p&gt;
-		A Key Performance Indicator (KPI) is a measurable value used to track and analyze company's performance over time.
-		we focused on their ability to:
-	&lt;/p&gt; --&gt;
-	&lt;p&gt;
-		The goal was to provide core leaders with an opportunity to explore people metrics, reporting and exporting functionalities of the dashboard along with exposure to the Scorecard and Executive Summary in depth.
-	&lt;/p&gt;
-	&lt;p&gt;
-		I collaborated with the HR Operations team to create a course that direct management's actions on the data that matter by focusing on their ability to:
-	&lt;/p&gt;
-	&lt;ul class="objectives"&gt;
-		&lt;li&gt;Navigate the dashboard and view relevant data&lt;/li&gt;
-		&lt;li&gt;View Scorecard and Executive Summary&lt;/li&gt;
-		&lt;li&gt;Interpret available data to make operational decisions&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;h4&gt;Making decisions simple&lt;/h4&gt;
-	&lt;p&gt;
-		I wanted to provide an easy way to explore relevant content core leaders have not connected with by reducing the number of decisions they have to make.
-	&lt;/p&gt;
-	&lt;div class="img-container"&gt;
-		&lt;img src="/img/kpi-home.png" alt="work sample"&gt;
-	&lt;/div&gt;
-	&lt;h4&gt;Time on Page&lt;/h4&gt;
-	&lt;p&gt;
-		One of the key metrics to measure user behavior is to track the amount of time they spend on your content. If people spend more time on a particular slide, they are more likely to be engaged or find it relevant.
-	&lt;/p&gt;
-	&lt;p&gt;Using xAPI, I was able to capture the time spent on a slide by comparing 'viewed' timestamps from each slide:&lt;/p&gt;
-	&lt;pre&gt;
-		&lt;code&gt;
-			{  
-			   "verb":{  
-			      "id":"http://id.tincanapi.com/verb/viewed",
-			      "display":{  
-				 "en-US":"viewed"
-			      }
-			   },
-			   "version":"1.0.0",
-			   "timestamp":"2018-01-19T21:11:15.050356+00:00",
-			   "object":{  
-			      "definition":{  
-				 "name":{  
-				    "en-US":"Slide 1"
-				 }
-			      }
-			   }
-			}
-		&lt;/code&gt;
-	&lt;/pre&gt;
-
-	&lt;!-- 
-	&lt;p&gt;Using xAPI statements, we gathered the number of views on each topic. Views tell us that the topic addresses learners' key questions and problems, and a way to measure content relevance.&lt;/p&gt;
-	--&gt;
-	&lt;!--
-	&lt;h4&gt;Likes and feedback&lt;/h4&gt;
-	&lt;p&gt;
-		It's nice to know how many users are viewing our content, but it's nicer to know if it triggers interest. 
-		(To measure the sign of interest, we examed the number of likes, shares &amp; feedback.)
-	&lt;/p&gt;
-	&lt;h5&gt;Likes&lt;/h5&gt;
-	&lt;p&gt;
-		I wanted to provide learners with a simple and quick way to interact with the content, and find out if they like the content we're sharing.
-	&lt;/p&gt;
-	&lt;div class="heart-shape"&gt;&lt;/div&gt;
-	&lt;p&gt;
-		To learn which content users find it interesting, I tracked the number of likes by customizing a 'like' button embedded with a trigger to execute xAPI statements.
-	&lt;/p&gt;
-	--&gt;
-	&lt;!-- &lt;h5&gt;Shares&lt;/h5&gt;
-	&lt;p&gt;
-		Monitored shares as they often reflect how learners perceive the course, and highly shared courses can indicate the content to be helpful and relevant.
-	&lt;/p&gt;
-
-
-	&lt;h5&gt;Feedback&lt;/h5&gt;
-	&lt;p&gt;
-		Feedback is one of the ways I ask our learners what I can do to improve their experience. Learners can also report a problem or send suggestions and ideas to help us constantly improve content and features.
-	&lt;/p&gt;
-	--&gt;
+<p>( explanation)</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>"verb": {  
+   "id": "http://adlnet.gov/expapi/verbs/Play",  
+   "display": {  
+     "en-US": "Video Played"  
+   }  
+ }
 </code></pre>
 </div>
+
+<p>(^ explanation)</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>"version": "1.0.0",
+  "timestamp": "2018-02-06T02:30:16.987082+00:00",
+  "object": {
+    "definition": {
+      "name": {
+        "en-US": "Captivate button tutorial"
+      }
+    },
+    "id": "http://www.willchinda.com/blog/2015/10/14/xapi-captivate-part-1/",
+    "objectType": "Activity"
+  },
+</code></pre>
+</div>
+
+<h2 id="shares">Shares</h2>
+<div class="icon-box">
+	<img src="/img/icon-share.png" />
+</div>
+<p>This metric is a good measure of how learners perceive the content. Highly shared courses can indicate the content to be helpful, and more likely to reach people organically.</p>
+
+<p>Shares were tracked using LMS’ built-in share feature.</p>
+
+<p><img src="/img/shares.png" alt="Image of Shares" /></p>
+
+<h2 id="clicks">Clicks</h2>
+<div class="icon-box">
+	<img src="/img/icon-clicks.png" />
+</div>
+<p>Clicks are an indication of how interesting your content is at encouraging learners to interact with your content.</p>
+
+<h2 id="making-sense-of-the-numbers">Making Sense of The Numbers</h2>
+
+<p>Engagement Rate is a…</p>
+
+<p>Looking at raw numbers doesn’t say much because observations are not actionable.</p>
+
+<p>Using the following engagement rate, I was able to assess course outcomes by converting views, shares, and clicks into actionable insights:</p>
+
+<p>( Likes + Shares + Clicks ) / Total Views</p>
+
+<p><img src="/img/1.jpg" alt="Image of Yaktocat" /></p>
+
+<!-- 
+## Time Spent on a Slide
+
+One of the key metrics to measure user behavior is to track the amount of time they spend on your content. If people spend more time on a particular slide, they are more likely to be engaged or find it relevant.
+-->
+
+<!-- 
+
+## Navigation
+
+Identify features that drive increases in active learners, engagement, and retention by converting raw data into actionable insights.
+
+Create a more focused learning experience by designing courses based on needs.
+
+
+<h4>Identify Key Metrics</h4>
+ 
+	A Key Performance Indicator (KPI) is a measurable value used to track and analyze company's performance over time.
+	we focused on their ability to:
+
+<p>
+	The goal was to provide core leaders with an opportunity to explore people metrics, reporting and exporting functionalities of the dashboard along with exposure to the Scorecard and Executive Summary in depth.
+</p>
+<p>
+	I collaborated with the HR Operations team to create a course that direct management's actions on the data that matter by focusing on their ability to:
+</p>
+
+	<li>Navigate the dashboard and view relevant data</li>
+	<li>View Scorecard and Executive Summary</li>
+	<li>Interpret available data to make operational decisions</li>
+
+<h4>Making decisions simple</h4>
+
+I wanted to provide an easy way to explore relevant content core leaders have not connected with by reducing the number of decisions they have to make.
+
+<h4>Time on Page</h4>
+<p>
+	One of the key metrics to measure user behavior is to track the amount of time they spend on your content. If people spend more time on a particular slide, they are more likely to be engaged or find it relevant.
+</p>
+<p>Using xAPI, I was able to capture the time spent on a slide by comparing 'viewed' timestamps from each slide:</p>
+<pre>
+	<code>
+		{  
+			"verb":{  
+				"id":"http://id.tincanapi.com/verb/viewed",
+				"display":{  
+				"en-US":"viewed"
+				}
+			},
+			"version":"1.0.0",
+			"timestamp":"2018-01-19T21:11:15.050356+00:00",
+			"object":{  
+				"definition":{  
+				"name":{  
+				"en-US":"Slide 1"
+				}
+				}
+			}
+		}
+	</code>
+</pre>
+
+
+<p>Using xAPI statements, we gathered the number of views on each topic. Views tell us that the topic addresses learners' key questions and problems, and a way to measure content relevance.</p>
+
+<h4>Likes and feedback</h4>
+<p>
+	It's nice to know how many users are viewing our content, but it's nicer to know if it triggers interest. 
+	(To measure the sign of interest, we examed the number of likes, shares & feedback.)
+</p>
+<h5>Likes</h5>
+<p>
+	I wanted to provide learners with a simple and quick way to interact with the content, and find out if they like the content we're sharing.
+</p>
+<div class="heart-shape"></div>
+<p>
+	To learn which content users find it interesting, I tracked the number of likes by customizing a 'like' button embedded with a trigger to execute xAPI statements.
+</p>
+
+<h5>Shares</h5>
+<p>
+	Monitored shares as they often reflect how learners perceive the course, and highly shared courses can indicate the content to be helpful and relevant.
+</p>
+
+
+<h5>Feedback</h5>
+<p>
+	Feedback is one of the ways I ask our learners what I can do to improve their experience. Learners can also report a problem or send suggestions and ideas to help us constantly improve content and features.
+</p> -->
+
 
             </div>
         </div>
@@ -164,59 +233,75 @@
   
   <script>
 
-  var video = "Fireworks"; // Change this to your video ID
+    var video = "planet"; // Change this to your video ID
 
-  var myXAPI = {};
+    var myXAPI = {};
 
-  ADL.launch(function (err, launchdata, xAPIWrapper) {
-    if (!err) {
-      ADL.XAPIWrapper = xAPIWrapper;
-      myXAPI.actor = launchdata.actor;
-      if (launchdata.customData.content) {
-        myXAPI.context = {contextActivities: {grouping: [{id: launchdata.customData.content}]}};
+    ADL.launch(function (err, launchdata, xAPIWrapper) {
+      if (!err) {
+        ADL.XAPIWrapper = xAPIWrapper;
+        myXAPI.actor = launchdata.actor;
+        if (launchdata.customData.content) {
+          myXAPI.context = {contextActivities: {grouping: [{id: launchdata.customData.content}]}};
+        } else {
+          myXAPI.context = {
+            contextActivities: {
+              grouping: [
+                {
+                  id: "http://adlnet.gov/event/xapiworkshop/launch/no-customData"
+                }
+              ]
+            }
+          };
+        }
       } else {
-        myXAPI.context = {contextActivities: {grouping: [{id: "http://adlnet.gov/event/xapiworkshop/launch/no-customData"}]}};
+        ADL.XAPIWrapper.changeConfig({
+          // "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
+          // "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
+          "endpoint":"https://lrs.adlnet.gov/xapi/",
+          "user":"xapi-workshop",
+          "password":"password1234"
+        });
+        myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "hmm"}};
+        myXAPI.context = {contextActivities: {grouping: [{id: "https://w3id.org/xapi/video/extensions/volume"}]}};
       }
-    } else {
-      ADL.XAPIWrapper.changeConfig({
-        "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
-        "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
-        // "endpoint":"https://lrs.adlnet.gov/xapi/",
-        // "user":"xapi-workshop",
-        // "password":"password1234"
-      });
-      myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "Visitor"}};
-      myXAPI.context = {contextActivities: {grouping: [{id: "http://adlnet.gov/event/xapiworkshop/non-launch"}]}};
+
+      myXAPI.object = {
+        id: "https://www.youtube.com/watch?v="+video, 
+        definition: {
+          type: "https://w3id.org/xapi/video/activity-type/video",
+          name: {
+            "en-US": "HMM"
+          }
+        }
+      };
+
+      ADL.XAPIYoutubeStatements.changeConfig(myXAPI);
+
+    }, true);
+
+    function initYT() {
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     }
 
-    myXAPI.object = {id: "https://www.youtube.com/watch?v="+video, definition: {name: {"en-US": video}}};
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '390',
+        width: '640',
+        videoId: 'D2SoGHFM18I',
+        playerVars: { 'autoplay': 0, 'disablekb': 1, 'showinfo': 0 },
+        events: {
+          'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,
+          'onStateChange': ADL.XAPIYoutubeStatements.onStateChange
+        }
+      });
+    }
 
-    ADL.XAPIYoutubeStatements.changeConfig(myXAPI);
-
-  }, true);
-
-  function initYT() {
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  }
-
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '390',
-      width: '640',
-      videoId: 'ZRCWxuL5bCk',
-      playerVars: { 'autoplay': 0, 'disablekb': 1, 'showinfo': 0 },
-      events: {
-        'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,
-        'onStateChange': ADL.XAPIYoutubeStatements.onStateChange
-      }
-    });
-  }
-
-  initYT();
+    initYT();
 
   </script>
 

@@ -16,59 +16,75 @@
   
   <script>
 
-  var video = "Fireworks"; // Change this to your video ID
+    var video = "planet"; // Change this to your video ID
 
-  var myXAPI = {};
+    var myXAPI = {};
 
-  ADL.launch(function (err, launchdata, xAPIWrapper) {
-    if (!err) {
-      ADL.XAPIWrapper = xAPIWrapper;
-      myXAPI.actor = launchdata.actor;
-      if (launchdata.customData.content) {
-        myXAPI.context = {contextActivities: {grouping: [{id: launchdata.customData.content}]}};
+    ADL.launch(function (err, launchdata, xAPIWrapper) {
+      if (!err) {
+        ADL.XAPIWrapper = xAPIWrapper;
+        myXAPI.actor = launchdata.actor;
+        if (launchdata.customData.content) {
+          myXAPI.context = {contextActivities: {grouping: [{id: launchdata.customData.content}]}};
+        } else {
+          myXAPI.context = {
+            contextActivities: {
+              grouping: [
+                {
+                  id: "http://adlnet.gov/event/xapiworkshop/launch/no-customData"
+                }
+              ]
+            }
+          };
+        }
       } else {
-        myXAPI.context = {contextActivities: {grouping: [{id: "http://adlnet.gov/event/xapiworkshop/launch/no-customData"}]}};
+        ADL.XAPIWrapper.changeConfig({
+          // "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
+          // "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
+          "endpoint":"https://lrs.adlnet.gov/xapi/",
+          "user":"xapi-workshop",
+          "password":"password1234"
+        });
+        myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "hmm"}};
+        myXAPI.context = {contextActivities: {grouping: [{id: "https://w3id.org/xapi/video/extensions/volume"}]}};
       }
-    } else {
-      ADL.XAPIWrapper.changeConfig({
-        "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
-        "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
-        // "endpoint":"https://lrs.adlnet.gov/xapi/",
-        // "user":"xapi-workshop",
-        // "password":"password1234"
-      });
-      myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "Visitor"}};
-      myXAPI.context = {contextActivities: {grouping: [{id: "http://adlnet.gov/event/xapiworkshop/non-launch"}]}};
+
+      myXAPI.object = {
+        id: "https://www.youtube.com/watch?v="+video, 
+        definition: {
+          type: "https://w3id.org/xapi/video/activity-type/video",
+          name: {
+            "en-US": "HMM"
+          }
+        }
+      };
+
+      ADL.XAPIYoutubeStatements.changeConfig(myXAPI);
+
+    }, true);
+
+    function initYT() {
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     }
 
-    myXAPI.object = {id: "https://www.youtube.com/watch?v="+video, definition: {name: {"en-US": video}}};
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '390',
+        width: '640',
+        videoId: 'D2SoGHFM18I',
+        playerVars: { 'autoplay': 0, 'disablekb': 1, 'showinfo': 0 },
+        events: {
+          'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,
+          'onStateChange': ADL.XAPIYoutubeStatements.onStateChange
+        }
+      });
+    }
 
-    ADL.XAPIYoutubeStatements.changeConfig(myXAPI);
-
-  }, true);
-
-  function initYT() {
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  }
-
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '390',
-      width: '640',
-      videoId: 'ZRCWxuL5bCk',
-      playerVars: { 'autoplay': 0, 'disablekb': 1, 'showinfo': 0 },
-      events: {
-        'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,
-        'onStateChange': ADL.XAPIYoutubeStatements.onStateChange
-      }
-    });
-  }
-
-  initYT();
+    initYT();
 
   </script>
 

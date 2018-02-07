@@ -112,6 +112,9 @@
           started = true;
         }
         else {
+          // log("yt: interacted");
+          // interacted = true;
+          // return interactVideo(ISOTime);
           log("yt: seeking");
           seeking = true;
           return seekVideo(ISOTime);
@@ -130,11 +133,12 @@
             id: ADL.videoprofile.verbs.paused['@id'],
             display: ADL.videoprofile.verbs.paused.prefLabel
           };
-          stmt.result = {"extensions":{"resultExt:paused":ISOTime}};
-
-        // i think i can use this to calculated the length of 'watched' ...
-          
-          
+          stmt.result = {
+            "extensions":
+            {
+              "resultExt:paused":ISOTime
+            }
+          };
 
           // manually send 'paused' statement because of interval delay
           ADL.XAPIWrapper.sendStatement(buildStatement(stmt));
@@ -147,16 +151,24 @@
       function seekVideo(ISOTime) {
         var stmt = {};
 
+
         stmt.verb = {
           id: ADL.videoprofile.verbs.seeked['@id'],
           display: ADL.videoprofile.verbs.seeked.prefLabel,
 
         };
-        stmt.result = {"extensions":{"resultExt:seeked":ISOTime}};
+
+        stmt.result = {
+          "extensions":{
+            "resultExt:time-to":ISOTime,
+            "resultExt:elapsed": ISOTime
+          }
+        };
+
+        stmt.context = {"extensions":{"resultExt:interacted":ISOTime}};
         
         return buildStatement(stmt); 
       }
-
 
       function interactVideo(ISOTime) {
         var stmt = {};
@@ -165,10 +177,11 @@
           id: ADL.videoprofile.references.interacted['@id'],
           display: ADL.videoprofile.references.interacted.prefLabel,
         };
-        stmt.result = {"extensions":{"resultExt:interacted":ISOTime}};
-        
+        stmt.result = {"extensions":{"resultExt:time":0}};
+
         ADL.XAPIWrapper.sendStatement(buildStatement(stmt));
       }
+
     
       function completeVideo(ISOTime) {
         if (completed) {
