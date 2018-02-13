@@ -1,18 +1,144 @@
 <!DOCTYPE html>
-    <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-        <link href="/css/main.css" rel="stylesheet">
-    </head>
-    <body id="down">
+  <head>  
+  <title>Work</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet">
+  <script type="text/javascript" src="lib/xapiwrapper.min.js"></script>
+  <script type="text/javascript" src="src/videoprofile.js"></script>
+  <script type="text/javascript" src="src/xapi-youtube-statements.js"></script>
+  <script src="highlight.pack.js"></script>
+  <link rel="stylesheet" href="/styles/atom-one-light.css">
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+</head>
 
-        <div class="warning-content">
-            <h1>
-                Page is under maintenance
-            </h1>
-            <h3>
-                If you'd like to view my page, send me a message at <a href="mailto:aidentdo@gmail.com">aidentdo@gmail.com</a>
-            </h3>
-        </div>
 
-    </body>
+  
+  <body>
+  
+
+  <header>
+  <h1 class="name"><a href="/">Aiden Do</a></h1>
+  <ol>
+    <li class="work"><a href="/">Work</a></li>
+    <li class="blog"><a href="/blog">Liked</a></li>
+    <li class="about"><a href="/about/">About</a></li>
+  </ol>
+  <p class="email"><a href="mailto:aidentdo@gmail.com">aidentdo@gmail.com</a></p>
+</header>
+
+
+    <section class="container">
+    <ul id="posts">
+        <li class="one">
+            <h3><a href="/datix">Video Analytics</a></h3>
+            <h5>See how viewers are engaging with your video</h5>
+            <a href="/datix">
+                <div class="img-container">🎥 </div>
+            </a>
+        </li>
+        <!-- <li class="two">
+            <h3><a href="/401k">Retirement Plan Participation</h3></a></h3>
+            <h5>Engaging employees through 401(k)</h5>
+            <div class="img-container"> 🤔 </div>
+        </li> -->
+        <li class="three">
+            <h3><a href="/kpi">KPI Dashboard</a></h3>
+            <h5>Real-time data and reporting in one place</h5>
+            <a href="/kpi">
+                <div class="img-container">🤖</div>
+            </a>
+        </li>
+    </ul>
+</section>
+   
+      
+  <footer>
+  <h1 class="name"><a href="/">Aiden Do</a></h1>
+  <ol>
+    <li class="work"><a href="/">Work</a></li>
+    <li class="blog"><a href="/blog/">Liked</a></li>
+    <li class="about"><a href="/about/">About</a></li>
+  </ol>
+  <p class="email"><a href="mailto:aidentdo@gmail.com">aidentdo@gmail.com</a></p>
+</footer>
+
+  
+  
+  
+  <script>
+
+    var video = "Fireworks"; // Change this to your video ID
+
+    var myXAPI = {};
+
+    ADL.launch(function (err, launchdata, xAPIWrapper) {
+      if (!err) {
+        ADL.XAPIWrapper = xAPIWrapper;
+        myXAPI.actor = launchdata.actor;
+        if (launchdata.customData.content) {
+          myXAPI.context = {contextActivities: {grouping: [{id: launchdata.customData.content}]}};
+        } else {
+          myXAPI.context = {
+            contextActivities: {
+              grouping: [
+                {
+                  id: "http://adlnet.gov/event/xapiworkshop/launch/no-customData"
+                }
+              ]
+            }
+          };
+        }
+      } else {
+        ADL.XAPIWrapper.changeConfig({
+          "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
+          "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
+          // "endpoint":"https://lrs.adlnet.gov/xapi/",
+          // "user":"xapi-workshop",
+          // "password":"password1234"
+        });
+        myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "Visitor"}};
+        myXAPI.context = {contextActivities: {grouping: [{id: "https://w3id.org/xapi/video/extensions"}]}};
+      }
+
+      myXAPI.object = {
+        id: "https://www.youtube.com/watch?v="+video, 
+        definition: {
+          name: {
+            "en-US": "Fireworks"
+          }
+        }
+      };
+
+      ADL.XAPIYoutubeStatements.changeConfig(myXAPI);
+
+    }, true);
+
+    function initYT() {
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '390',
+        width: '640',
+        videoId: 'ZRCWxuL5bCk',
+        playerVars: { 'autoplay': 0, 'disablekb': 1, 'showinfo': 0 },
+        events: {
+          'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,
+          'onStateChange': ADL.XAPIYoutubeStatements.onStateChange
+        }
+      });
+    }
+
+    initYT();
+
+  </script>
+
+  </body>
 </html>

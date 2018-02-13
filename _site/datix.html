@@ -1,6 +1,6 @@
 <!DOCTYPE html>
   <head>  
-  <title>Aiden Do | Datix</title>
+  <title>Datix</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link href="/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet">
@@ -37,51 +37,38 @@
             <div class="article">
                 <p><img src="/img/datix-screenshot.png" /></p>
 
-<h1 id="improve-patient-safety-and-create-a-culture-of-learning">Improve patient safety and create a culture of learning</h1>
-<p>The goal was to make incident reporting the easiest thing to do on our caregiver’s list. To make sure Datix was well-adopted, the Risk Management team and I worked together to create a video on how to:</p>
+<h1 id="a-culture-of-patient-safety-through-reporting">A Culture of Patient Safety through reporting</h1>
 
-<ul>
-  <li>Capture and review data</li>
-  <li>Navigate the Event Status Dashboard</li>
-  <li>Monitor event progress</li>
-</ul>
+<p>The Risk Management team and I created a video on how to capture and assess important details in Datix, a web-based risk management software, to make incident reporting the easiest thing to do on our caregiver’s list.</p>
 
-<p>But creating a video is just the start of a continuous process. You need to measure the performance of your videos to learn how you can improve the next one.</p>
+<h1 id="video-analytics">Video Analytics</h1>
 
-<p>The amount of views is a helpful metric, but how do you know if people actually watched it?</p>
+<p>Video has become one of the most engaging form of content. They can make information more digestible and easier to understand than a text article.</p>
 
-<!-- xAPI and xapiyoutubewrapper allows you to capture user actions like when the video was played, paused, completed, abandoned or skipped, and convert these metrics into an actionable data. -->
+<p>But for most organizations, simply having video content available isn’t enough.</p>
 
-<!-- BODY -->
-<h2 id="video-analytics">Video Analytics</h2>
+<p>You need to know if people are actually watching your videos.</p>
 
-<h2 id="view-duration">View Duration</h2>
+<!-- Using xAPI, I was able to track interest and engagement to get a comprehensive view of the ROI of our video investment. -->
 
-<p>The average view duration tells us the amount of time the average learner spends watching the video.</p>
+<h2 id="chapters">Chapters</h2>
 
-<p><img src="/img/1.jpg" alt="Image of CODE" /></p>
+<p>Added chapter points to make it easy for viewers to quickly jump to the section they want without having to search for it.</p>
 
-<p><img src="/img/1.jpg" alt="Image of GRAPH" /></p>
+<div class="img-box">
+    <img src="/img/chapter-marker.png" />
+</div>
 
-<p>This provides a rough benchmark to evaluate and compare it to similar contents.</p>
+<h2 id="viewer-retention">Viewer Retention</h2>
 
-<h2 id="percent-completion">Percent Completion</h2>
-
-<p>This metric is the % of a video that is watched by a learner. 
-<img src="/img/1.jpg" alt="Image of Yaktocat" /></p>
-
-<p>For example, if a user watches 20 seconds of a 30-second video, the video view rate percentage is calculated as 66.66.
-This metric provides a sense of how well your content aligns with the learners’ needs.</p>
-
-<h2 id="retention">Retention</h2>
-
-<p>The purpose of this metric is to monitor video performance in retaining learners, and visualize drop-off points.<br />
-<img src="/img/1.jpg" alt="Image of Yaktocat" /></p>
+<p>Using xAPI, I was able to capture actions like when the video was played, paused, completed, seeked, skipped, and where in the video people are dropping off.</p>
 
 <h2 id="demo">Demo</h2>
 <p>You can interact with the video below to see what your statements would look like.</p>
 <div id="player"></div>
-<!-- <script type="text/javascript" id="waxid-6cfa46f2-e91e-4173-a430-1569475043d1">
+
+<p>The activity log might take a few seconds to load!
+<script type="text/javascript" id="waxid-6cfa46f2-e91e-4173-a430-1569475043d1">
 var _waxr = _waxr || [];
 (function () {
     var reportembed = document.createElement('script'); reportembed.defer = true; reportembed.type = 'text/javascript';
@@ -90,7 +77,8 @@ var _waxr = _waxr || [];
     var s = document.getElementById('waxid-6cfa46f2-e91e-4173-a430-1569475043d1');
     s.parentNode.insertBefore(reportembed, s);
 })();
-</script> -->
+</script></p>
+
 <p>Refresh page to view activity results</p>
 
 
@@ -104,7 +92,7 @@ var _waxr = _waxr || [];
   <h1 class="name"><a href="/">Aiden Do</a></h1>
   <ol>
     <li class="work"><a href="/">Work</a></li>
-    <li class="blog"><a href="/blog/">Blog</a></li>
+    <li class="blog"><a href="/blog/">Liked</a></li>
     <li class="about"><a href="/about/">About</a></li>
   </ol>
   <p class="email"><a href="mailto:aidentdo@gmail.com">aidentdo@gmail.com</a></p>
@@ -115,7 +103,7 @@ var _waxr = _waxr || [];
   
   <script>
 
-    var video = "planet"; // Change this to your video ID
+    var video = "Fireworks"; // Change this to your video ID
 
     var myXAPI = {};
 
@@ -138,22 +126,21 @@ var _waxr = _waxr || [];
         }
       } else {
         ADL.XAPIWrapper.changeConfig({
-          // "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
-          // "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
-          "endpoint":"https://lrs.adlnet.gov/xapi/",
-          "user":"xapi-workshop",
-          "password":"password1234"
+          "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
+          "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
+          // "endpoint":"https://lrs.adlnet.gov/xapi/",
+          // "user":"xapi-workshop",
+          // "password":"password1234"
         });
-        myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "hmm"}};
-        myXAPI.context = {contextActivities: {grouping: [{id: "https://w3id.org/xapi/video/extensions/volume"}]}};
+        myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "Visitor"}};
+        myXAPI.context = {contextActivities: {grouping: [{id: "https://w3id.org/xapi/video/extensions"}]}};
       }
 
       myXAPI.object = {
         id: "https://www.youtube.com/watch?v="+video, 
         definition: {
-          type: "https://w3id.org/xapi/video/activity-type/video",
           name: {
-            "en-US": "HMM"
+            "en-US": "Fireworks"
           }
         }
       };
@@ -174,7 +161,7 @@ var _waxr = _waxr || [];
       player = new YT.Player('player', {
         height: '390',
         width: '640',
-        videoId: 'D2SoGHFM18I',
+        videoId: 'ZRCWxuL5bCk',
         playerVars: { 'autoplay': 0, 'disablekb': 1, 'showinfo': 0 },
         events: {
           'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,

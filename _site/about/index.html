@@ -1,6 +1,6 @@
 <!DOCTYPE html>
   <head>  
-  <title>Aiden Do | About</title>
+  <title>About</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link href="/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet">
@@ -43,7 +43,7 @@
         <a href="/about" class="about" >About</a>
     </div>
 </header> -->
-<p>My name is Aiden but you can call me JJ. I’m a Seattle based learning experience designer. Currently with Swedish/Providence as a part of the L&amp;D team. Before that, I helped to narrow the information gap as a content developer for ExamWorks.</p>
+<p>My name is Aiden but you can call me JJ. I’m a Seattle based learning experience designer. Currently with Providence as a part of the L&amp;D team. Before that, I helped to narrow the information gap as a content developer for ExamWorks.</p>
 
             </li>
         </ul>
@@ -57,7 +57,7 @@
   
   <script>
 
-    var video = "planet"; // Change this to your video ID
+    var video = "Fireworks"; // Change this to your video ID
 
     var myXAPI = {};
 
@@ -80,22 +80,21 @@
         }
       } else {
         ADL.XAPIWrapper.changeConfig({
-          // "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
-          // "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
-          "endpoint":"https://lrs.adlnet.gov/xapi/",
-          "user":"xapi-workshop",
-          "password":"password1234"
+          "endpoint":"https://joongjae.waxlrs.com/TCAPI/",
+          "auth" : "Basic " + toBase64("VkpIkb7YGaSxMQImksGO:BpdXOyPDTEHe6QtKNq8C")
+          // "endpoint":"https://lrs.adlnet.gov/xapi/",
+          // "user":"xapi-workshop",
+          // "password":"password1234"
         });
-        myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "hmm"}};
-        myXAPI.context = {contextActivities: {grouping: [{id: "https://w3id.org/xapi/video/extensions/volume"}]}};
+        myXAPI.actor = {account: {homePage:"http://example.com/watch-video", name: "Visitor"}};
+        myXAPI.context = {contextActivities: {grouping: [{id: "https://w3id.org/xapi/video/extensions"}]}};
       }
 
       myXAPI.object = {
         id: "https://www.youtube.com/watch?v="+video, 
         definition: {
-          type: "https://w3id.org/xapi/video/activity-type/video",
           name: {
-            "en-US": "HMM"
+            "en-US": "Fireworks"
           }
         }
       };
@@ -116,7 +115,7 @@
       player = new YT.Player('player', {
         height: '390',
         width: '640',
-        videoId: 'D2SoGHFM18I',
+        videoId: 'ZRCWxuL5bCk',
         playerVars: { 'autoplay': 0, 'disablekb': 1, 'showinfo': 0 },
         events: {
           'onReady': ADL.XAPIYoutubeStatements.onPlayerReady,

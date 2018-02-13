@@ -22,6 +22,7 @@
       var seeking = false;
       var prevTime = 0.0;
       var completed = false;
+      var volume = false;
 
       this.changeConfig = function(myXAPI) {
         actor = myXAPI.actor;
@@ -33,6 +34,12 @@
         var message = "yt: player ready";
         log(message);
         window.onunload = exitVideo;
+      }
+
+      this.onStateChange = function(event) {
+        var volume = "yt: player ready";
+        log(message);
+        vid.onvolumechange = exitVideo;
       }
 
       this.onStateChange = function(event) {
@@ -164,20 +171,23 @@
             "resultExt:elapsed": ISOTime
           }
         };
-
-        stmt.context = {"extensions":{"resultExt:interacted":ISOTime}};
         
         return buildStatement(stmt); 
       }
 
       function interactVideo(ISOTime) {
+        if (volume) {
+          return null;
+        }
+
         var stmt = {};
 
         stmt.verb = {
           id: ADL.videoprofile.references.interacted['@id'],
           display: ADL.videoprofile.references.interacted.prefLabel,
         };
-        stmt.result = {"extensions":{"resultExt:time":0}};
+        stmt.result = {"extensions":{"resultExt:time":0, "volume":true}};
+        volume = true;
 
         ADL.XAPIWrapper.sendStatement(buildStatement(stmt));
       }

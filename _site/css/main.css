@@ -85,16 +85,6 @@ footer ol a {
   margin: 0 auto;
 }
 
-.flexbox {
-  display: flex;
-  height: 380px;
-  margin: 6px;
-  /* justify-content: space-evenly;
-  padding: 24px 0 24px;
-  background: pink; */
-  border: solid 3px tomato;
-}
-
 .article {
   max-width: 620px;
   margin: 0 auto;
@@ -115,6 +105,10 @@ footer ol a {
     0 2px 4px rgba(0,0,0,0.18);
 }
 
+.robot {
+  font-size: .6em;
+}
+
 .one .img-container {
   background-color: #8EC5FC;
   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
@@ -125,28 +119,48 @@ footer ol a {
   background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 }
 
-.three .img-container {
+.three .img-container, .robot {
   background-color: #08AEEA;
   background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
 }
 
 img {
+  margin-top: 0;
   vertical-align: top;
   max-width: 100%;
-  margin-top: 0;
+  /* border: #00CD4A 1px solid; */
+}
+
+pre {
+  /* border: #00CD4A 1px solid; */
+  margin-bottom: 9%;
 }
 
 code {
   font-family: 'roboto mono';
   font-size: 13px;
   line-height: 24px;
-  max-width: 100%; 
+  max-width: 100%;
   /* border-radius: 5px;
   box-shadow: 
     0 2px 4px rgba(0,0,0,0.18);
   border: solid 1px tomato; */
 }
 
+blockquote {
+  margin: 0;
+  padding-left: 1em;
+  border-left: 3px pink solid;
+}
+
+blockquote ol li:before{
+  content: ""!important;
+  /* padding-left: 0; */
+}
+
+ol {
+  padding-left: 1em;
+}
 
 /* Styles */
 
@@ -175,6 +189,21 @@ a:hover {
   color: #1e1e1c;
 }
 
+#work .container h1 {
+  margin-top: 12%;
+  font-size: 24px;
+  line-height: 1.3em;
+}
+
+h2 {
+  margin-top: 9%;
+  font-size: 21px;
+  /* font-size: 1.5em;
+  line-height: 1.3em; */
+  text-align: left;
+  /* margin-bottom: .9em; */
+}
+
 h3 {
 	margin-bottom: 0;
   text-align: center;
@@ -183,14 +212,6 @@ h3 {
 h3 a {
 	border: 0;
   text-decoration: none;
-}
-
-h2 {
-  font-size: 1.5em;
-  line-height: 1.3em;
-  margin-top: 9%;
-  text-align: left;
-  /* margin-bottom: .9em; */
 }
 
 h5 {
@@ -216,15 +237,6 @@ p {
 
 #player {
   margin-bottom: 3%;
-}
-
-figcaption {
-  margin-top: 3%;
-  text-align: left;
-  font-size: 15px;
-  font-weight: 700;
-  color: #6F767E;
-  margin-bottom: 6%;
 }
 
 ul {

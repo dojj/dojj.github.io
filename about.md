@@ -14,4 +14,4 @@ layout: about
         <a href="/about" class="about" >About</a>
     </div>
 </header> -->
-My name is Aiden but you can call me JJ. I'm a Seattle based learning experience designer. Currently with Swedish/Providence as a part of the L&amp;D team. Before that, I helped to narrow the information gap as a content developer for ExamWorks.
+My name is Aiden but you can call me JJ. I'm a Seattle based learning experience designer. Currently with Providence as a part of the L&amp;D team. Before that, I helped to narrow the information gap as a content developer for ExamWorks.
