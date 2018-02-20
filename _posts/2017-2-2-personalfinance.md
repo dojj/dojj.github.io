@@ -32,6 +32,3 @@ permalink: /401k
   Simply answer the “yes” or “no” questions as they go, and, when prompted, respond to questions to help us convert feedback into actionable insights. 
 
   ![Image of Yaktocat](/img/1.jpg)
-
-
->sdfsdfadfsadfsfafsadfsdf

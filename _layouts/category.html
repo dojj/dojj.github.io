@@ -2,25 +2,14 @@
 layout: default 
 ---
 
-  <section class="container">
-    {% for post in site.categories[page.category] %}
-    <div id="posts">
-      <div class="title">
-        <h3><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h3>
-        <h5><a href="{{ post.url | absolute_url }}">{{ post.subtitle }}</a></h5>
-      </div>
-      {{ content }}
+<section class="container">
+  {% for post in site.categories[page.category] %}
+  <div id="posts">
+    <div class="title">
+      <h3><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h3>
+      <h5><a href="{{ post.url | absolute_url }}">{{ post.subtitle }}</a></h5>
     </div>
-    {% endfor %}
-  </section>
-
-
-    <!--<div class="content">
-          <div>
-            {{ post.excerpt }}
-          </div>
-        </div>
-        <a href="{{ post.url | absolute_url }}">
-          {% if page.title == 'Work' %}
-          {% endif %}
-        </a> -->
+      {{  post.excerpt }}
+  </div>
+  {% endfor %}
+</section>

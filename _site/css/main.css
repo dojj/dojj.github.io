@@ -17,6 +17,10 @@ body {
   margin: 0;
 }
 
+#posts {
+  margin-bottom: 38vh;
+}
+
 #posts li {
   padding-left: 0;
   margin: 0 0 30vh;
@@ -87,7 +91,7 @@ footer ol a {
 
 .article {
   max-width: 620px;
-  margin: 0 auto;
+  margin: 0 auto 24vh auto;
 }
 
 .icon-box {
@@ -96,38 +100,26 @@ footer ol a {
 }
 
 .img-container {
-  /* margin-top: 6%; */
-  font-size: 4em;
+  /* margin-top: 6vh; */
+  /* font-size: 4em; */
   text-align: center;
-  padding: 20% 0;
-  border-radius: 5px;
-  box-shadow: 
-    0 2px 4px rgba(0,0,0,0.18);
+  /* padding: 20% 0; */
+  /* margin-bottom: 18vh; */
 }
 
-.robot {
-  font-size: .6em;
-}
-
-.one .img-container {
-  background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-}
-
-.two .img-container {
-  background-color: #FBDA61;
-  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
-}
-
-.three .img-container, .robot {
-  background-color: #08AEEA;
-  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+.img-box {
+  margin-top: 6vh;
+  text-align: center;
+  margin-bottom: 6vh;
 }
 
 img {
   margin-top: 0;
   vertical-align: top;
   max-width: 100%;
+  border-radius: 5px;
+  /* box-shadow: 
+    0 2px 4px rgba(0,0,0,0.18); */
   /* border: #00CD4A 1px solid; */
 }
 
@@ -148,9 +140,11 @@ code {
 }
 
 blockquote {
-  margin: 0;
+  /* margin-top: 3vh; */
+  margin-left: 0;
   padding-left: 1em;
   border-left: 3px pink solid;
+  /* margin-bottom: 3vh; */
 }
 
 blockquote ol li:before{
@@ -196,7 +190,7 @@ a:hover {
 }
 
 h2 {
-  margin-top: 9%;
+  margin-top: 12%;
   font-size: 21px;
   /* font-size: 1.5em;
   line-height: 1.3em; */
@@ -233,6 +227,7 @@ p {
   text-align: left;
   word-wrap: break-word;
   line-height: 1.6em;
+  margin-bottom: 0;
 }
 
 #player {
