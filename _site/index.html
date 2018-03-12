@@ -3,6 +3,7 @@
   <title>Work</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link href="/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet">
   <script type="text/javascript" src="lib/xapiwrapper.min.js"></script>
   <script type="text/javascript" src="src/videoprofile.js"></script>
@@ -10,7 +11,6 @@
   <script src="highlight.pack.js"></script>
   <link rel="stylesheet" href="/styles/atom-one-light.css">
   <script>hljs.initHighlightingOnLoad();</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 </head>
 
 
@@ -29,45 +29,247 @@
 </header>
 
 
-    <section class="container">
-  
-  <div id="posts">
-    <div class="title">
-      <h3><a href="http://localhost:4000/datix">Datix</a></h3>
-      <h5><a href="http://localhost:4000/datix">Incident Reporting and Risk Management</a></h5>
-    </div>
-      <div class="img-container">
-    <img src="/img/datix.png" />
-</div>
-
-
-  </div>
-  
-  <div id="posts">
-    <div class="title">
-      <h3><a href="http://localhost:4000/kpi">KPI Dashboard</a></h3>
-      <h5><a href="http://localhost:4000/kpi">Real-Time Data and Reporting in One Place</a></h5>
-    </div>
-      <div class="img-container">
-  <img src="/img/kpi.png" />
-</div>
-<!-- ![Image of Dashboard](/img/kpi.png)   -->
-
-
-  </div>
-  
-  <div id="posts">
-    <div class="title">
-      <h3><a href="http://localhost:4000/empi">Master Patient Index</a></h3>
-      <h5><a href="http://localhost:4000/empi">Ensuring Data Integrity</a></h5>
-    </div>
-      <div class="img-container">
-    <img src="/img/mpi-main.png" />
-</div>
-
-
-  </div>
-  
+  <section class="container">
+    <ul id="posts">
+        <li>
+            <h3>KPI Dashboard</h3>
+            <h5>Real-time data and reporting in one place</h5>
+            <div class="img_container">
+                <img src="/img/dashboard.png">
+            </div>
+            <div class="article">
+                <h2>Focus actions on the data that matter</h2>
+                <p>
+                    HR Operations team and I designed a course to help core leaders explore the KPI Dashboard. This course provides a comprehensive overview of the People Metrics, reporting and exporting functionality of the Dashboard along with exposure to the Scorecard and Executive Summary.
+                </p>
+                <ul id="learning_objectives">
+                    <p>
+                        Our goal was to help users explore the functionality of the dashboard by showing how to:
+                    </p>
+                    <li>Access the Dashboard</li>
+                    <li>Navigate through the tabs of each dashboard section</li>
+                    <li>Drill down to view the specific data required</li>
+                    <li>Understand data that is related to People Metrics</li>
+                    <li>Interpret and use this data to make business decisions</li>
+                </ul>
+            </div>
+            <div class="_3kb7 _12mx _12my"></div>
+            <div class="article">
+                <div class="i">
+                    <h2>Measuring learner engagement</h2>
+                    Using xAPI, I was able to capture the number of likes, shares, and views to discover how learners are interacting with the content and learn how I can further optimize the learning experience.
+                </div>
+            </div>
+            <div class="flex_container">
+                <!-- <div class="img_container example_img">
+                    <img src="/img/like.png">
+                </div> -->
+<pre>
+        <code>
+{
+"verb": {  
+    "id": "https://w3id.org/xapi/acrossx/verbs/liked",  
+    "display": {  
+        "en-US": "liked"  
+    }  
+},
+"version": "1.0.0",
+    "timestamp": "2017-09-06T02:30:16.987082+00:00",
+    "object": {
+        "definition": {
+            "name": {
+                "en-US": "Summary Reports"
+            },
+            "description": {  
+                "en-US": "Summarizes 10 predefined reports."  
+            }
+        },
+        "id": "http://example.adlnet.gov/xapi/summary-reports",
+        "objectType": "Activity"
+    },
+}
+        </code>
+    </pre>
+                <div class="description co">
+                    <h2>Discover what learners like</h2>
+                    <p>
+                        Like buttons were placed throughout the lesson as a simple and quick way for learners to express that they like something.
+                    </p>
+                    <p>
+                        The following statement is generated when a learner likes what they see.
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="_3kb7 _12mx _12my"></div> -->
+            <div class="flex_container">
+                <div class="description">
+                    <h2>Create shareable content</h2>
+                    <p>
+                        This metric is a good measure of how learners perceive the content, because highly shared lessons can indicate the content to be helpful and relevant to your audience.
+                    </p>
+                    <p>Shares were tracked using the LMS' built-in 'share' feature.</p>
+                </div>
+                <div class="img_container shadow">
+                    <div class="imgur">
+                        <img src="/img/shares.png">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="_3kb7 _12mx _12my"></div> -->
+            <div class="flex_container">
+                <div class="img_container shadow">
+                    <img src="/img/menu.png">
+                </div>
+                <div class="description">
+                    <h2>Focused learning experience</h2>
+                    <p>
+                        By monitoring the number of views, I was able to sort topics by popularity based on the number of views. Reviewing your popular content is a great way to see what's working.
+                    </p>
+                </div>
+            </div>
+            <div class="_3kb7 _12mx _12my"></div>
+            <div class="outcome">
+                <h4>RESULTS</h4>
+                <h2></h2>
+                <!-- <h2>I was able to identify top performing slides</h2> -->
+                <div class="percentage">
+                    <div class="results">
+                        <h2>88%</h2>
+                        <p>Of the content within the lesson were liked</p>
+                    </div>
+                    <div class="results">
+                        <h2>61%</h2>
+                        <p>Of the learners shared the lesson</p>
+                    </div>
+                    <div class="results">
+                        <h2>92%</h2>
+                        <p>Of the lesson were explored</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <h3>Datix</h3>
+            <h5>Incident Reporting and Risk Management</h5>
+            <div class="img_container">
+                <img src="/img/datix_thumbnail.png">
+            </div>
+            <div class="article">
+                <h2>Creating a Culture of Patient Safety through Reporting</h2>
+                <p>
+                    The Risk Management team and I created a video tutorial on how to capture and assess important details in Datix, a SaaS based service, to make incident reporting the easiest thing to do on our caregiver's list by showing how to:
+                </p>
+                <ul id="learning_objectives">
+                    <li>Access Datix</li>
+                    <li>Use the Event Status Dashboard</li>
+                    <li>Document the Management Review</li>
+                    <li>Attach documents and use templates</li>
+                    <li>Understand the Leader Sign-Off process</li>
+                </ul>
+            </div>
+            <div class="_3kb7 _12mx _12my"></div>
+            <div class="article">
+                <div class="i">
+                    <h2>Video Analytics</h2>
+                    <p>
+                        Video has become one of the most engaging form of content. They can make information more digestible and easier to understand than a text article. But for most organizations, simply having video content available isn’t enough. You need to know if people are actually watching your videos.
+                    </p>
+                </div>
+            </div>
+            <div class="flex_container">
+                <div class="img_container shadow">
+                    <img src="/img/statement.png">
+                </div>
+                <div class="description">
+                    <h2>Insight into the viewing session</h2>
+                    <p>
+                        Leveraging xAPI, I was able to measure the performance of the video, and gain insights into how viewers were interacting with our content.
+                    </p>
+                </div>
+            </div>
+            <div class="_3kb7 _12mx _12my"></div>
+            <div class="flex_container">
+                <div class="description co">
+                    <h2>Drop-Off Points</h2>
+                    <p>
+                        This metric provides a visual representation of where the majority of our viewers are dropping off, which provides an insight to what is happening at that moment in the video, or a ballpark for how long to aim for with our subsequent videos.
+                    </p>
+                </div>
+<pre>
+    <code>
+...
+"verb": {
+    "id": "https://w3id.org/xapi/adl/verbs/abandoned",
+    "display": {
+        "en-US": "abandoned"
+    }
+},
+...
+"stored": "2018-02-23T08:04:19.483041+00:00",
+"result": {
+    "extensions": {
+        "http://id.tincanapi.com/extension/duration": "PT34.744S",
+        "https://w3id.org/xapi/video/extensions/time": "PT34.744S"
+    }
+},              
+    </code>
+</pre>
+            </div>
+            <div class="_3kb7 _12mx _12my"></div>
+            <div class="outcome">
+                <h4>RESULTS</h4>
+                <h2></h2>
+                <div class="percentage datix_flexbox">
+                    <div class="results">
+                        <h2>91%</h2>
+                        <p>Of the viewers completed the video from start to finish</p>
+                    </div>
+                    <div class="results">
+                        <h2>87%</h2>
+                        <p>Of the video were watched on average</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <h3>Kronos Workforce Timekeeper</h3>
+            <h5>Track, manage, and optimize timekeeping</h5>
+            <div class="img_container">
+                <img src="/img/kronos.png">
+            </div>
+            <div class="article">
+                <h2>Manage timecards and schedules</h2>
+                <p>
+                    In preparation for an upgrade from the older version of Kronos (a workforce management software and services company), the HR Operations, Payroll, Educators and I worked together to create and update content for Timekeepers and Managers to provide an understanding of the improvements and introduce new features. 
+                </p>
+                <p>
+                    This course provides instructions on managing employees’ timecards in Kronos to ensure documentation requirements are met and all employees are paid accurately.
+                </p>
+                <ul id="learning_objectives">
+                    <li>Navigate through Kronos</li>
+                    <li>Add missed punches (with appropriate documentation)</li>
+                    <li>Add missed transfers (department, position, and/or work rule)</li>
+                    <li>Add non-productive pay codes to employees’ timecards</li>
+                    <li>Understand the Attestation process</li>
+                </ul>
+            </div>
+            <div class="_3kb7 _12mx _12my"></div>
+            <div class="outcome">
+                <h4>RESULTS</h4>
+                <h2></h2>
+                <div class="percentage datix_flexbox">
+                    <div class="results">
+                        <h2>94%</h2>
+                        <p>Of the learners were satisfied with the updated content</p>
+                    </div>
+                    <div class="results">
+                        <h2>97%</h2>
+                        <p>Completion rate</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
 </section>
    
       

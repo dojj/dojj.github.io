@@ -3,6 +3,7 @@
   <title>Datix</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link href="/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet">
   <script type="text/javascript" src="lib/xapiwrapper.min.js"></script>
   <script type="text/javascript" src="src/videoprofile.js"></script>
@@ -10,7 +11,6 @@
   <script src="highlight.pack.js"></script>
   <link rel="stylesheet" href="/styles/atom-one-light.css">
   <script>hljs.initHighlightingOnLoad();</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 </head>
 
 
@@ -27,22 +27,26 @@
 </header>
 
 
-    <body id="work">
+  <body id="work">
     <section class="container">
         <div>
-            <div class="title">
+            <!-- <div class="title">
                 <h3>Datix</h3>
                 <h5>Incident Reporting and Risk Management</h5>
-            </div>
+            </div> -->
             <div class="article">
-                <div class="img-container">
+                <h1 id="creating-a-culture-of-patient-safety-through-reporting">Creating a Culture of Patient Safety through Reporting</h1>
+
+<div class="img-container">
     <img src="/img/datix.png" />
 </div>
+<p><br />
+The Risk Management team and I created a video tutorial on how to capture and assess important details in Datix, a web-based risk management software, to make incident reporting the easiest thing to do on our caregiver’s list.</p>
 
-<h1 id="a-culture-of-patient-safety-through-reporting">A Culture of Patient Safety through reporting</h1>
-<p>The Risk Management team and I created a video on how to capture and assess important details in Datix, a web-based risk management software, to make incident reporting the easiest thing to do on our caregiver’s list.<br />
-<br />
-I created an eLearning video to show our caregivers how to:</p>
+<p><br /></p>
+
+<p>Our goal was to show our caregivers how to:</p>
+
 <ul>
   <li>Access Datix.</li>
   <li>Use the Event Status Dashboard.</li>
@@ -51,27 +55,72 @@ I created an eLearning video to show our caregivers how to:</p>
   <li>Understand the Leader Sign-Off process.</li>
 </ul>
 
-<h1 id="video-analytics">Video Analytics</h1>
-<p>Video has become one of the most engaging form of content. They can make information more digestible and easier to understand than a text article.<br />
+<h2 id="using-video-in-elearning">Using Video in eLearning</h2>
+
+<p>Video has become the most engaging form of content. They can make information more digestible and easier to understand than a text article.</p>
+
+<div class="img-box">
+    <img src="/img/datix-howto2.jpg" />
+</div>
+
+<p>According to <a class="source" href="https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/complete-white-paper-c11-481360.html">Cisco</a>, video traffic will make up 82% of all internet traffic by 2020.</p>
+
+<h2 id="script">Script</h2>
+<p>I started the project by spending some time with a technical writer to draft a script.<br />
 <br />
-But for most organizations, simply having video content available isn’t enough. 
-You need to know if people are actually watching your videos.</p>
+Instead of simply saying what’s happening on-screen, we wanted to draw attention to the connection between actions of the user and reactions of the system with the voice over.</p>
+<div class="img-box">
+    <img src="/img/12.jpg" />
+</div>
+
+<h2 id="animations-and-effects">Animations and Effects</h2>
+<p>Used Camtasia’s editing features to guide and focus learners’ attention.</p>
+<div class="img-box">
+    <img src="/img/12.jpg" />
+</div>
 
 <h2 id="chapters">Chapters</h2>
-<p>Chapter points were provided to make it easy for viewers to quickly jump to the section they want without having to search for it. This was also a good way to see the most seeked part of the video.
-<br /></p>
+<p>Chapter points were provided to make it easy for viewers to jump to the section they want without having to search for it. This was also a good way to see the most seeked part of the video.</p>
 
 <div class="img-box">
     <img src="/img/chapter-marker.png" />
 </div>
 
-<h2 id="viewer-retention">Viewer Retention</h2>
-<p>Using xAPI, I was able to capture actions like when the video was played, paused, completed, seeked, skipped, and where in the video people are dropping off.<br />
+<h2 id="video-analytics">Video Analytics</h2>
+<p>Simply having video content available isn’t enough.<br />
 <br />
-You can interact with the demo video below to see what your statements would look like.</p>
-<div id="player"></div>
+You need to know if people are actually watching your videos. Leveraging xAPI, I was able to capture user interactions.</p>
 
-<p>The activity log might take a few seconds to load.<br />
+<ul>
+  <li>Played</li>
+  <li>Paused</li>
+  <li>Completed</li>
+  <li>Seeked</li>
+  <li>Skipped</li>
+  <li>Abandoned</li>
+</ul>
+
+<p>You can interact with the demo below to see what your statements would look like.</p>
+
+<h2 id="drop-off-points">Drop-off Points</h2>
+
+<p>This metric tells us when the viewers stopped watching or abandoned the video.<br />
+<br />
+This provides a visual presentation of where the majority of our viewers are dropping off and see what is happening at that moment in the video.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<div class="img-box">
+    <img src="/img/datix-graph.png" />
+</div>
+
+<p>Our video had a great retention rate; as 87% of our viewers played to its completion. Considering 10 ~ 20-minute videos has an engagement loss of nearly 60%.<br />
+<br />
+By having access to these metrics, we were able to translate these data into actionable insights to make our next video even better than our last.</p>
+
+<!-- <div id="player"></div>
+
+The activity log might take a few seconds to load.  
 <script type="text/javascript" id="waxid-6cfa46f2-e91e-4173-a430-1569475043d1">
 var _waxr = _waxr || [];
 (function () {
@@ -81,9 +130,9 @@ var _waxr = _waxr || [];
     var s = document.getElementById('waxid-6cfa46f2-e91e-4173-a430-1569475043d1');
     s.parentNode.insertBefore(reportembed, s);
 })();
-</script>
-<br />
-Refresh page to view activity results.</p>
+</script> -->
+<p><br />
+<!-- Refresh page to view activity results. --></p>
 
 
             </div>

@@ -3,6 +3,7 @@
   <title>KPI Dashboard</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link href="/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="stylesheet">
   <script type="text/javascript" src="lib/xapiwrapper.min.js"></script>
   <script type="text/javascript" src="src/videoprofile.js"></script>
@@ -10,7 +11,6 @@
   <script src="highlight.pack.js"></script>
   <link rel="stylesheet" href="/styles/atom-one-light.css">
   <script>hljs.initHighlightingOnLoad();</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 </head>
 
 
@@ -27,18 +27,17 @@
 </header>
 
 
-    <body id="work">
+  <body id="work">
     <section class="container">
         <div>
-            <div class="title">
+            <!-- <div class="title">
                 <h3>KPI Dashboard</h3>
                 <h5>Real-Time Data and Reporting in One Place</h5>
-            </div>
+            </div> -->
             <div class="article">
                 <div class="img-container">
   <img src="/img/kpi.png" />
 </div>
-<!-- ![Image of Dashboard](/img/kpi.png)   -->
 
 <h1 id="focusing-actions-on-the-data-that-matter">Focusing actions on the data that matter</h1>
 <p>HR Operations team and I designed a course to help core leaders explore HR Operations Dashboard. This course provided a comprehensive review of the People Metrics, reporting and exporting functionality of the Dashboard along with exposure to the Scorecard and Executive Summary.</p>
@@ -70,29 +69,31 @@ To calculate for this rate, I focused on metrics like views, shares, and clicks 
 <br />
 The following statement is generated when a learner likes something.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
- </span><span class="nt">"verb"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://w3id.org/xapi/acrossx/verbs/liked"</span><span class="p">,</span><span class="w">  
-    </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
-      </span><span class="nt">"en-US"</span><span class="p">:</span><span class="w"> </span><span class="s2">"liked"</span><span class="w">  
-    </span><span class="p">}</span><span class="w">  
- </span><span class="p">},</span><span class="w">
- </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-06T02:30:16.987082+00:00"</span><span class="p">,</span><span class="w">
-   </span><span class="nt">"object"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-     </span><span class="nt">"definition"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-       </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-         </span><span class="nt">"en-US"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Summary Reports"</span><span class="w">
-       </span><span class="p">},</span><span class="w">
-       </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
-         </span><span class="nt">"en-US"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Summarizes 10 predefined reports within the dashboard."</span><span class="w">  
-       </span><span class="p">}</span><span class="w">
-     </span><span class="p">},</span><span class="w">
-     </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.adlnet.gov/xapi/summary-reports"</span><span class="p">,</span><span class="w">
-     </span><span class="nt">"objectType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Activity"</span><span class="w">
-   </span><span class="p">},</span><span class="w">
-</span><span class="err">}</span><span class="w">
-</span></code></pre>
+<div class="highlighter-rouge"><pre class="highlight"><code>...
+{
+ "verb": {  
+    "id": "https://w3id.org/xapi/acrossx/verbs/liked",  
+    "display": {  
+      "en-US": "liked"  
+    }  
+ },
+ "version": "1.0.0",
+   "timestamp": "2017-09-06T02:30:16.987082+00:00",
+   "object": {
+     "definition": {
+       "name": {
+         "en-US": "Summary Reports"
+       },
+       "description": {  
+         "en-US": "Summarizes 10 predefined reports within the dashboard."  
+       }
+     },
+     "id": "http://example.adlnet.gov/xapi/summary-reports",
+     "objectType": "Activity"
+   },
+}
+...
+</code></pre>
 </div>
 
 <h2 id="shares">Shares</h2>
