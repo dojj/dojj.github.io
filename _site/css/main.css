@@ -18,6 +18,7 @@ body {
   font-size: 18px;
   font-weight: 300;
   margin: 0;
+  padding: 0 6%;
 }
 
 ul {
@@ -38,7 +39,7 @@ ul {
 header,
 footer {
   max-width: 1150px;
-  margin: 3vh auto 13vh auto;
+  margin: 12vh auto 12vh auto;
   height: 32px;
   padding: 21px 2% 19px;
 }
@@ -62,9 +63,9 @@ footer p {
   padding: 0;
   width: 25%;
   line-height: 32px;
-  font-size: 14px;
-  letter-spacing: .03em;
-  font-weight: 500;
+  /* font-size: 14px; */
+  /* letter-spacing: .03em; */
+  /* font-weight: 500; */
 }
 
 header ol,
@@ -86,9 +87,7 @@ footer ol li {
   padding: 0;
   line-height: 32px;
   display: inline-block;
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: .07em;
+  letter-spacing: .01em;
 }
 
 header ol a,
@@ -131,7 +130,9 @@ footer ol a {
 
 .outcome {
   margin-top: 60px;
-  max-width: 100%;
+  /* max-width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
 }
 .outcome h4 {
   font-family: 'Roboto';
@@ -140,7 +141,7 @@ footer ol a {
   font-size: 16px;
   letter-spacing: 4px;
   line-height: 21px;
-  margin-bottom: 10px;
+  /* margin-bottom: 100px; */
 }
 .outcome p {
   color: #1e1e1c;
@@ -168,13 +169,18 @@ footer ol a {
 
 .results {
   width: 30%;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 .results h2 {
   text-align: center;
   font-weight: 400;
   letter-spacing: -.5px;
-  margin-bottom: 2%;
+  margin: 0 auto 2% auto;
+}
+.results p {
+  text-align: center;
+  margin: 0 auto 0 auto;
 }
 
 .img_container {
@@ -238,7 +244,7 @@ li,
 ul,
 p,
 a { 
-  /* font-size: 18px; */
+  font-size: 18px;
   line-height: 26px;
   text-decoration: none;
   color: #1d2129;
@@ -261,11 +267,11 @@ a:hover {
 
 h2 {
   margin-top: 0;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 400;
   color: #1d2129;
   line-height: 1.4em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 1em;
 }
 
@@ -283,6 +289,10 @@ h3 {
 h3 a {
 	border: 0;
   text-decoration: none;
+}
+
+h4 {
+  margin: 0 auto 24px auto;
 }
 
 p {
@@ -339,7 +349,7 @@ p {
 }
 
 #about .container {
-  max-width: 75%;
+  max-width: 80%;
 }
 
 #about .post {
@@ -404,9 +414,14 @@ p {
     padding: 0;
   }
 
-  .img_container, .learning_objectives, .metric_container {
+  .img_container, 
+  .learning_objectives, 
+  .metric_container,
+  .description {
     max-width: 100%;
   }
+
+
 
 }
 
