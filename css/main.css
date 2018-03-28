@@ -130,7 +130,7 @@ footer ol a {
 
 .outcome {
   margin-top: 60px;
-  /* max-width: 100%; */
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -138,10 +138,9 @@ footer ol a {
   font-family: 'Roboto';
   font-weight: 700;
   color: #4080ff;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 4px;
   line-height: 21px;
-  /* margin-bottom: 100px; */
 }
 .outcome p {
   color: #1e1e1c;
@@ -165,6 +164,7 @@ footer ol a {
 
 .datix_flexbox {
   justify-content: space-evenly;
+  margin: 0 auto 0 auto;
 }
 
 .results {
@@ -180,6 +180,7 @@ footer ol a {
 }
 .results p {
   text-align: center;
+  /* max-width: 100%; */
   margin: 0 auto 0 auto;
 }
 
