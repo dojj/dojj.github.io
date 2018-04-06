@@ -450,6 +450,28 @@ p {
   }
 }
 
+#down {
+  background: #EEEEF4;
+  color:#999;
+}
+#down h1 {
+  font-weight:100;
+  font-size:35px;
+  color:#E43;
+}
+#down h3, a {
+  font-size: 18px;
+}
+#down a {
+  color:#1e1e1c;
+}
+#down h3 a:hover {
+  color: #999;
+}
+#down .warning-content {
+  margin-top: 15%;
+  text-align:center;
+}
 
 
 
