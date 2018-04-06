@@ -233,7 +233,8 @@ code {
 
 h1,
 h2,
-h3,
+
+,
 h5,
 li,
 ul,
@@ -268,7 +269,7 @@ h2 {
 h3 {
   margin-top: 0;
   font-size: 32px;
-/*   font-weight: 300; */
+  font-weight: 300;
   max-width: 100%;
   text-align: center;
   line-height: 1.7em;
@@ -461,6 +462,7 @@ p {
 }
 #down h3, a {
   font-size: 18px;
+  font-weight: 300;
 }
 #down a {
   color:#1e1e1c;
