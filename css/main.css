@@ -268,7 +268,7 @@ h2 {
 h3 {
   margin-top: 0;
   font-size: 32px;
-  font-weight: 700;
+/*   font-weight: 300; */
   max-width: 100%;
   text-align: center;
   line-height: 1.7em;
