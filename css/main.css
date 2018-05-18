@@ -14,10 +14,9 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  font-size: 18px;
   color: #1e1e1c;
   background: #fff;
-  font-weight: 300;
+  /* font-weight: 300; */
   margin: 0;
 }
 
@@ -28,7 +27,7 @@ ul {
 }
 
 #posts {
-  /* border: palevioletred 2px dotted; */
+  margin-top: 0;
 }
 
 #posts li {
@@ -103,7 +102,7 @@ footer ol a {
 }
 
 .article {
-  max-width: 740px;
+  max-width: 640px;
   margin: 0 auto 9% auto;
 }
 
@@ -182,6 +181,7 @@ footer ol a {
 
 .img_container {
   max-width: 100%;
+  margin-bottom: 26px;
 }
 
 .shadow {
@@ -258,26 +258,37 @@ a:hover {
 
 h2 {
   margin-top: 0;
-  /* font-size: 18px; */
-  font-weight: 400;
-  /* color: #1e1e1c; */
-  line-height: 1.4em;
   margin-bottom: 1em;
 }
 
+.article h2 {
+  margin-top: 30px;
+}
+
 h3 {
-  margin-top: 0;
-  font-size: 32px;
-  font-weight: 700;
-  max-width: 100%;
+  /* margin-top: 0; */
+  /* font-weight: 700; */
+  /* max-width: 100%; */
   text-align: center;
-  line-height: 1.7em;
-  margin-bottom: 9%;
+  margin-bottom: 0;
 }
 
 h3 a {
 	border: 0;
   text-decoration: none;
+}
+
+h5 {
+  margin-top: 0;
+	color: #a0a0a0;
+	text-align: center;
+	margin-bottom: 26px;
+}
+
+h5 a {
+	color: #a0a0a0;
+	text-decoration: none;
+	border: 0;
 }
 
 h4 {
