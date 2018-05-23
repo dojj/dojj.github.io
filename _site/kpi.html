@@ -70,7 +70,7 @@ To calculate for this rate, I focused on metrics like views, shares, and clicks 
 <br />
 The following statement is generated when a learner likes something.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>...
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
 {
  "verb": {  
     "id": "https://w3id.org/xapi/acrossx/verbs/liked",  
@@ -94,8 +94,7 @@ The following statement is generated when a learner likes something.</p>
    },
 }
 ...
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="shares">Shares</h2>
 
@@ -118,41 +117,39 @@ Shares were tracked using the LMS’ built-in share feature.<br />
 <p>I’m also able to sort the content based on popularity by monitoring the number of clicks.
 <!-- Reviewing popular content is a great way to see what is working as well as what isn't.  --></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"verb"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://adlnet.gov/expapi/verbs/clicked"</span><span class="p">,</span><span class="w">  
-    </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
-      </span><span class="nt">"en-US"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clicked"</span><span class="w">  
-    </span><span class="p">}</span><span class="w">  
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-06T02:44:52.215348+00:00"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"object"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"definition"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"en-US"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Status of Hires"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.adlnet.gov/xapi/example/status-of-hires"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"objectType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Activity"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-</span></code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "verb": {  
+    "id": "http://adlnet.gov/expapi/verbs/clicked",  
+    "display": {  
+      "en-US": "clicked"  
+    }  
+  },
+  "version": "1.0.0",
+  "timestamp": "2017-09-06T02:44:52.215348+00:00",
+  "object": {
+    "definition": {
+      "name": {
+        "en-US": "Status of Hires"
+      }
+    },
+    "id": "http://example.adlnet.gov/xapi/example/status-of-hires",
+    "objectType": "Activity"
+  },
+</code></pre></div></div>
 <p>By declaring ‘Summary Report’ as the parent of ‘Status of Hires’, I was able to provide some contextual information to a statement.</p>
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"context"</span><span class="p">:{</span><span class="w">  
-    </span><span class="nt">"contextActivities"</span><span class="p">:{</span><span class="w">  
-        </span><span class="nt">"parent"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">  
-            </span><span class="nt">"id"</span><span class="p">:</span><span class="s2">"http://example.adlnet.gov/xapi/example/summary-report"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"objectType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Activity"</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "context":{  
+    "contextActivities":{  
+        "parent": [
+          {  
+            "id":"http://example.adlnet.gov/xapi/example/summary-report",
+            "objectType": "Activity"
+          }
+        ]
+    }
+  }
 
-</span></code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="making-sense-of-the-numbers">Making Sense of the Numbers</h2>
 
