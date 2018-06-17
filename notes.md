@@ -1,0 +1,1 @@
+animations can be used to enhance storytelling and convey messages more emotionally.
