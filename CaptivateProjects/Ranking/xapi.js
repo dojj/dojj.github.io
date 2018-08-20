@@ -12,6 +12,16 @@ function generateEmail() {
   return str;
 }
 
+var points = generatePoints();
+
+function generatePoints() {
+  var pt = Math.floor(Math.random() * 10000) + 1;
+  var strg = pt;
+
+  return strg;
+}
+
+
 var conf = {
   'endpoint': 'https://trial-lrs.yetanalytics.io/xapi/',
   'auth': 'Basic ' + toBase64('50cc53246413e358199c6e9f6bf29d87:7d8ce34719292198bf7f43e54976b448')
@@ -19,7 +29,8 @@ var conf = {
 
 ADL.XAPIWrapper.changeConfig(conf);
 
-function send_statement(verbId, verb, objectId, name, description, score, success) {
+// function send_statement(verbId, verb, objectId, name, description, score, success) {
+function send_statement(verbId, verb, objectId, name, description, points, success) {
   var userName = window.cpAPIInterface.getVariableValue("user_name");
 
   // define the xapi statement being sent
@@ -50,7 +61,8 @@ function send_statement(verbId, verb, objectId, name, description, score, succes
         // 'scaled': 1,
         // 'min': 0,
         // 'max': 100,
-        'raw': score
+        // 'raw': score
+        'raw': points
       },
       'success': success
     }
@@ -64,7 +76,8 @@ function getScores() {
   var params = ADL.XAPIWrapper.searchParams(); 
 
   // Enter the ID for the statements that you would like to pull 
-  params['verb'] = 'http://example.com/xapi/answered';
+  // params['verb'] = 'http://example.com/xapi/answered';
+  params['verb'] = 'http://example.com/xapi/generated';
   var answered = ADL.XAPIWrapper.getStatements(params);
 
   var stmts = answered.statements;
@@ -85,19 +98,10 @@ function getScores() {
 
   // var name0 = JSON.stringify(topscores[0].actor.name);
   // var score0 = JSON.stringify(topscores[0].result.score.raw);
-  // var name1 = JSON.stringify(topscores[1].actor.name);
-  // var score1 = JSON.stringify(topscores[1].result.score.raw);
-  // var name2 = JSON.stringify(topscores[2].actor.name);
-  // var score2 = JSON.stringify(topscores[2].result.score.raw);
 
   // window.cpAPIInterface.setVariableValue("name0", name0);
   // window.cpAPIInterface.setVariableValue("score0", score0);
-  // window.cpAPIInterface.setVariableValue("name1", name1);
-  // window.cpAPIInterface.setVariableValue("score1", score1);
-  // window.cpAPIInterface.setVariableValue("name2", name2);
-  // window.cpAPIInterface.setVariableValue("score2", score2);
 
-  //var window = window.cpAPIInterface.getVariableValue();
   window.cpAPIInterface.setVariableValue("name0", topscores[0].actor.name);
   window.cpAPIInterface.setVariableValue("score0", topscores[0].result.score.raw);
   window.cpAPIInterface.setVariableValue("name1", topscores[1].actor.name);
