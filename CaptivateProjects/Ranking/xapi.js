@@ -24,7 +24,7 @@ function generatePoints() {
 
 var conf = {
   'endpoint': 'https://trial-lrs.yetanalytics.io/xapi/',
-  'auth': 'Basic ' + toBase64('5b344555-2f5c-40ff-81fd-a308419f500e:15cccc819467987d3274c99f801f01c3')
+  'auth': 'Basic ' + toBase64('15cccc819467987d3274c99f801f01c3:a7b2dd9f902444d13f3d0481c92c4ad0')
 };
 
 ADL.XAPIWrapper.changeConfig(conf);
