@@ -1,3 +1,0 @@
-<script type="text/javascript" src="cryptojs_v3.1.2.js"></script>
-<script type="text/javascript" src="xapiwrapper.min.js"></script>
-<script type="text/javascript" src="xapi.js"></script>

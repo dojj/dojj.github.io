@@ -14,4 +14,3 @@ layout: about
         <a href="/about" class="about" >About</a>
     </div>
 </header> -->
-My name is Aiden, and I'm a Seattle based learning experience designer. Currently with Providence as a part of the L&amp;D team. Before that, I helped to narrow the information gap as a curriculum developer for ExamWorks.
