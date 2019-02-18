@@ -10,6 +10,8 @@ function generateEmail() {
   return str;
 }
 
+var tincan = new TinCan({url: window.location.href});
+
 $("a").click(function send_statement(verbId, verb, objectId, name, description) {
   var conf = {
     'endpoint': 'https://trial-lrs.yetanalytics.io/xapi/',
