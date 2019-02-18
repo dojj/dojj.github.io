@@ -12,7 +12,7 @@ function generateEmail() {
 
 var tincan = new TinCan({url: window.location.href});
 
-$("a").click(function send_statement(verbId, verb, objectId, name, description) {
+$("a").click(function send_statement() {
   var conf = {
     'endpoint': 'https://trial-lrs.yetanalytics.io/xapi/',
     'auth': 'Basic ' + toBase64('50cc53246413e358199c6e9f6bf29d87:7d8ce34719292198bf7f43e54976b448')
@@ -26,16 +26,15 @@ $("a").click(function send_statement(verbId, verb, objectId, name, description) 
   // define the xapi statement being sent
   var statement = {
     'actor': {
-      'mbox': 'mailto:' + email,
-      'name': 'mailto:' + email,
+      'name': 'Budda',
       'objectType': 'Agent'
     },
     'verb': {
-       'id': verbId,
+       'id': 'clicked',
       'display': {'en-US': verb}
     },
     'object': {
-      'id': objectId,
+      'id': 'button',
       'definition': {
         'name': {
           'en-US': name
