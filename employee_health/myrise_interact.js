@@ -40,7 +40,7 @@ function sendStatement(statement) {
                                     
                     }},
                         
-            
+	 	tincan.sendStatement(statement);
                 
             };
             var result = ADL.XAPIWrapper.sendStatement(jsonstatement);
