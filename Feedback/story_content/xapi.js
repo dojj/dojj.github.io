@@ -45,5 +45,5 @@ function send_statement(verbId, verb, objectId, name, description) {
   }; // end statement definition
 
   // Dispatch the statement to the LRS
-  var result = ADL.XAPIWrapper.sendStatement(statement);
+  var result = ADL.XAPIWrapper.send_statement(statement);
 }
